@@ -1,3 +1,5 @@
+#  LeWorldModel， JEPA的一个落地实现
+
 **Yann LeCun 的 LeWorldModel（简称 LeWM）** 是他团队在 2026 年 3 月 13 日发布的一项新研究，正式论文标题为《LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture from Pixels》（arXiv: 2603.19312）。这是 LeCun 长期倡导的 **JEPA（Joint-Embedding Predictive Architecture，联合嵌入预测架构）** 在世界模型（World Model）方向上的一个重要落地实现，由 Mila、NYU、Samsung SAIL 和 Brown University 等机构的研究者共同完成（包括 Lucas Maes、Quentin Le Lidec 等）。
 
 ### 背景：为什么 LeCun 这么推“世界模型”？
