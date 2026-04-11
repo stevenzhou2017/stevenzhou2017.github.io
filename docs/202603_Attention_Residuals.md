@@ -1,3 +1,5 @@
+# Attention Residuals, 注意力旋转90度
+
 **《Attention Residuals》（简称 AttnRes）** 是 Kimi 团队（Moonshot AI）于 2026 年 3 月 16 日发布的最新技术报告，arXiv 编号为 2603.15031。
 
 这篇论文针对 Transformer 架构中**标准残差连接（Residual Connections）**长期未被优化的痛点，提出了一种全新的“深度维度注意力”机制，把残差从“固定累加”升级为“输入依赖的选择性聚合”。它本质上是把序列注意力（Attention）的思想“移植”到网络深度（depth）维度上，被称为“深度残差的注意力化”。
