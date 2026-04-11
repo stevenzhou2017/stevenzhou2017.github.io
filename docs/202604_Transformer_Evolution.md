@@ -16,15 +16,15 @@ Transformer结构的演进始于2017年Google团队发表的经典论文《Atten
 ### 2. 三大分支演进（2018年起）
 原始Encoder-Decoder结构很快分化为三种主要变体，以适应不同任务需求：
 
-- **Encoder-Only**（仅编码器）：专注于**理解（Understanding）**任务，如分类、命名实体识别、语义相似度。代表：**BERT**（2018，Google）。
+- **Encoder-Only**（仅编码器）：专注于 **理解（Understanding）** 任务，如分类、命名实体识别、语义相似度。代表：**BERT**（2018，Google）。
   - 创新：**Masked Language Modeling (MLM)** + **Next Sentence Prediction**，实现双向上下文建模。
   - 后续优化：RoBERTa（动态掩码）、ALBERT（参数共享）、DistilBERT（蒸馏压缩）。
 
-- **Decoder-Only**（仅解码器）：专注于**生成（Generation）**任务，如文本续写、对话。代表：**GPT系列**（OpenAI，从GPT-1 2018开始）。
+- **Decoder-Only**（仅解码器）：专注于 **生成（Generation）** 任务，如文本续写、对话。代表：**GPT系列**（OpenAI，从GPT-1 2018开始）。
   - 创新：**因果掩码（Causal Masking）**，自回归（Autoregressive）生成下一个token。
   - 演进路径：GPT-1（预训练+微调）→ GPT-2（零样本能力）→ GPT-3（175B参数，少样本/零样本学习）→ GPT-4（多模态、推理增强）。后续开源模型如LLaMA系列（Meta）、Mistral、Gemma等均基于此。
 
-- **Encoder-Decoder**（完整结构）：适合**序列到序列（Seq2Seq）**任务，如翻译、摘要、问答。代表：**T5**（2019，Google，Text-to-Text Transfer Transformer）。
+- **Encoder-Decoder**（完整结构）：适合 **序列到序列（Seq2Seq）** 任务，如翻译、摘要、问答。代表：**T5**（2019，Google，Text-to-Text Transfer Transformer）。
   - 创新：将所有NLP任务统一为“文本到文本”框架。
   - 其他：BART、FLAN-T5、UL2等。
 
@@ -46,7 +46,7 @@ Transformer在规模化过程中面临计算复杂度（O(n²)注意力）、长
 
 - **块结构调整**：
   - Pre-LN / Post-LN → 多种并行块设计（PaLM、Falcon）。
-  - SwiGLU激活 + RMSNorm + RoPE已成为2023年后“现代Transformer”的常见组合。
+  - SwiGLU激活 + RMSNorm + RoPE已成为2023年后 **“现代Transformer”** 的常见组合。
 
 - **长上下文与效率**：
   - 上下文窗口从512/1024扩展到128K+（通过RoPE、YaRN、NTK等插值）。
@@ -57,7 +57,7 @@ Transformer在规模化过程中面临计算复杂度（O(n²)注意力）、长
   - **RLHF / DPO**：从InstructGPT开始，提升对齐性（ChatGPT的基石）。
   - **LoRA/QLoRA**：参数高效微调（PEFT），极大降低微调成本。
 
-2024–2025年，架构趋于收敛：大多数开源LLM（如LLaMA 3、Qwen、DeepSeek）采用**Decoder-Only + RoPE + GQA + RMSNorm + SwiGLU**的“后Transformer”标准块，与原始2017版相比，块内部已显著精炼（见Medium文章对比图）。
+2024–2025年，架构趋于收敛：大多数开源LLM（如LLaMA 3、Qwen、DeepSeek）采用**Decoder-Only + RoPE + GQA + RMSNorm + SwiGLU**的 **“后Transformer”** 标准块，与原始2017版相比，块内部已显著精炼。
 
 ### 4. 扩展到多模态与视觉（2020年起）
 - **Vision Transformer (ViT, 2020)**：将图像分patch，像token一样处理，开启视觉Transformer时代。
