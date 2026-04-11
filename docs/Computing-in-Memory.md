@@ -18,7 +18,10 @@
 - **数字存算一体**：在存储单元内或周边添加数字逻辑电路（如加法树、移位器），以二进制方式精确运算。精度高、鲁棒性强，但面积和功耗相对较高。
 
 **典型存算一体架构示意图**（以SRAM-CIM宏单元为例，可见子阵列并行计算）：
+<!---
 ![SRAM-CIM宏单元](https://pic1.zhimg.com/v2-735ac886ec573b505c81a5573fb1e528_1440w.jpg)
+--->
+![SRAM-CIM宏单元](../images/Von-Neumann-800x450.png "Von Neumann Architecture")
 
 此外，还有**近存计算（Near-Memory Computing）**作为过渡：通过3D堆叠/HBM等技术缩短存算距离，但仍未完全融合。真正的存算一体是“存内计算”。
 
