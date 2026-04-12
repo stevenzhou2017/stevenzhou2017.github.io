@@ -10,6 +10,63 @@
       <link rel="stylesheet" href="./css/jyzhou.css">
 	    <!-- 引入 zero-md（推荐最新版本） -->
       <script type="module" src="https://cdn.jsdelivr.net/npm/zero-md@3?register"></script>
+
+	  <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+
+        html, body {
+            height: 100%;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header 和 Footer 統一格式 */
+        header, footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px 0;
+            flex-shrink: 0;
+        }
+
+        /* iframe 樣式優化（去除邊框、自動適應寬度） */
+        iframe {
+            border: none;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /* Body 主內容區 */
+        .content {
+            flex: 1;
+            padding: 30px;
+            background-color: #f8f9fa;
+            overflow-y: auto;
+        }
+
+        /* zero-md Markdown 樣式優化 */
+        .markdown-body {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* 讓 iframe 內容與主頁面樣式協調 */
+        iframe#header-iframe { height: 120px; }
+        iframe#footer-iframe { height: 100px; }
+    </style>	
   </HEAD>	
 
 
@@ -26,6 +83,21 @@
 
     <!-- 使用 iframe 引入 Footer -->
     <iframe id="footer-iframe" src="footer.html" title="Footer"></iframe>
+
+	<script>
+        // 可選：自動調整 iframe 高度（防止出現滾動條）
+        window.addEventListener('load', () => {
+            const headerIframe = document.getElementById('header-iframe');
+            const footerIframe = document.getElementById('footer-iframe');
+
+            headerIframe.onload = () => {
+                headerIframe.style.height = headerIframe.contentWindow.document.body.scrollHeight + 'px';
+            };
+            footerIframe.onload = () => {
+                footerIframe.style.height = footerIframe.contentWindow.document.body.scrollHeight + 'px';
+            };
+        });
+    </script>
 </BODY>
 
 </HTML>
