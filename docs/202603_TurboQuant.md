@@ -1,5 +1,9 @@
 # TurboQuant， 向量量化压缩算法
 
+Author：周均扬
+
+---
+
 Google TurboQuant 是 Google Research 于 2026 年 3 月 24 日发布的先进向量量化（vector quantization）压缩算法，主要用于解决大型语言模型（LLM）推理过程中的关键瓶颈——**键值缓存（KV cache）** 的内存开销，同时也适用于向量搜索（vector search）场景。
 
 ### 背景与核心问题
