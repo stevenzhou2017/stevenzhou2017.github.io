@@ -1,5 +1,9 @@
 # Transformer结构的演进
 
+Author：周均扬
+
+---
+
 Transformer结构的演进始于2017年Google团队发表的经典论文《Attention Is All You Need》（Vaswani et al.）。该论文提出了一种全新的神经网络架构，完全基于**自注意力机制（Self-Attention）**，彻底抛弃了此前主导序列建模的RNN（循环神经网络，如LSTM）和CNN（卷积神经网络）。这解决了RNN在长序列上的梯度消失/爆炸问题，并实现了高度并行化计算，大幅提升训练效率。
 
 ### 1. 原始Transformer架构（2017）
