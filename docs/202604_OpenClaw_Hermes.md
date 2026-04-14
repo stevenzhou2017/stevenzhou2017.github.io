@@ -3,7 +3,11 @@ Author：周均扬
 
 ---
 
-**从OpenClaw到Hermes，AI Agent正经历从“能做事”到“会成长”的质变。** 这不是简单的项目迭代，而是开源AI Agent领域2026年初的一次标志性演进，体现了整个行业从工具化助手向自主学习伙伴的转变。
+**从OpenClaw到Hermes，AI Agent正经历从“能做事”到“会成长”的质变。** 这不是简单的项目迭代，而是开源AI Agent领域2026年初的一次标志性演进，体现了整个行业从工具化助手向自主学习伙伴的转变。 
+[OpenClaw](https://openclaw.ai/ "OpenClaw Personal AI Assistant") 
+[Hermes Agent](https://github.com/nousresearch/hermes-agent "An Agent that grows with you") 
+
+
 
 ### 1. OpenClaw：2026年初的“爆款起点”, **行动派个人助手**
 OpenClaw（前身Clawdbot/Moltbot）于2025年底/2026年初开源，由个人开发者发起，后交由社区维护。它迅速登顶GitHub星标榜（首周破10万），被戏称为“小龙虾”。核心定位是**本地运行的持久AI助手**：
