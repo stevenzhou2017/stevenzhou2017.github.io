@@ -20,22 +20,16 @@ Author：周均扬
 论文的核心贡献是把残差替换为**深度维度的 softmax Attention**：
 
 标准残差：
-\[
-h_l = h_{l-1} + f_l(h_{l-1})
-\]
+$$h_l = h_{l-1} + f_l(h_{l-1})$$
 （实际是所有前层输出的均匀累加）
 
 AttnRes（Full 版）：
-\[
-h_l = \sum_{i=0}^{l-1} \alpha_{i \to l} \cdot v_i
-\]
+$$h_l = \sum_{i=0}^{l-1} \alpha_{i \to l} \cdot v_i$$
 其中注意力权重：
-\[
-\alpha_{i \to l} = \frac{\exp(w_l^\top \text{RMSNorm}(k_i))}{\sum_j \exp(w_l^\top \text{RMSNorm}(k_j))}
-\]
+$$\alpha_{i \to l} = \frac{\exp(w_l^\top \text{RMSNorm}(k_i))}{\sum_j \exp(w_l^\top \text{RMSNorm}(k_j))}$$
 
-- 每层只学一个**伪查询向量** \(w_l \in \mathbb{R}^d\)（非常轻量）。
-- Key/Value 直接用前面各层的输出 \(v_i\)（和反向传播需要的激活重叠，额外开销极小）。
+- 每层只学一个**伪查询向量** $$w_l \in \mathbb{R}^d$$（非常轻量）。
+- Key/Value 直接用前面各层的输出 $$v_i$$（和反向传播需要的激活重叠，额外开销极小）。
 - 用 RMSNorm 防止幅度偏差。
 
 **理论洞见**：论文用结构化矩阵分析证明，传统残差（包括 Highway、mHC 等变体）其实都是“深度线性注意力”（固定权重），而 AttnRes 是“深度 softmax 注意力”。这完成了深度维度上从“线性”到“softmax”的跃迁，和序列维度上 Transformer 取代 RNN 的路径完全一致。
