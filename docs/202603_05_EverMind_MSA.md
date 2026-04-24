@@ -1,6 +1,8 @@
 # MSA：Memory Sparse Attention，记忆稀疏注意力
 Author：周均扬
 
+date: 2026.03.16
+
 ---
 
 **EverMind的MSA（Memory Sparse Attention，记忆稀疏注意力）** 是2026年3月发布的一项突破性Transformer架构创新，由EverMind（EverMind-AI）团队提出，旨在解决大语言模型（LLM）的**长期记忆（Lifelong Memory）** 问题，实现原生支持高达**1亿（100M）token** 的高效上下文处理，而性能衰退极小。
