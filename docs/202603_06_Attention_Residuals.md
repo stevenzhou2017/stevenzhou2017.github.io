@@ -1,5 +1,8 @@
 # Attention Residuals, 注意力旋转90度
 Author：周均扬
+
+date: 2026.03.18
+
 ---
 
 **《Attention Residuals》（简称 AttnRes）** 是 Kimi 团队（Moonshot AI）于 2026 年 3 月 16 日发布的最新技术报告，arXiv 编号为 2603.15031。
