@@ -1,6 +1,8 @@
 # AI Agent的发展: 从OpenClaw到Hermes
 Author：周均扬
 
+date: 2026.04.12
+
 ---
 
 **从OpenClaw到Hermes，AI Agent正经历从“能做事”到“会成长”的质变。** 这不是简单的项目迭代，而是开源AI Agent领域2026年初的一次标志性演进，体现了整个行业从工具化助手向自主学习伙伴的转变。 
