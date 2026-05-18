@@ -54,10 +54,6 @@ Result
 * 单机系统
 * 工具型软件
 
-典型：
-
-* Cognex
-* Keyence
 
 
 ### 第二阶段：AI Vision
@@ -77,10 +73,6 @@ Detection
 * GPU化
 * 云训练
 
-典型：
-
-* Ultralytics
-* OpenMMLab
 
 
 ### 第三阶段：Vision OS
@@ -148,11 +140,7 @@ Industrial AGI Runtime
 
 ### 1. AI Runtime Kernel（AI运行时内核）
 
-这是未来最核心模块。
-
-相当于：Windows Kernel
-
-在 Vision OS 中变成：AI Runtime Kernel
+这是未来最核心模块。相当于：Windows Kernel; 在 Vision OS 中变成：AI Runtime Kernel。
 
 
 #### 核心职责
@@ -169,7 +157,6 @@ Industrial AGI Runtime
 * SAM
 * Pose
 * ReID
-
 
 
 ##### （2）统一硬件调度
@@ -211,24 +198,11 @@ Hardware Backend
 ```
 
 
-#### 推荐技术栈
-
-| 模块      | 技术           |
-| ------- | ------------ |
-| Runtime | ONNX Runtime |
-| NVIDIA  | TensorRT     |
-| 国产      | Ascend CANN  |
-| Edge    | OpenVINO     |
-| Serving | Triton       |
-| MLOps   | Kubeflow     |
-
 ---
 
-## 5. Agent化（最关键）
+## 5. Agent化
 
-未来工业视觉平台：
-
-> 本质上会变成 Agent OS。
+未来工业视觉平台，本质上会变成 Agent OS。
 
 
 ### 1. 什么是 Vision Agent
@@ -289,7 +263,7 @@ PLC / Robot
 
 ---
 
-## 6. Text-to-Workflow（革命点）
+## 6. Text-to-Workflow
 
 这是未来最大变化。
 
@@ -335,17 +309,8 @@ Execution Runtime
 
 ## 7. Vision Workflow OS
 
-未来：
+未来，Workflow 不再是“功能”。而是操作系统调度层。
 
-Workflow 不再是“功能”。
-
-而是：
-
-```text
-操作系统调度层
-```
-
----
 
 ### 核心能力
 
@@ -361,19 +326,7 @@ Workflow 不再是“功能”。
 
 #### 2. State Machine
 
-工业系统必须：
-
-```text
-确定性
-```
-
-因此：
-
-```text
-AI + 状态机
-```
-
-会成为标准。
+工业系统必须，确定性。因此 “AI + 状态机” 会成为标准。
 
 
 #### 3. Event Bus
@@ -389,11 +342,9 @@ AI事件
 
 ---
 
-## 8. 多模态感知（未来核心）
+## 8. 多模态感知
 
-未来工业视觉：
-
-不会只有 Camera。
+未来工业视觉不会只有 Camera。
 
 
 ### 感知融合：
@@ -415,17 +366,13 @@ Industrial Multimodal Perception
 
 ---
 
-## 9. Industrial Copilot（工业副驾）
+## 9. Industrial Copilot
 
-未来每个工业视觉系统：
-
-都会有：
+未来每个工业视觉系统，都会有：
 
 ```text
 Industrial Copilot
 ```
-
----
 
 ### 典型能力
 
@@ -478,7 +425,7 @@ AI自动分析：
 
 ---
 
-## 10. 工业数据闭环（真正壁垒）
+## 10. 工业数据闭环
 
 未来真正壁垒,不是模型。而是工业数据闭环。
 
@@ -644,19 +591,9 @@ AI能够理解：
 
 ---
 
-## 15. 最终形态
+## 15. 总结
 
-未来 Industrial Vision OS：
-
-会接近：
-
-```text
-Factory Brain
-```
-
-即：
-
-整个工厂：
+Industrial Vision OS， 会接近 Factory Brain。 即整个工厂：
 
 ```text
 看得见
@@ -666,101 +603,7 @@ Factory Brain
 自主演化
 ```
 
----
-
-## 16. 未来5~10年的产业趋势
-
-### 2026~2028
-
-AI增强视觉平台：
-
-```text
-Vision + AI Copilot
-```
-
----
-
-### 2028~2030
-
-Agent化：
-
-```text
-Multi-Agent Factory
-```
-
----
-
-### 2030以后
-
-```text
-Industrial Autonomous System
-```
-
-即：
-
-工厂开始：
-
-* 自感知
-* 自调度
-* 自优化
-* 自维护
-
----
-
-## 17. 建议的技术路线（现实可落地）
-
-### 第一阶段
-
-```text
-Qt
-+ OpenCV
-+ ONNX Runtime
-+ Workflow
-```
-
-
-### 第二阶段
-
-```text
-+ YOLO
-+ TensorRT
-+ Plugin SDK
-+ OPC UA
-```
-
-
-### 第三阶段
-
-```text
-+ LLM
-+ Agent
-+ Text-to-Workflow
-+ Auto Label
-```
-
-
-### 第四阶段
-
-```text
-+ MLOps
-+ Digital Twin
-+ World Model
-+ Self-Evolving AI
-```
-
----
-
-## 18. 下一代工业视觉平台的本质
-
-最终：
-
-Industrial Vision OS 本质上是：
-
-```text
-AI时代的工业感知操作系统
-```
-
-类似于：
+Industrial Vision OS 本质上是AI时代的工业感知操作系统。 类似于：
 
 | 时代     | 核心平台                 |
 | ------ | -------------------- |
@@ -769,8 +612,4 @@ AI时代的工业感知操作系统
 | 云时代    | Kubernetes           |
 | AI工业时代 | Industrial Vision OS |
 
-它将成为：
-
-```text
-未来智能工厂的基础设施层
-```
+它将成为未来智能工厂的基础设施层。
