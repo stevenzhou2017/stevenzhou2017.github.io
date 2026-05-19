@@ -18,7 +18,9 @@ date: 2026.05.19
 
 **VLM** 与 **VLA** 代表两者不同的AI范式。
 
-***VLM*即视觉语言模型，核心是看懂世界！本质是把图像、视频、文本映射到统一语义空间。典型的结构是：
+**VLM**即视觉语言模型，核心是看懂世界！本质是把图像、视频、文本映射到统一语义空间。
+
+典型的结构是：
 
 ```text
 Image → Vision Encoder → LLM → Text / Reasoning
@@ -29,15 +31,15 @@ VLM的代表模型是 OpenAI的GPT-4V， Google的Gemini， Meta的LLaVa， 阿�
 但VLM通常不直接控制物理世界。
 
 
-**VLA**即视觉语言动作模型。核心是从感知直接到行动。本质是看懂并行动，并不仅仅是看懂世界！ VLA的典型结构是： 
+**VLA**即视觉语言动作模型。核心是从感知直接到行动。本质是看懂并行动，并不仅仅是看懂世界！ 
+
+VLA的典型结构是： 
 
 ```text
 Image + Text → World Model → Action Policy → Robot Action
 ```
 
-VLA接近机器人大脑。 
-
-VLA的代表方向是 Google的DeepMind RT-2， Tesla的Optimu， Figure AI的Figure VLA， NVIDIA的GR00T。
+VLA接近机器人大脑。 VLA的代表方向是 Google的DeepMind RT-2， Tesla的Optimu， Figure AI的Figure VLA， NVIDIA的GR00T。
 
 
 总结就是，**VLM**的目标是理解世界，而**VLA**的目标是操作世界。**VLM**偏向于认知智能，即 Cognitive AI； 而**VLA**偏向于具身智能，即 Embodied AI。
@@ -73,43 +75,27 @@ VLA的代表方向是 Google的DeepMind RT-2， Tesla的Optimu， Figure AI的Fi
 | 多模态融合          | 图像+文本           | 图像+文本+状态+传感器                      |
 
 
-### **VLM**的核心技术是
+### **VLM**的核心技术是：
 
-#### 1. Vision Encoder
+#### 1. Vision Encoder， 例如：ViT、EVA、SigLIP
 
-例如：ViT、EVA、SigLIP
+#### 2. LLM， 例如：Transformer、MoE
 
-#### 2. LLM
-
-例如：Transformer、MoE
-
-#### 3. Cross Attention
-
-图像与文本对齐。
+#### 3. Cross Attention， 图像与文本对齐
 
 
-### **VLA**的核心技术是
+### **VLA**的核心技术是：
 
-#### 1. World Model
+#### 1. World Model， 预测：下一步世界状态
 
-预测：下一步世界状态
-
-#### 2. Policy Model
-
-输出：动作序列
+#### 2. Policy Model， 输出：动作序列
 
 
-#### 3. Trajectory Planning
+#### 3. Trajectory Planning, 路径规划
 
-路径规划。
+#### 4. Reinforcement Learning, 强化学习
 
-#### 4. Reinforcement Learning
-
-强化学习。
-
-#### 5. Sim2Real
-
-仿真到现实。
+#### 5. Sim2Real, 仿真到现实
 
 
 
@@ -143,7 +129,7 @@ VLA的代表方向是 Google的DeepMind RT-2， Tesla的Optimu， Figure AI的Fi
 
 **VLM** 更像“大脑皮层”， 负责理解、推理、语义。
 
-**VLA** 更像“大脑 + 小脑 + 神经系统”，因为除了理解，还要 “运动控制”、“平衡”，“时序”、“力反馈”。
+**VLA** 更像“大脑 + 小脑 + 神经系统”，因为除了理解外，还要 “运动控制”、“平衡”，“时序”、“力反馈”。
 
 ---
 
