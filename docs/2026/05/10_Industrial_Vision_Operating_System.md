@@ -529,3 +529,6 @@ Industrial Vision OS 本质上是AI时代的工业感知操作系统。 类似�
 | AI工业时代 | Industrial Vision OS |
 
 它将成为未来智能工厂的基础设施层。
+
+
+![Next Generation AI Vision Platform](Next_Generation_AI_Vision_Platform.png "Next Generation AI Vision Platform")
