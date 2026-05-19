@@ -147,5 +147,5 @@ Camera → Perception → VLM理解 → World Model → VLA规划 → 机器人/
 ---
 
  **VLM vs VLA 工业视觉系统对比图**，将理解层与执行层的关系、数据流和闭环反馈直观可视化。
-
+![VLM vs VLA](VLM_VLA_Industrial_Vision_System.png "VLM vs VLA")
 
