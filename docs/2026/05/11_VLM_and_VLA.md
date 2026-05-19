@@ -6,7 +6,7 @@ date: 2026.05.19
 
 ---
 
- **VLM（Vision Language Model）** 与 **VLA（Vision-Language-Action）** 的对比整理成一份清晰的表格和说明，便于快速理解二者异同点及在工业视觉中的角色。
+ **VLM（Vision Language Model）** 与 **VLA（Vision-Language-Action）** 代表两者不同的AI范式。
 
 
 ## 1. 核心概念
@@ -16,7 +16,6 @@ date: 2026.05.19
 | VLM | Vision Language Model  | 理解视觉世界 + 推理  | 文本、语义、解释  | 缺陷分析、OCR理解、工艺解释、工业Copilot |
 | VLA | Vision-Language-Action | 将视觉理解转化为动作执行 | 物理动作、控制指令 | 机器人抓取、AGV路径规划、装配操作、自动维护   |
 
-**VLM** 与 **VLA** 代表两者不同的AI范式。
 
 **VLM**即视觉语言模型，核心是看懂世界！本质是把图像、视频、文本映射到统一语义空间。
 
