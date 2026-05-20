@@ -98,4 +98,4 @@ date: 2026.05.20
 ---
 
 **Tesla Optimus、Helix 和大小脑模式的对比可视化图**，直观展示“感知/决策 → 控制/执行”的差异和优缺点。
-
+![Emboded Robot](Emboded_Robot_Optimus_Helix_Brain_Cerebellum.png "Emboded Robot")
