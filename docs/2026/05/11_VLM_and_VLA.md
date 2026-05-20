@@ -38,7 +38,7 @@ VLA的典型结构是：
 Image + Text → World Model → Action Policy → Robot Action
 ```
 
-VLA接近机器人大脑。 VLA的代表方向是 Google的DeepMind RT-2， Tesla的Optimu， Figure AI的Figure VLA， NVIDIA的GR00T。
+VLA接近机器人大脑。 VLA的代表方向是 Google的DeepMind RT-2， Tesla的Optimus， Figure AI的Figure VLA， NVIDIA的GR00T。
 
 
 总结就是，**VLM**的目标是理解世界，而**VLA**的目标是操作世界。**VLM**偏向于认知智能，即 Cognitive AI； 而**VLA**偏向于具身智能，即 Embodied AI。
