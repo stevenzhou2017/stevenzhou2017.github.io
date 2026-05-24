@@ -136,6 +136,10 @@ NVIDIA 发布的**通用机器人基础模型**：
 * **若目标是从仿真到真实部署、迭代控制策略与物理交互**：优先构建 **NVIDIA Isaac 完整训练与仿真 pipeline**。
 * **混合方案**：使用 Gemini 作为大脑策略输出器 → NVIDIA Isaac 作为执行与模拟平台，形成“大脑（Gemini） + 小脑（Isaac 控制）”架构。
 
+
+**ROS2 + Isaac + Gemini 分层架构图** 
+![ROS2_Isaac_Gemini](ROS2_Nvidia_Isaac_Google_Gemini_Robotics.png "ROS2 + Isaac + Gemini 分层架构图")
+
 ---
 
 
@@ -160,6 +164,3 @@ NVIDIA 发布的**通用机器人基础模型**：
 
 [^9]: "NVIDIA Announces Isaac GR00T N1 — the World’s First Open Humanoid Robot Foundation Model — and Simulation Frameworks to Speed Robot Development | NVIDIA Newsroom", https://nvidianews.nvidia.com/news/nvidia-isaac-gr00t-n1-open-humanoid-robot-foundation-model-simulation-frameworks?utm_source=chatgpt.com 
 
-
-**ROS2 + Isaac + Gemini 分层架构图** 
-![ROS2_Isaac_Gemini](ROS2_Nvidia_Isaac_Google_Gemini_Robotics.png "ROS2 + Isaac + Gemini 分层架构图")
