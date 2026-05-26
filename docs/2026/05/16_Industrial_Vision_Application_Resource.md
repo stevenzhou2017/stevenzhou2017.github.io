@@ -30,18 +30,14 @@ date： 2026.05.26
 
 ### 1. 单帧数据量
 
-图像数据量公式：
-
-$Data_{frame}=Width \times Height \times BitDepth / 8$
+图像数据量公式：$Data_{frame}=Width \times Height \times BitDepth / 8$
 
 
 ### 2. 200万像素图像
 
 #### 分辨率
 
-通常： $1920 \times 1080 = 2,073,600$
-
-约等于：* 2.07 MP
+通常： $1920 \times 1080 = 2,073,600$，约等于：* 2.07 MP
 
 ---
 
@@ -52,26 +48,16 @@ $Data_{frame}=Width \times Height \times BitDepth / 8$
 
 每像素：* 8 bit = 1 Byte
 
-因此：$Data_{frame}=1920 \times 1080 \times 1$
-
-得到：* 2,073,600 Bytes ≈ 2 MB / frame
+因此：$Data_{frame}=1920 \times 1080 \times 1$， 得到：* 2,073,600 Bytes ≈ 2 MB / frame
 
 
 #### 单路实时带宽
 
 公式：$Bandwidth=FrameSize \times FPS $
 
-代入：$2MB \times 60 = 120MB/s$
+代入：$2MB \times 60 = 120MB/s$， 即：* 单路 ≈ 120 MB/s，换算网络：$120 \times 8 = 960Mbps$，即：* ≈ 1Gbps
 
-即：* 单路 ≈ 120 MB/s
-
-换算网络：$120 \times 8 = 960Mbps$
-
-即：* ≈ 1Gbps
-
-这意味着：结论（Mono8）单个 200万@60FPS 相机：* 已接近 GigE 极限
-
-因此：
+这意味着：结论（Mono8）单个 200万@60FPS 相机：* 已接近 GigE 极限，因此：
 
 * 普通千兆网卡非常危险
 * 必须：
@@ -96,9 +82,7 @@ $Data_{frame}=Width \times Height \times BitDepth / 8$
 
 单路：* 120 MB/s
 
-4路：$120 \times 4 = 480MB/s$
-
-即：* 480 MB/s ≈ 3.84 Gbps
+4路：$120 \times 4 = 480MB/s$，即：* 480 MB/s ≈ 3.84 Gbps
 
 
 
@@ -106,13 +90,9 @@ $Data_{frame}=Width \times Height \times BitDepth / 8$
 
 RGB8：* 3 Byte/pixel
 
-单帧：$1920 \times 1080 \times 3 \approx 6MB$
+单帧：$1920 \times 1080 \times 3 \approx 6MB$。 单路：$6MB \times 60 = 360MB/s$
 
-单路：$6MB \times 60 = 360MB/s$
-
-4路：$360 \times 4 = 1440MB/s$
-
-即：* 1.44 GB/s ≈ 11.5 Gbps
+4路：$360 \times 4 = 1440MB/s$，即：* 1.44 GB/s ≈ 11.5 Gbps
 
 ---
 
@@ -141,9 +121,7 @@ RGB8：* 3 Byte/pixel
 | GPU上传    | 1  |
 | 推理输出     | 1  |
 
-通常：
-
-* 实际内存吞吐 ≈ 原始图像 3~5 倍
+通常：* 实际内存吞吐 ≈ 原始图像 3~5 倍
 
 
 ### Mono8 情况
@@ -174,9 +152,7 @@ CPU很低：
 | ---- | ----- |
 | 4路采集 | 5~15% |
 
-前提：
-
-* i7 / Ryzen 级别
+前提：* i7 / Ryzen 级别
 
 
 ### 2. OpenCV处理
@@ -248,13 +224,9 @@ CPU很低：
 
 如果录像：
 
-### Mono8
+Mono8： 480 MB/s，每小时：$480 \times 3600 \approx 1.7TB$
 
-480 MB/s，每小时：$480 \times 3600 \approx 1.7TB$
-
-### RGB8
-
-1.44 GB/s，每小时：$1.44 \times 3600 \approx 5.2TB$
+RGB8： 1.44 GB/s，每小时：$1.44 \times 3600 \approx 5.2TB$
 
 ---
 
