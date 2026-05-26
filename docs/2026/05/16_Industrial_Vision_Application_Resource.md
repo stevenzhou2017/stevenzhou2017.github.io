@@ -359,5 +359,5 @@ PLC/MES/Robot
 这些比“算法本身”更重要。
 
 
-**工业视觉应用资源评估**
+**多路工业视觉应用实现框架**
 ![Vision Application Resource](Industrial_Vision_APP_Resource.png "Vision Application Resource")
