@@ -6,7 +6,7 @@ date： 2026.05.26
 
 ---
 
-以典型工业视觉系统为例，对 **4 路工业相机（200 万像素，60FPS）** 的带宽、内存、CPU/GPU、PCIe 与存储资源进行系统估算。
+以典型工业视觉系统为例，对 **4路 工业相机（200 万像素，60FPS）** 的带宽、内存、CPU/GPU、PCIe 与存储资源进行系统估算。
 
 假设条件：
 
@@ -358,6 +358,7 @@ PLC/MES/Robot
 
 这些比“算法本身”更重要。
 
-
+<!---
 **多路工业视觉应用实现框架**
 ![Vision Application Resource](Industrial_Vision_APP_Resource.png "Vision Application Resource")
+--->
