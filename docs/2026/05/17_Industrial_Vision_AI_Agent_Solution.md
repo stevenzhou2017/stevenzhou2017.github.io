@@ -154,4 +154,7 @@ date: 2026.05.27
 - 工业领域应用前景与发展方向： 工业视觉Agent在智能质检、巡检预警、装配指导等领域应用前景广阔，未来将向更智能化、集成化、轻量化方向发展，助力工业生产效率和质量的进一步提升。
 
 
+---
+**工业视觉Agent构建方案**，让工业视觉具备感知、理解、决策与执行的智能体能力，驱动智能制造升级。
+![Industrial_Vision_Agent](Industrial_Vision_Agent_Solution.png "Industrial Vision Agent")
 
