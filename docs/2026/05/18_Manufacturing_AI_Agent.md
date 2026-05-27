@@ -1,5 +1,5 @@
 
-# 制造业AI Agent
+# 制造业AI Agent: 驱动智能升级的关键力量
 
 author: 周均扬
 
