@@ -38,25 +38,22 @@ date： 2026.05.30
 #### 1.  BES（Bidirectional Evolutionary Search）
 
 即：
-
 ```
 Forward Search + Backward Search
 ```
-
 双向搜索。 ([Hugging Face][^1])
 
 
 整体结构：
-
 ```text
-                Goal
-                  ↑
+             Goal
+              ↑
          Backward Decompose
-                  ↓
+              ↓
 Subgoal1  Subgoal2  Subgoal3
       ↘      ↓      ↙
       Forward Evolution
-             ↓
+              ↓
      Candidate Solutions
 ```
 
@@ -83,21 +80,17 @@ BES 在前向搜索和后向搜索之间交替进行（通常每若干前向步�
 
 #### 4. 为什么叫 Bidirectional？
 
-因为 Forward 从初始状态向前生成
-
+因为 Forward 从初始状态向前生成:
 ```text
 Problem -> Step1 -> Step2 -> Answer
 ```
 
-Backward则从目标反推
-
+Backward则从目标反推:
 ```text
 Answer <- Subgoal3 <- Subgoal2 <- Subgoal1
 ```
 
-
 最终：
-
 ```text
 Forward Search
       ↘
@@ -147,9 +140,7 @@ Backward Search
 
 ### 5. 对 Agent 的意义
 
-这篇论文实际上不是在解决LLM问题。而是在解决 Agent Search 问题。
-
-未来Agent大概率会采用："Planner + Evolution + Goal Decomposition + Verifier"结构。
+这篇论文实际上不是在解决LLM问题。而是在解决 Agent Search 问题。未来Agent大概率会采用："Planner + Evolution + Goal Decomposition + Verifier"结构。
 
 即：
 
@@ -198,7 +189,6 @@ Backward Search
 ### 7. 技术判断
 
 这篇论文最大的价值并不是提出一个新的 Search Algorithm，而是提出了一个非常重要的趋势：
-
 > **未来大模型的提升可能不再主要依赖更大的参数规模，而依赖更强的搜索（Search）、规划（Planning）、进化（Evolution）和目标分解（Goal Decomposition）能力。**
 
 从演进路径看：
@@ -234,7 +224,6 @@ Self-Improvement
 的统一框架。
 
 对于工业视觉 Agent、制造业 AI Agent、机器人大小脑系统而言，这篇论文的启发是：
-
 > **未来的核心竞争力可能不是更大的 Vision-Language Model，而是“搜索+规划+进化”的 Agent 操作系统**。 
 
 
