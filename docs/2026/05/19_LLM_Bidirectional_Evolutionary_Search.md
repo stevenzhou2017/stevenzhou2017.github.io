@@ -8,7 +8,7 @@ date： 2026.05.30
 
 ## 0. 基本信息 
 
-论文名称： Self-Improving Language Models with Bidirectional Evolutionary Search
+名称： Self-Improving Language Models with Bidirectional Evolutionary Search
 
 作者： Guowei Xu 等（Harvard、MIT）
 
@@ -21,11 +21,12 @@ date： 2026.05.30
 ---
 
 ### 1. 核心问题与动机
+
 现有LLM自改进（self-improving）和推理（inference）中的搜索方法（如Best-of-N采样、Tree Search / MCTS / ToT等）存在**两个根本局限**：
 
 - 1. **验证信号稀疏（Sparse Verification Signals）**：Verifier（如正确性检查器）通常只在最终答案给出二元或粗粒度反馈，中间过程缺乏密集指导。
 
-- 2. **候选生成受限（Confined Candidate Generation）**：主要通过**自回归扩展（autoregressive expansion）**生成候选，候选始终在模型自身概率分布的高概率质量区域（narrow entropy shell）。难以探索低概率但正确的解空间，尤其在 frontier 难题上。
+- 2. **候选生成受限（Confined Candidate Generation）**：主要通过 **自回归扩展（autoregressive expansion）** 生成候选，候选始终在模型自身概率分布的高概率质量区域（narrow entropy shell）。难以探索低概率但正确的解空间，尤其在 frontier 难题上。
 
 这些限制导致在困难的后训练任务中，主流方法（如GRPO、Tree-GRPO）难以找到足够高质量样本，模型无法有效提升；在推理时也难以稳定解决开放性问题。
 
@@ -63,7 +64,7 @@ BES 在前向搜索和后向搜索之间交替进行（通常每若干前向步�
 - **表示**：每个候选是部分轨迹（partial trajectory）的节点。
 - **操作符**（Operators）：
   - **Expansion（扩展）**：标准自回归采样新步骤（类似现有方法）。
-  - **Evolution Operators（进化操作符，核心创新）**：从不同轨迹中**重组（recombine）**部分，生成单次rollout难以得到的候选：
+  - **Evolution Operators（进化操作符，核心创新）**：从不同轨迹中 **重组（recombine）** 部分，生成单次rollout难以得到的候选：
     - **Combination**：共享前缀的不同轨迹，后缀拼接。
     - **Deletion**：删除最不合理的内部步骤。
     - **Translocation**：用另一轨迹的步骤替换当前轨迹中的某一步。
@@ -72,7 +73,7 @@ BES 在前向搜索和后向搜索之间交替进行（通常每若干前向步�
 **理论动机**：仅用扩展生成的候选被限制在窄“entropy shell”内；进化操作符能跳出该壳，探索更广阔空间（论文有Theorem证明）。
 
 #### 3. **后向搜索（Backward Search）：提供密集反馈**
-- 递归将原任务分解成**可检查的子目标（checkable sub-goals）**树。
+- 递归将原任务分解成**可检查的子目标（checkable sub-goals）** 树。
 - 用这些子目标评估前向节点：满足越多子目标，得分越高。
 - 提供**密集、中间反馈**，即使没有完全解决最终问题，也能有效指导搜索。
 - 理论优势：将“一击必中”的低概率问题转化为收集多个子目标的更容易问题，实现**指数级样本效率提升**（Theorem 4.5）。
@@ -107,9 +108,7 @@ Backward Search
 
 但这里用于 LLM 推理。 ([HyperAI][^2])
 
-
 整体框架像“进化 + 分治”：前向产生多样/创新候选，后向提供细粒度指导，二者相互促进。
-
 
 ---
 
@@ -140,7 +139,7 @@ Backward Search
 
 ### 5. 对 Agent 的意义
 
-这篇论文实际上不是在解决LLM问题。而是在解决 Agent Search 问题。未来Agent大概率会采用："Planner + Evolution + Goal Decomposition + Verifier"结构。
+这篇论文实际上不是在解决LLM问题。而是在解决 Agent Search 问题。未来Agent大概率会采用 **"Planner + Evolution + Goal Decomposition + Verifier"** 的结构。
 
 即：
 
@@ -189,57 +188,29 @@ Backward Search
 ### 7. 技术判断
 
 这篇论文最大的价值并不是提出一个新的 Search Algorithm，而是提出了一个非常重要的趋势：
-> **未来大模型的提升可能不再主要依赖更大的参数规模，而依赖更强的搜索（Search）、规划（Planning）、进化（Evolution）和目标分解（Goal Decomposition）能力。**
+> **未来大模型的提升可能不再主要依赖更大的参数规模，而依赖更强的搜索（Search）、规划（Planning）、进化（Evolution）和目标分解（Goal Decomposition）能力**。
 
 从演进路径看：
 
 ```text
-Prompt Engineering
-      ↓
-Chain of Thought
-      ↓
-Tree Search
-      ↓
-MCTS
-      ↓
-Evolution Search
-      ↓
-Bidirectional Evolution Search
-      ↓
-Agentic Self-Improvement
+Prompt Engineering -> Chain of Thought -> Tree Search -> MCTS -> Evolution Search -> Bidirectional Evolution Search -> Agentic Self-Improvement
 ```
 
 而 BES 可以被视为：
-
 ```text
-Tree-of-Thought
-      +
-Genetic Algorithm
-      +
-Hierarchical Planning
-      +
-Self-Improvement
+Tree-of-Thought + Genetic Algorithm + Hierarchical Planning + Self-Improvement
 ```
-
 的统一框架。
 
 对于工业视觉 Agent、制造业 AI Agent、机器人大小脑系统而言，这篇论文的启发是：
 > **未来的核心竞争力可能不是更大的 Vision-Language Model，而是“搜索+规划+进化”的 Agent 操作系统**。 
 
+---
 
 ### 参考资料：
 
 [^1]: "Self-Improving Language Models with Bidirectional Evolutionary Search", https://huggingface.co/papers/2605.28814
 [^2]: "Self-Improving Language Models with Bidirectional Evolutionary Search | Papers | HyperAI", https://hyper.ai/en/papers/2605.28814
-
-
-
-
-
-
----
-
-
 
 
 
