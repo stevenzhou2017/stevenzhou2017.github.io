@@ -1,4 +1,4 @@
-# 回归分析中的预测置信区间计算
+# 回归分析中的预测置信区间的计算
 
 author: 周均扬
 
@@ -8,9 +8,9 @@ date：2026.06.01
 
 ## 1. 在简单线性回归分析中的预测置信区间计算
 
-在简单线性回归分析中（模型：$Y = \beta_0 + \beta_1 X + \epsilon$，其中 $\epsilon \sim N(0, \sigma^2)$），**预测置信区间** 通常指两种：
+在简单线性回归分析中，模型：$Y = \beta_0 + \beta_1 X + \epsilon$，其中 $\epsilon \sim N(0, \sigma^2)$ ，**预测置信区间** 通常指两种：
 
-- 1. **均值响应（mean response）的置信区间（Confidence Interval, CI）**：针对给定 $x = x_0$ 时，**回归线上的均值** $E(Y | x_0)$ 的置信区间。
+- 1. **均值响应（mean response）的置信区间（Confidence Interval, CI）**：针对给定 $x = x_0$ 时，**回归线上的均值** $E(Y|x_0)$ 的置信区间。
 - 2. **单个未来观测（new observation）的预测区间（Prediction Interval, PI）**：针对给定 $x = x_0$ 时，一个**新的单个 Y 值** 的预测区间。
 
 ###  1.计算公式
@@ -20,10 +20,10 @@ date：2026.06.01
 对于给定 $x_0$ 的预测值 $\hat{y}_0 = b_0 + b_1 x_0$：
 
 - **均值响应的置信区间（CI）**：
-  $$\hat{y}_0 \pm t_{\alpha/2, n-2} \cdot s \cdot \sqrt{ \frac{1}{n} + \frac{(x_0 - \bar{x})^2}{S_{xx}} }$$
+  $$\hat{y}_0 \pm t_{\alpha/2, n-2} \cdot s \cdot \sqrt{ \frac{1}{n} + \frac{(x_0 - \bar{x})^2}{S_{xx}}}$$
   
 - **单个未来观测的预测区间（PI）**：
-  $$\hat{y}_0 \pm t_{\alpha/2, n-2} \cdot s \cdot \sqrt{ 1 + \frac{1}{n} + \frac{(x_0 - \bar{x})^2}{S_{xx}} }$$
+  $$\hat{y}_0 \pm t_{\alpha/2, n-2} \cdot s \cdot \sqrt{ 1 + \frac{1}{n} + \frac{(x_0 - \bar{x})^2}{S_{xx}}}$$
   （比CI多了一个“1”，因为包含了未来观测的额外变异 $\sigma^2$）
 
 ### 2.计算步骤
@@ -80,7 +80,7 @@ t 值 (95%, df=3) $\approx 3.182$
 
 ### 2. **与线性回归的区别**：
 - 线性回归中，Jacobian是设计矩阵X，公式是精确的。
-- 非线性中，公式是渐近的（适用于大样本）；小样本可能需Bootstrap或蒙特卡罗方法来改善精度。
+- 非线性中，公式是渐近的，适用于大样本；小样本可能需**Bootstrap**或**蒙特卡罗**方法来改善精度。
 - 如果模型高度非线性，区间可能不对称（但这里假设正态近似）。
 
 这些区间可通过数值Jacobian或分析推导计算。在Python中，`scipy.optimize.curve_fit` 可以直接返回协方差矩阵，用于计算。
@@ -210,7 +210,7 @@ x = 10:
 ```
 
 **说明**：
-- `curve_fit` 返回 `popt`（参数）和 `pcov`（协方差矩阵），这里我手动计算以示清晰（实际可直接用 `pcov` 替换 `Sigma`）。
+- `curve_fit` 返回 `popt`（参数）和 `pcov`（协方差矩阵），实际可直接用 `pcov` 替换 `Sigma`。
 - Jacobian用数值有限差分计算；如果模型简单，可手动推导偏导。
 - 对于更复杂模型，可用 `lmfit` 库（但需检查环境是否支持；这里用标准scipy）。
 - 区间宽度在外推点（如x=10）更大，因为不确定性放大。
