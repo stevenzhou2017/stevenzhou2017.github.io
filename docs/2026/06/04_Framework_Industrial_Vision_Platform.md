@@ -142,5 +142,5 @@ date： 2026.06.05
 
 ---
 
-**完整的企业级工业视觉平台架构图**，把数据流、模块、线程和AI功能直观可视化，方便汇报和团队交流。
+**完整的企业级工业视觉平台架构图**，把数据流、模块、线程和AI功能直观可视化。
 ![Framework_Industrial_Vision_Platform](Framework_Industrial_Vision_Platform.png "Framework Industrial Vision Platform")
