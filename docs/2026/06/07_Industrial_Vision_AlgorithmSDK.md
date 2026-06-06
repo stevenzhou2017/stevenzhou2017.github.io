@@ -1,4 +1,4 @@
-# 工业视觉算法层(AlgorithmSDK)
+# 工业视觉算法层(AlgorithmSDK)设计方案
 
 author： 周均扬
 
