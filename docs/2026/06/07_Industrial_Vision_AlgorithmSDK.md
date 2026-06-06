@@ -95,7 +95,7 @@ struct VisionFrame
 
 工业视觉平台典型流程：
 
-1. **CameraSDK采集 → VisionFrame**
+1. **CameraSDK采集 → VisionFrame**：CameraSDK -> (Adapter Layer) -> UnifiedFrame -> (Adapter Layer) -> AlgorithmSDK：VisionFrame
 2. **CV Toolkit预处理**（去噪、增强、ROI裁切）
 3. **Measurement/Calibration/3D Toolkit**（尺寸测量、位置校正、点云处理）
 4. **AI Toolkit推理**（目标检测/缺陷检测/分割）
