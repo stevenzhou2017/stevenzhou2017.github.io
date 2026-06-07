@@ -126,8 +126,8 @@ cudaStreamSynchronize(stream);
 - 资源竞争：多个Stream同时访问同一块内存需小心（使用Events同步）。
 
 **性能指标参考**（RTX 4090 / A100 典型场景）：
-- 单Stream + 同步：~100~200 FPS（YOLO示例）
-- 3~4 Stream + 异步 + Zero Copy：可达 300~500+ FPS
+- 单Stream + 同步：100 ~ 200 FPS（YOLO示例）
+- 3 ~ 4 Stream + 异步 + Zero Copy：可达 300~500+ FPS
 
 ## 6. 未来趋势
 
