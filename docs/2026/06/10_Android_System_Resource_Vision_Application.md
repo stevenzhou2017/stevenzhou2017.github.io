@@ -138,3 +138,6 @@ OS      : Android 13+
 
 该配置可以支持：4路视频采集 + 4路实时编码 + 本地存储 + YOLO目标检测 + 人脸识别 + RTSP推流 + OTA升级。并保留约 30%～50% 的系统余量，满足工业产品长期稳定运行需求。
 ---
+
+**Andorid系统硬件资源评估**
+![Android Resource](Android_System_Resource_4Camera.png "Android Resource")
