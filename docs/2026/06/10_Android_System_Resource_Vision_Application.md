@@ -45,23 +45,13 @@ date： 2026.06.10
 
 ### 1. 高通方案
 
-#### Snapdragon 8 Gen2
+- Snapdragon 8 Gen2： 适合 4 × 1080P30, H264/H265编码； 视频引擎 4K120 Decode, 8K30 Encode； 编码能力 约 250~300 fps 1080P；完全满足： 4 × 1080P30 = 120 fps。
 
-适合：4 × 1080P30, H264/H265编码。  视频引擎： 4K120 Decode, 8K30 Encode； 编码能力：约 250~300 fps 1080P。
-
-完全满足： 4 × 1080P30 = 120 fps。
-
-#### Qualcomm QCM6490（工业级）
-
-支持：4路MIPI Camera, 4K H265 Encode。 适合：智能NVR，工业视觉网关，车载终端。
+- Qualcomm QCM6490（工业级）：支持4路MIPI Camera, 4K H265 Encode； 适合智能NVR，工业视觉网关，车载终端。
 
 ### 2. 瑞芯微方案
 
-#### RK3588
-
-Rockchip RK3588是目前国产工业视觉热门平台。硬件编码：8K30 H264/H265。 支持：4 × 1080P30， 8 × 1080P30。CPU：4 × A76 + 4 × A55； NPU：6 TOPS。
-
-非常适合：视频采集，视频存储，AI分析。
+- RK3588：Rockchip RK3588是目前国产工业视觉热门平台；硬件编码：8K30 H264/H265； 支持：4 × 1080P30， 8 × 1080P30；CPU：4 × A76 + 4 × A55； NPU：6 TOPS；非常适合：视频采集，视频存储，AI分析。
 
 ---
 
@@ -75,13 +65,12 @@ Rockchip RK3588是目前国产工业视觉热门平台。硬件编码：8K30 H26
 ### 2. 内存需求
 
 - 视频缓存： 例如1080P：6MB/frame， 则三缓冲：18MB/路；4路：72MB。
-
 - 系统缓存： Android系统：2GB；视频服务：1GB；编码缓存：1GB
 
 推荐：
 
 | 场景    | RAM  |
-| ----- | ---- |
+| ------- | ------ |
 | 基础录像  | 4GB  |
 | AI分析  | 8GB  |
 | 多模型AI | 16GB |
@@ -95,21 +84,19 @@ Rockchip RK3588是目前国产工业视觉热门平台。硬件编码：8K30 H26
 
 - 24小时存储量：H.265，单路：2 Mbps ≈ 21 GB/day， 4路：≈ 84 GB/day； H.264，单路 42GB/day, 4路 168GB/day。
 - 7天存储： H.265, 84 × 7 ≈ 588 GB; H.264, 1176GB。
-```
 
 推荐：1TB SSD。
-
 
 
 ### 4. 摄像头接口需求
 
 4路摄像头通常采用：
 
-- MIPI CSI: 推荐 4 Lane CSI；带宽 2.5 Gbps/Lane；4 Lane 10 Gbps。足够 4 × 1080P30。
+- MIPI CSI:  推荐 4 Lane CSI；带宽 2.5 Gbps/Lane；4 Lane 10 Gbps。足够 4 × 1080P30。
 
 - GMSL： 每路 GMSL1: 1–3 Gbps， 每路 GMSL2: 6 Gbps；4路 1080P30，GMSL1 足够，但为了带宽余量和升级到 4K，需要 GMSL2。
 
-- USB Camera: USB3.0 5 Gbps, 支持 4 × UVC Camera, 但CPU负担更大。
+- USB Camera:  USB3.0 5 Gbps, 支持 4 × UVC Camera, 但CPU负担更大。
 
 工业场景建议： MIPI > GMSL > USB
 
