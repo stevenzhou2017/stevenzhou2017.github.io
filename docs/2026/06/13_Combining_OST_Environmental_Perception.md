@@ -71,7 +71,7 @@ date: 2026.06.13
 
 AI结果：Frame1  0.55； Frame2  0.61； Frame3  0.74；Frame4  0.89。
 
-传统：Frame3-> 判NG。
+传统：Frame3 -> 判NG。
 
 
 最优停时：继续观察，直到 "Expected Gain < Waiting Cost" 停止。
@@ -128,9 +128,7 @@ CameraSDK和AlgorithmSDK中，增加DecisionSDK。架构：CameraSDK -> Algorith
 * 第二项：继续观察后的期望收益
 
 
-现代工业视觉更适合：
-
-### Deep Optimal Stopping
+现代工业视觉更适合：Deep Optimal Stopping
 
 输入：最近N帧特征
 
@@ -181,7 +179,6 @@ CameraSDK和AlgorithmSDK中，增加DecisionSDK。架构：CameraSDK -> Algorith
 └───────────────────────────────┘
 ```
 
-这已经从传统 AOI/工业视觉系统演进为**“环境感知驱动的工业智能体（Industrial Perception Agent）”**架构，其中最优停时理论负责回答一个关键问题：
-> **是否已经获得足够的信息，可以现在做出可靠决策，还是应该继续观察？**
+这已经从传统 AOI/工业视觉系统演进为**“环境感知驱动的工业智能体（Industrial Perception Agent）”**架构，其中最优停时理论负责回答一个关键问题：**是否已经获得足够的信息，可以现在做出可靠决策，还是应该继续观察？**
 
 这对于缺陷检测、机器人抓取、动态测量、视觉引导装配、工业安全监测、边缘AI视觉系统都具有很高的应用价值。
