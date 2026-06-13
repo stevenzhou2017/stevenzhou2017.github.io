@@ -6,8 +6,7 @@ date: 2026.06.13
 
 ---
 
-**最优停时理论（Optimal Stopping Theory）**本质上是在动态决策过程中解决一个核心问题：
-> **什么时候停止继续观察，并立即做出决策，能够使总体收益最大或风险最小？**
+**最优停时理论（Optimal Stopping Theory）**本质上是在动态决策过程中解决一个核心问题：**什么时候停止继续观察，并立即做出决策，能够使总体收益最大或风险最小？**
 
 数学上属于：
 
@@ -18,13 +17,13 @@ date: 2026.06.13
 
 经典案例：
 
-* 秘书问题（Secretary Problem）
+* 秘书问题
 * 金融期权执行
 * 雷达目标检测
 * 自动驾驶决策
 * AI Agent规划
 
-而在**工业视觉+环境感知（Perception）**领域，最优停时理论实际上具有非常大的应用价值，目前多数工业视觉系统还没有充分利用这一思想。
+而在**工业视觉 + 环境感知**领域，最优停时理论实际上具有非常大的应用价值，目前多数工业视觉系统还没有充分利用这一思想。
 
 ---
 
@@ -67,7 +66,7 @@ date: 2026.06.13
 
 ### 场景1：工业缺陷检测
 
-生产线： 工件移动 -> Camera连续采集
+生产线： 工件移动 -> Camera连续采集。
 
 AI结果：Frame1  0.55； Frame2  0.61； Frame3  0.74；Frame4  0.89。
 
@@ -182,3 +181,8 @@ CameraSDK和AlgorithmSDK中，增加DecisionSDK。架构：CameraSDK -> Algorith
 这已经从传统 AOI/工业视觉系统演进为**“环境感知驱动的工业智能体（Industrial Perception Agent）”**架构，其中最优停时理论负责回答一个关键问题：**是否已经获得足够的信息，可以现在做出可靠决策，还是应该继续观察？**
 
 这对于缺陷检测、机器人抓取、动态测量、视觉引导装配、工业安全监测、边缘AI视觉系统都具有很高的应用价值。
+
+---
+**环境感知驱动的工业智能体**
+![Industrial_Intelligent_agents_driven_Environmental_Perception](Industrial_Intelligent_agents_driven_Environmental_Perception.png "Industrial_Intelligent_agents_driven_Environmental_Perception")
+
