@@ -1,4 +1,5 @@
-# 《AI Agent驱动的协同平台总体架构》 ---从 Workflow 驱动演进到 Agent 自主决策驱动的下一代智能运营平台
+# 《AI Agent驱动的协同平台总体架构》 
+---从 Workflow 驱动演进到 Agent 自主决策驱动的下一代智能运营平台
 
 author： 周均扬
 
@@ -180,4 +181,5 @@ date: 2026.06.12
 
 ---
 
-
+**AI Agent驱动的协同平台**，从Workflow驱动演进到Agent自主决策驱动的下一代运营平台。
+![AI Agent Driven Collaboration Platform](AI_Agent_Driven_Collaboration_Platform.png "AI_Agent_Driven_Collaboration_Platform")
