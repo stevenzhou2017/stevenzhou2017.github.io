@@ -36,17 +36,14 @@ Object-Centric Vision（目标视觉）的视觉链路主要关注: 目标检测
 ## 2. 环境视觉感知对象
 
 ### 1 空间环境
-
     - 识别：通道、货架、工作站、装卸口、充电桩、危险区域
     - 形成：Semantic Map
 
 ### 2 动态环境
-
     - 识别：人、叉车、AGV、AMR、托盘车
     - 形成：Dynamic Occupancy Map
 
 ### 3 环境状态
-
     - 识别：拥堵、堵塞、空闲、异常占用、逆行
     - 形成：Environment State
 
@@ -63,11 +60,9 @@ Object-Centric Vision（目标视觉）的视觉链路主要关注: 目标检测
 ## 4. 环境摄像头协议
 
 ### IPC摄像头
-
     - 适合：园区监控、仓库监控、人员识别
     - 协议：RTSP、RTMP、WebRTC、ONVIF
     - 推荐：RTSP + ONVIF 组合。
-
 
 实际上：ONVIF 是环境视觉核心协议。
 
@@ -80,11 +75,10 @@ Object-Centric Vision（目标视觉）的视觉链路主要关注: 目标检测
 ##  5.环境3D感知协议
 
 LiDAR: 
- 
     - 推荐ROS2 DDS
-    - 点云：$/points$
-    - 定位：$/odom$
-    - 地图：$/map$
+    - 点云：/points
+    - 定位：/odom
+    - 地图：/map
 
 ---
 
@@ -117,7 +111,6 @@ LiDAR:
 环境Agent不传视频，传事件。
 
 例如：
-
 ```json
 {
   "event":"AISLE_BLOCKED",
@@ -130,7 +123,6 @@ LiDAR:
   "event":"HUMAN_ENTER"
 }
 ```
-
 
 ```json 
 {
@@ -145,9 +137,9 @@ LiDAR:
 
 ## 9. 环境视觉推荐协议栈
 
-   - 仓储物流：IPC Camera -- RTSP -- Vision Agent -- Kafka -- LiDAR -- ROS2 DDS -- Fusion Agent -- Environment Agent -- Kafka -- Scheduler Agent
-   - 数字孪生仓库：Camera -- ONVIF + RTSP -- LiDAR -- ROS2 DDS -- IMU -- ROS2 DDS -- Fusion Agent -- World Model Agent -- Digital Twin
-   - 未来具身智能： Vision/LiDAR/Audio/RFID/IoT -> Environment Agent -> World Model Agent -> Planner Agent
+   - 仓储物流：IPC Camera -- RTSP -- Vision Agent -- Kafka -- LiDAR -- ROS2 DDS -- Fusion Agent -- Environment Agent -- Kafka -- Scheduler Agent。
+   - 数字孪生仓库：Camera -- ONVIF + RTSP -- LiDAR -- ROS2 DDS -- IMU -- ROS2 DDS -- Fusion Agent -- World Model Agent -- Digital Twin。
+   - 未来具身智能： Vision/LiDAR/Audio/RFID/IoT -> Environment Agent -> World Model Agent -> Planner Agent。
 
 ---
 
