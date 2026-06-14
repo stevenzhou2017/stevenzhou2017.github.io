@@ -69,7 +69,6 @@ date：2026.06.13
 
 namespace VisionOS
 {
-
 enum class PixelFormat
 {
     RGB8,
@@ -84,18 +83,12 @@ struct VisionFrame
 
     uint32_t width;
     uint32_t height;
-
     uint32_t stride;
-
     PixelFormat format;
-
     uint64_t timestamp;
-
     std::string cameraId;
-
     uint64_t frameId;
 };
-
 }
 ```
 
@@ -115,12 +108,8 @@ VisionFrame
 class CameraManager
 {
 public:
-
-    using FrameCallback =
-        std::function<void(const VisionFrame&)>;
-
+    using FrameCallback = std::function<void(const VisionFrame&)>;
     void setFrameCallback(FrameCallback cb);
-
 };
 ```
 
@@ -128,8 +117,7 @@ public:
 采集：
 
 ```cpp
-camera->setFrameCallback(
-[](const VisionFrame& frame)
+camera->setFrameCallback([](const VisionFrame& frame)
 {
     ...
 });
@@ -150,23 +138,18 @@ camera->setFrameCallback(
 class IAlgorithm
 {
 public:
-
     virtual AlgorithmResult
-    process(
-        const VisionFrame& frame)=0;
+    process(const VisionFrame& frame) = 0;
 };
 ```
 
 例如：
 
 ```cpp
-class YOLODetector :
-    public IAlgorithm
+class YOLODetector : public IAlgorithm
 {
 public:
-
-    AlgorithmResult process(
-        const VisionFrame& frame) override;
+    AlgorithmResult process(const VisionFrame& frame) override;
 };
 ```
 
@@ -184,8 +167,7 @@ Camera Thread -> Frame Queue -> Inference ThreadPool -> Result Queue -> Vision A
 代码：
 
 ```cpp
-camera->setFrameCallback(
-[this](const VisionFrame& frame)
+camera->setFrameCallback([this](const VisionFrame& frame)
 {
     frameQueue.push(frame);
 });
@@ -200,12 +182,8 @@ void worker()
     while(true)
     {
         VisionFrame frame;
-
         frameQueue.pop(frame);
-
-        auto result =
-            detector.process(frame);
-
+        auto result = detector.process(frame);
         resultQueue.push(result);
     }
 }
@@ -314,8 +292,7 @@ VisionFrame
 算法：
 
 ```cpp
-Algorithm::process(
-    const VisionFrame&)
+Algorithm::process(const VisionFrame&)
 ```
 
 避免：
