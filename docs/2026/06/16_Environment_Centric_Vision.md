@@ -17,7 +17,7 @@ Object-Centric Vision（目标视觉）的视觉链路主要关注: 目标检测
 
 ## 1. 环境视觉的位置
 
-升级 L7 Perception Intelligence 为Perception Intelligence Layer： 
+升级 L7 Perception Intelligence 为 Perception Intelligence Layer： 
 ```text
 ┌──────────────────────────────────────────┐
 │        Perception Intelligence Layer     │
@@ -35,34 +35,30 @@ Object-Centric Vision（目标视觉）的视觉链路主要关注: 目标检测
 
 ## 2. 环境视觉感知对象
 
-### 1 空间环境
+### 1. 空间环境
 
     - 识别：通道、货架、工作站、装卸口、充电桩、危险区域
     - 形成：Semantic Map
 
-### 2 动态环境
+### 2. 动态环境
 
     - 识别：人、叉车、AGV、AMR、托盘车
     - 形成：Dynamic Occupancy Map
 
-### 3 环境状态
+### 3. 环境状态
 
     - 识别：拥堵、堵塞、空闲、异常占用、逆行
     - 形成：Environment State
 
----
 
 ## 3. 环境视觉协议体系
 
-环境视觉通常不是单一协议。
+环境视觉通常不是单一协议。而是：Video + 3D + Localization + Semantic 融合。
 
-而是：Video + 3D + Localization + Semantic 融合。
 
----
+### 1. 环境摄像头协议
 
-## 4. 环境摄像头协议
-
-### IPC摄像头
+#### IPC摄像头
 
     - 适合：园区监控、仓库监控、人员识别
     - 协议：RTSP、RTMP、WebRTC、ONVIF
@@ -74,9 +70,8 @@ Object-Centric Vision（目标视觉）的视觉链路主要关注: 目标检测
 
 架构： Camera --- ONVIF --- Camera Manager
 
----
 
-##  5.环境3D感知协议
+###  2. 环境3D感知协议
 
 LiDAR: 
 
@@ -85,9 +80,8 @@ LiDAR:
     - 定位：/odom
     - 地图：/map
 
----
 
-## 6. VSLAM协议体系
+### 3. VSLAM协议体系
 
 环境理解需要：Visual SLAM
 
@@ -97,9 +91,8 @@ LiDAR:
 
 输出：Pose + Map + Trajectory
 
----
 
-## 7. 数字地图协议
+### 4. 数字地图协议
 
 环境视觉最终生成：World Model
 
@@ -111,7 +104,7 @@ LiDAR:
 
 ---
 
-## 八、环境事件协议
+### 5. 环境事件协议
 
 环境Agent不传视频，传事件。
 
@@ -140,7 +133,7 @@ LiDAR:
 
 ---
 
-## 9. 环境视觉推荐协议栈
+### 6. 环境视觉推荐协议栈
 
    - 仓储物流：IPC Camera -- RTSP -- Vision Agent -- Kafka -- LiDAR -- ROS2 DDS -- Fusion Agent -- Environment Agent -- Kafka -- Scheduler Agent。
    - 数字孪生仓库：Camera -- ONVIF + RTSP -- LiDAR -- ROS2 DDS -- IMU -- ROS2 DDS -- Fusion Agent -- World Model Agent -- Digital Twin。
@@ -148,29 +141,23 @@ LiDAR:
 
 ---
 
-## 10. 完整感知协议架构
+## 4. 完整感知协议架构
 
 ```text 
 ┌─────────────────────────────────────────┐
-│          Environment Vision Layer        │
+│         Environment Vision Layer        │
 ├─────────────────────────────────────────┤
-│ IPC Camera                               │
-│    RTSP + ONVIF                          │
+│ IPC Camera： RTSP + ONVIF               │
 ├─────────────────────────────────────────┤
-│ Industrial Camera                        │
-│    GenICam + GigE Vision                 │
+│ Industrial Camera：GenICam+GigE Vision  │
 ├─────────────────────────────────────────┤
-│ LiDAR                                    │
-│    ROS2 DDS                              │
+│ LiDAR：ROS2 DDS                         │
 ├─────────────────────────────────────────┤
-│ IMU                                      │
-│    ROS2 DDS                              │
+│ IMU：ROS2 DDS                           │
 ├─────────────────────────────────────────┤
-│ RFID                                     │
-│    MQTT                                  │
+│ RFID：MQTT                              │
 ├─────────────────────────────────────────┤
-│ PLC                                      │
-│    OPC UA                               │
+│ PLC：OPC UA                             │
 └─────────────────────────────────────────┘
                  │
                  ▼
@@ -192,6 +179,8 @@ LiDAR:
                  ▼
          Robot Agent
 ```
+
+Environment Vision Layer -> Fusion / World Model Agent -> Kafka Event Bus ->  Planner Agent ->  Scheduler Agent -> Robot Agent
 
 变化是：从 传统视觉 -> 识别目标 升级为: 环境视觉 -> 构建世界模型 -> 驱动Agent决策。
 
