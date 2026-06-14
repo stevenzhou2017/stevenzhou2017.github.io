@@ -68,36 +68,32 @@ date: 2026.06.13
 
 生产线： 工件移动 -> Camera连续采集。
 
-AI结果：Frame1  0.55； Frame2  0.61； Frame3  0.74；Frame4  0.89。
-
-传统：Frame3 -> 判NG。
-
-
-最优停时：继续观察，直到 "Expected Gain < Waiting Cost" 停止。
-
-效果：误检下降、漏检下降。
+- AI结果：Frame1  0.55； Frame2  0.61； Frame3  0.74；Frame4  0.89。
+- 传统：Frame3 -> 判NG。
+- 最优停时：继续观察，直到 "Expected Gain < Waiting Cost" 停止。
+- 效果：误检下降、漏检下降。
 
 
 ### 场景2：目标跟踪
 
 工业机器人抓取：目标正在移动
 
-视觉系统：Tracking Confidence 不断变化：0.65、0.71、0.76、0.83、0.92。
+- 视觉系统：Tracking Confidence 不断变化：0.65、0.71、0.76、0.83、0.92。
+- 问题：何时发送抓取命令？
+- 太早：定位误差大；
+- 太晚：目标已离开。
 
-问题：何时发送抓取命令？太早：定位误差大；太晚：目标已离开。 这是典型Optimal Stopping 问题。
+这是典型Optimal Stopping 问题。
 
 
 ### 场景3：自动光学检测（AOI）
 
 PCB检测：反光、遮挡。系统可以：调整曝光，重新拍摄。
 
-决策：继续采集？还是输出结果？
-
-状态：Image Quality。
-
-收益：提高识别率。
-
-成本：检测节拍增加。
+- 决策：继续采集？还是输出结果？
+- 状态：Image Quality。
+- 收益：提高识别率。
+- 成本：检测节拍增加。
 
 求：最优停止采集时间。
 
@@ -105,19 +101,21 @@ PCB检测：反光、遮挡。系统可以：调整曝光，重新拍摄。
 
 ## 4. 工业视觉 + 环境感知架构
 
+**融合架构**
+
 Camera -> Image Acquisition -> AI Detection -> Confidence Evaluation -> Optimal Stopping Engine -> Continue Observe  / Stop & Output
 
 进一步：State Xt -> Bayesian Filter -> Belief State -> Optimal Stopping -> Decision， 类似POMDP架构。
 
 ---
 
-## 5. 与工业视觉SDK结合
+**与工业视觉SDK结合**
 
 CameraSDK和AlgorithmSDK中，增加DecisionSDK。架构：CameraSDK -> AlgorithmSDK -> DecisionSDK -> PLC/MES
 
 ---
 
-## 6. AI化的最优停时
+## 5. AI化的最优停时
 
 传统：动态规划 -> Bellman Equation求解。
 
@@ -141,7 +139,7 @@ CameraSDK和AlgorithmSDK中，增加DecisionSDK。架构：CameraSDK -> Algorith
 
 ---
 
-## 7. 环境感知智能体（Perception Agent）
+## 6. 环境感知智能体（Perception Agent）
 
 未来工业视觉会逐步从 看见（See） 变成 感知（Perceive），再到决策（Decide）形成闭环：Camera -> Perception -> World Model -> Optimal Stopping -> Action -> Robot/PLC，其中最优停时成为：感知 → 决策 之间的关键桥梁。
 
@@ -178,7 +176,7 @@ CameraSDK和AlgorithmSDK中，增加DecisionSDK。架构：CameraSDK -> Algorith
 └───────────────────────────────┘
 ```
 
-这已经从传统 AOI/工业视觉系统演进为**“环境感知驱动的工业智能体（Industrial Perception Agent）”**架构，其中最优停时理论负责回答一个关键问题：**是否已经获得足够的信息，可以现在做出可靠决策，还是应该继续观察？**
+从传统 AOI/工业视觉系统演进为**“环境感知驱动的工业智能体（Industrial Perception Agent）”**架构，其中最优停时理论负责回答一个关键问题：**是否已经获得足够的信息，可以现在做出可靠决策，还是应该继续观察？**
 
 这对于缺陷检测、机器人抓取、动态测量、视觉引导装配、工业安全监测、边缘AI视觉系统都具有很高的应用价值。
 
