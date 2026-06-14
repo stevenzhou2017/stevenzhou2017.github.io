@@ -36,14 +36,17 @@ Object-Centric Vision（目标视觉）的视觉链路主要关注: 目标检测
 ## 2. 环境视觉感知对象
 
 ### 1 空间环境
+
     - 识别：通道、货架、工作站、装卸口、充电桩、危险区域
     - 形成：Semantic Map
 
 ### 2 动态环境
+
     - 识别：人、叉车、AGV、AMR、托盘车
     - 形成：Dynamic Occupancy Map
 
 ### 3 环境状态
+
     - 识别：拥堵、堵塞、空闲、异常占用、逆行
     - 形成：Environment State
 
@@ -60,6 +63,7 @@ Object-Centric Vision（目标视觉）的视觉链路主要关注: 目标检测
 ## 4. 环境摄像头协议
 
 ### IPC摄像头
+
     - 适合：园区监控、仓库监控、人员识别
     - 协议：RTSP、RTMP、WebRTC、ONVIF
     - 推荐：RTSP + ONVIF 组合。
@@ -75,6 +79,7 @@ Object-Centric Vision（目标视觉）的视觉链路主要关注: 目标检测
 ##  5.环境3D感知协议
 
 LiDAR: 
+
     - 推荐ROS2 DDS
     - 点云：/points
     - 定位：/odom
@@ -193,3 +198,9 @@ LiDAR:
 最终形成：Physical World -> Perception Layer -> World Model Agent -> Planner Agent -> Scheduler Agent -> Robot Agent -> Physical World
 
 接近当前具身智能（Embodied AI）、仓储机器人群体智能和 Agentic Logistics Platform 的主流演进方向。
+
+
+---
+
+**设备层(感知器官)设计**，设备不再是独立终端而是Agent体系中的感知器官，通过统一的数据契约、事件总线和控制总线与上层智能体形成实时闭环。
+![Environment-Centric Visio](AI_Agent_Environment-Centric_Visio.png "Environment-Centric Visio")
