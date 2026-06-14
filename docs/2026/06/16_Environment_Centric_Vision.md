@@ -58,7 +58,7 @@ Object-Centric Vision（目标视觉）的视觉链路主要关注: 目标检测
 
 ### 1. 环境摄像头协议
 
-#### IPC摄像头
+IPC摄像头： 
 
     - 适合：园区监控、仓库监控、人员识别
     - 协议：RTSP、RTMP、WebRTC、ONVIF
@@ -102,7 +102,6 @@ LiDAR:
 
 适合：仓储、园区、物流中心
 
----
 
 ### 5. 环境事件协议
 
@@ -131,13 +130,11 @@ LiDAR:
 进入：Kafka
 
 
----
-
 ### 6. 环境视觉推荐协议栈
 
-   - 仓储物流：IPC Camera -- RTSP -- Vision Agent -- Kafka -- LiDAR -- ROS2 DDS -- Fusion Agent -- Environment Agent -- Kafka -- Scheduler Agent。
-   - 数字孪生仓库：Camera -- ONVIF + RTSP -- LiDAR -- ROS2 DDS -- IMU -- ROS2 DDS -- Fusion Agent -- World Model Agent -- Digital Twin。
-   - 未来具身智能： Vision/LiDAR/Audio/RFID/IoT -> Environment Agent -> World Model Agent -> Planner Agent。
+   - 仓储物流：IPC Camera -- RTSP -- Vision Agent -- Kafka -- LiDAR -- ROS2 DDS -- Fusion Agent -- Environment Agent -- Kafka -- Scheduler Agent
+   - 数字孪生仓库：Camera -- ONVIF + RTSP -- LiDAR -- ROS2 DDS -- IMU -- ROS2 DDS -- Fusion Agent -- World Model Agent -- Digital Twin
+   - 未来具身智能： Vision/LiDAR/Audio/RFID/IoT -> Environment Agent -> World Model Agent -> Planner Agent
 
 ---
 
@@ -162,12 +159,12 @@ LiDAR:
                  │
                  ▼
 ┌─────────────────────────────────────────┐
-│          Fusion / World Model Agent      │
+│         Fusion / World Model Agent      │
 └─────────────────────────────────────────┘
                  │
                  ▼
 ┌─────────────────────────────────────────┐
-│          Kafka Event Bus                 │
+│          Kafka Event Bus                │
 └─────────────────────────────────────────┘
                  │
                  ▼
