@@ -1,4 +1,5 @@
-# 最优停时理论与工业视觉结合
+# 最优停时理论与工业视觉结合的环境感知
+
 
 author: 周均扬
 
@@ -6,7 +7,7 @@ date: 2026.06.13
 
 ---
 
-**最优停时理论（Optimal Stopping Theory）**本质上是在动态决策过程中解决一个核心问题：**什么时候停止继续观察，并立即做出决策，能够使总体收益最大或风险最小？**
+**最优停时理论（Optimal Stopping Theory）** 本质上是在动态决策过程中解决一个核心问题：**什么时候停止继续观察，并立即做出决策，能够使总体收益最大或风险最小？**
 
 数学上属于：
 
@@ -23,7 +24,7 @@ date: 2026.06.13
 * 自动驾驶决策
 * AI Agent规划
 
-而在**工业视觉 + 环境感知**领域，最优停时理论实际上具有非常大的应用价值，目前多数工业视觉系统还没有充分利用这一思想。
+而在 **工业视觉 + 环境感知** 领域，最优停时理论实际上具有非常大的应用价值，目前多数工业视觉系统还没有充分利用这一思想。
 
 ---
 
@@ -43,7 +44,7 @@ date: 2026.06.13
 
 ---
 
-## 2. 业视觉中的最优停时模型
+## 2. 工业视觉中的最优停时模型
 
 定义：Xt = 第t帧状态
 
@@ -107,15 +108,13 @@ Camera -> Image Acquisition -> AI Detection -> Confidence Evaluation -> Optimal 
 
 进一步：State Xt -> Bayesian Filter -> Belief State -> Optimal Stopping -> Decision， 类似POMDP架构。
 
----
 
 **与工业视觉SDK结合**
 
 CameraSDK和AlgorithmSDK中，增加DecisionSDK。架构：CameraSDK -> AlgorithmSDK -> DecisionSDK -> PLC/MES
 
----
 
-## 5. AI化的最优停时
+**AI化的最优停时**
 
 传统：动态规划 -> Bellman Equation求解。
 
@@ -139,11 +138,11 @@ CameraSDK和AlgorithmSDK中，增加DecisionSDK。架构：CameraSDK -> Algorith
 
 ---
 
-## 6. 环境感知智能体（Perception Agent）
+## 5. 环境感知智能体（Perception Agent）
 
 未来工业视觉会逐步从 看见（See） 变成 感知（Perceive），再到决策（Decide）形成闭环：Camera -> Perception -> World Model -> Optimal Stopping -> Action -> Robot/PLC，其中最优停时成为：感知 → 决策 之间的关键桥梁。
 
-### 面向工业视觉环境感知平台的推荐架构
+**面向工业视觉环境感知平台的推荐架构**
 ```text
 ┌───────────────────────────────┐
 │         CameraSDK             │
@@ -176,7 +175,7 @@ CameraSDK和AlgorithmSDK中，增加DecisionSDK。架构：CameraSDK -> Algorith
 └───────────────────────────────┘
 ```
 
-从传统 AOI/工业视觉系统演进为**“环境感知驱动的工业智能体（Industrial Perception Agent）”**架构，其中最优停时理论负责回答一个关键问题：**是否已经获得足够的信息，可以现在做出可靠决策，还是应该继续观察？**
+从传统 AOI/工业视觉系统演进为 **“环境感知驱动的工业智能体（Industrial Perception Agent）”** 架构，其中最优停时理论负责回答一个关键问题：**是否已经获得足够的信息，可以现在做出可靠决策，还是应该继续观察？**
 
 这对于缺陷检测、机器人抓取、动态测量、视觉引导装配、工业安全监测、边缘AI视觉系统都具有很高的应用价值。
 
