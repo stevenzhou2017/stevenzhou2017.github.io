@@ -75,7 +75,7 @@ IPC摄像头：
 
 LiDAR: 
 
-    - 推荐ROS2 DDS
+    - 推荐 ROS2 DDS
     - 点云：/points
     - 定位：/odom
     - 地图：/map
