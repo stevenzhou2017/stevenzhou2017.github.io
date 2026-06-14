@@ -138,8 +138,7 @@ camera->setFrameCallback([](const VisionFrame& frame)
 class IAlgorithm
 {
 public:
-    virtual AlgorithmResult
-    process(const VisionFrame& frame) = 0;
+    virtual AlgorithmResult process(const VisionFrame& frame) = 0;
 };
 ```
 
