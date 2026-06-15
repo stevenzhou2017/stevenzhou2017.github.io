@@ -381,7 +381,7 @@ DecisionSDK
 * sequence decision model
 * multimodal perception
 
-### C. 结合你现有 CameraSDK / AlgorithmSDK
+### C. 结合CameraSDK / AlgorithmSDK
 
 * 构建 DecisionSDK
 * 做“工业视觉智能体闭环系统”
