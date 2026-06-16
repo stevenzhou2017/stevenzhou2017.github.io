@@ -36,7 +36,7 @@ $V_t = \esssup_{\tau \ge t} \mathbb{E}[X_\tau | \mathcal{F}_t]$
 
 #### （2）Bellman 最优性原理（MDP形式）
 
-$V(x)=\max{g(x),\mathbb{E}[V(X_{t+1})|X_t=x]}$
+$V(x)=\max{ \( g(x),\mathbb{E}[V(X_{t+1})|X_t=x] \) }$
 
 对应：
 
