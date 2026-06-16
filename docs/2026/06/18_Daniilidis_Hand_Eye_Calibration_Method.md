@@ -159,3 +159,5 @@ Daniilidis 方法的本质是： 用对偶四元数把 SE(3) 的“旋转 + 平�
 
 ---
 
+**手眼标定方法对比**
+![Hand_Eye_Calibration_Methods](Hand_Eye_Calibration_Methods.png "Hand_Eye_Calibration_Methods")
