@@ -26,7 +26,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENSE
-  - docs/_*             # 如果有私有文档
+# - docs/_*             # 如果有私有文档
 
 # 默认 Front Matter（可选）
 defaults:
