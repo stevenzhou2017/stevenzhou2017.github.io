@@ -1,5 +1,36 @@
+# ==================== 站点基本信息 ====================
+title: 周均扬博士 | Dr. Junyang Zhou
+description: 工业AI与智能制造专家 | 25+年AI领导经验 | 锂电池智能制造 | 具身智能
 url: "https://stevenzhou2017.github.io"   # 必须是完整 HTTPS 地址
 baseurl: ""                               # 根目录留空
 
+# ==================== 作者信息 ====================
+author:
+  name: 周均扬博士 (Junyang Zhou)
+  email: junyang.zhou@gmail.com
+  url: https://stevenzhou2017.github.io
+
+# ==================== 插件（最重要） ====================
 plugins:
-  - jekyll-sitemap
+  - jekyll-sitemap      # 自动生成 sitemap.xml
+  - jekyll-feed         # 可选：生成 RSS feed（推荐）
+  # - jekyll-seo-tag    # 推荐后续添加，用于自动优化 SEO
+
+# ==================== 可选高级配置 ====================
+# 时间格式（用于 lastmod）
+timezone: Asia/Shanghai
+
+# 排除文件（不进入 sitemap 和构建）
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - docs/_*             # 如果有私有文档
+
+# 默认 Front Matter（可选）
+defaults:
+  - scope:
+      path: ""          # 所有文件
+    values:
+      layout: "default" # 如果你有 layout 文件
