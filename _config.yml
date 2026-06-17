@@ -38,4 +38,6 @@ defaults:
       sitemap: true
       last_modified_at: "now"
 
-
+- scope: { path: "publication.html" }    values: { sitemap: true }
+- scope: { path: "research.html" } values: { sitemap: true }
+- scope: { path: "resource.html" } values: { sitemap: true }
