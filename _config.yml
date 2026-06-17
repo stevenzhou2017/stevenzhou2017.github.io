@@ -10,6 +10,9 @@ plugins:
 
 # ==================== 重要：排除不需要的内容 ====================
 exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
   - github-recovery-codes.html
   - cgi-bin/
   - assets/
@@ -17,8 +20,10 @@ exclude:
   - footer.html
   - docs/2025/
   - docs/2026/              # 先全部排除笔记页（等你完善后再逐步放开）
+  - docs/
   - download/               # PDF 文件太多，建议不放进 sitemap
   - test.html
+
 
 # ==================== 只收录核心高质量页面 ====================
 defaults:
@@ -34,22 +39,12 @@ defaults:
       last_modified_at: "now"
 
   - scope:
-      path: "award.html"
-    values:
-      sitemap: true
-
-  - scope:
       path: "research.html"
     values:
       sitemap: true
 
   - scope:
       path: "publication.html"
-    values:
-      sitemap: true
-
-  - scope:
-      path: "resource.html"
     values:
       sitemap: true
 
