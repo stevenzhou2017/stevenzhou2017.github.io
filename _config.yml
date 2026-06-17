@@ -53,17 +53,3 @@ defaults:
     values:
       sitemap: true
 
-  - scope:
-      path: "links.html"
-    values:
-      sitemap: false
-
-  - scope:
-      path: "teaching.html"
-    values:
-      sitemap: true
-
-  - scope:
-      path: "download.html"
-    values:
-      sitemap: false    # 如果你想保留下载页
