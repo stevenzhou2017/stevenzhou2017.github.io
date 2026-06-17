@@ -6,6 +6,7 @@ exclude:
   - github-recovery-codes.html
   - cgi-bin/
   - header.html
+  - footer.html
   - assets/
   - docs/2025/          # 先排除旧的笔记页，可逐步放开
   - docs/2026/          # 暂时全部排除（等你完善后再移除）
