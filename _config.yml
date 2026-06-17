@@ -38,13 +38,4 @@ defaults:
       sitemap: true
       last_modified_at: "now"
 
-  - scope:
-      path: "research.html"
-    values:
-      sitemap: true
-
-  - scope:
-      path: "publication.html"
-    values:
-      sitemap: true
 
