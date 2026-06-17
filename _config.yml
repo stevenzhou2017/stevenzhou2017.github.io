@@ -1,28 +1,35 @@
+title: 周均扬博士 | Dr. Junyang Zhou
+description: 工业AI与智能制造专家 | 25+年AI领导经验 | 锂电池智能制造 | 具身智能
+url: "https://stevenzhou2017.github.io"
+baseurl: ""
+
+timezone: Asia/Shanghai
+
 plugins:
   - jekyll-sitemap
 
-# ==================== 排除不需要的页面 ====================
+# ==================== 重要：排除不需要的内容 ====================
 exclude:
   - github-recovery-codes.html
   - cgi-bin/
-  - header.html
-  - footer.html
   - assets/
-  - docs/2025/          # 先排除旧的笔记页，可逐步放开
-  - docs/2026/          # 暂时全部排除（等你完善后再移除）
+  - docs/2025/
+  - docs/2026/              # 先全部排除笔记页（等你完善后再逐步放开）
+  - download/               # PDF 文件太多，建议不放进 sitemap
+  - test.html
 
-# 只对核心页面开启 sitemap
+# ==================== 只收录核心高质量页面 ====================
 defaults:
   - scope:
-      path: ""                    # 所有页面默认
+      path: ""              # 所有页面默认不收录
     values:
-      sitemap: false              # 默认不收录
+      sitemap: false
 
   - scope:
-      path: "index.html"          # 只收录核心页面
+      path: "index.html"
     values:
       sitemap: true
-      last_modified_at: "now"     # 强制更新时间
+      last_modified_at: "now"
 
   - scope:
       path: "award.html"
@@ -53,3 +60,8 @@ defaults:
       path: "teaching.html"
     values:
       sitemap: true
+
+  - scope:
+      path: "download.html"
+    values:
+      sitemap: true   # 如果你想保留下载页
