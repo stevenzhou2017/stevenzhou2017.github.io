@@ -1,9 +1,7 @@
 User-agent: *
 Allow: /
 
-# 禁止抓取不必要的目录
-Disallow: /docs/2025/
-Disallow: /docs/2026/
+Disallow: /docs/
 Disallow: /cgi-bin/
 Disallow: /github-recovery-codes.html
 
