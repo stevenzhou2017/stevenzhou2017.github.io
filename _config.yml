@@ -1,0 +1,5 @@
+url: "https://stevenzhou2017.github.io"   # 必须是完整 HTTPS 地址
+baseurl: ""                               # 根目录留空
+
+plugins:
+  - jekyll-sitemap
