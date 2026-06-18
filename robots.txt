@@ -5,8 +5,16 @@ Allow: /
 Disallow: /audio/
 Disallow: /award/
 Disallow: /cgi-bin/
+Disallow: /cgi-bin/counter/
+Disallow: /cgi-bin/counter/images/
 Disallow: /counter/
 Disallow: /css/
+Disallow: /images/
+Disallow: /images/icons/
+Disallow: /download/entertainment/
+Disallow: /download/latex/
+Disallow: /download/thesis/
+Disallow: /download/thesis/master
 Disallow: /download/
 Disallow: /images/
 Disallow: /github-recovery-codes.html
