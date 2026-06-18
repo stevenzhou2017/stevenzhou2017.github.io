@@ -1,19 +1,62 @@
 {
+  "graph_version": "3.0",
   "nodes": [
     {
       "id": "zero_copy",
       "type": "docs",
       "title": "CUDA Zero Copy Pipeline",
-      "tags": ["cuda", "gpu", "memory"]
+      "tags": ["cuda", "gpu", "memory"],
+      "weight": 0.9,
+      "embedding_group": "gpu_memory_system",
+      "summary": "GPU zero-copy data pipeline for industrial vision systems"
     },
     {
       "id": "vision_kernel",
       "type": "research",
       "title": "Event-driven Vision Kernel",
-      "tags": ["vision", "event-driven"]
+      "tags": ["vision", "event-driven", "real-time"],
+      "weight": 0.95,
+      "embedding_group": "vision_system",
+      "summary": "Event-driven architecture for real-time industrial vision processing"
     }
   ],
+
   "edges": [
-    ["zero_copy", "vision_kernel"]
-  ]
+    {
+      "from": "zero_copy",
+      "to": "vision_kernel",
+      "type": "dependency",
+      "weight": 0.85,
+      "reason": "Shared real-time GPU pipeline dependency"
+    }
+  ],
+
+  "tag_graph": {
+    "cuda": {
+      "cluster": "gpu_compute",
+      "importance": 0.95,
+      "linked_nodes": ["zero_copy"]
+    },
+    "vision": {
+      "cluster": "perception_system",
+      "importance": 0.9,
+      "linked_nodes": ["vision_kernel"]
+    },
+    "gpu": {
+      "cluster": "gpu_compute",
+      "importance": 0.85,
+      "linked_nodes": ["zero_copy"]
+    },
+    "memory": {
+      "cluster": "system_optimization",
+      "importance": 0.8,
+      "linked_nodes": ["zero_copy"]
+    }
+  },
+
+  "semantic_clusters": {
+    "gpu_compute": ["cuda", "gpu", "memory"],
+    "vision_system": ["vision", "event-driven", "real-time"],
+    "system_optimization": ["memory", "zero-copy"]
+  }
 }
