@@ -2,8 +2,12 @@ User-agent: *
 Allow: /
 
 # 禁止抓取不必要的目录
-Disallow: /docs/
+Disallow: /audio/
+Disallow: /award/
 Disallow: /cgi-bin/
+Disallow: /counter/
+Disallow: /css/
 Disallow: /github-recovery-codes.html
 
 Sitemap: https://stevenzhou2017.github.io/sitemap.xml
+Host: stevenzhou2017.github.io
