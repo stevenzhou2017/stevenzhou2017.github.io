@@ -280,7 +280,7 @@ Despite extensive studies on stochastic control, POMDPs, and deep reinforcement 
 
 # 4. 你的研究在gap中的定位（很关键）
 
-你的工作（Industrial Perception Agent + Optimal Stopping）实际上填补：
+Industrial Perception Agent + Optimal Stopping填补：
 
 ### ✔ Theory
 
