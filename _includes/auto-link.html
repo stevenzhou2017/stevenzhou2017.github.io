@@ -1,0 +1,12 @@
+{% assign related = site.pages | where: "category", page.category %}
+
+<div class="related">
+  <h3>Related Knowledge</h3>
+  <ul>
+  {% for p in related limit:5 %}
+    {% if p.url != page.url %}
+      <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>
