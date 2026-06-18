@@ -93,6 +93,7 @@ sitemap:
     - /download/entertainment/
     - /download/latex/
     - /download/thesis/master/
+    - /research/osdip/
     - /github-recovery-codes.html
     - /github-recovery-codes.md
     - /test.html
@@ -113,6 +114,7 @@ exclude:
   - README.md
   - node_modules
   - vendor
+  - research/osdip/
 
 # =========================
 # SEO SIGNAL BOOST
