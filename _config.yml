@@ -1,57 +1,23 @@
 # =========================
-# Site Identity
+# SITE IDENTITY (GRAPH ROOT)
 # =========================
 title: 周均扬博士 | Dr. Junyang Zhou
 description: >-
-  工业AI与智能制造专家 | 25+年AI领导经验 | 锂电池智能制造 | 具身智能
+  Industrial AI | Smart Manufacturing | Vision Systems | CUDA Optimization | 25+年AI领导经验 | 锂电池智能制造 | 具身智能
 url: "https://stevenzhou2017.github.io"
 baseurl: ""
 
 timezone: Asia/Shanghai
 
 # =========================
-# SEO Plugins
+# SEO PLUGINS
 # =========================
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-whitelist:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
 # =========================
-# Sitemap Behavior (关键优化)
-# =========================
-sitemap:
-  filename: sitemap.xml
-  exclude:
-    - /assets/
-    - /audio/
-    - /award/
-    - /download/demo/
-    - /download/entertainment/
-    - /download/latex/
-    - /download/thesis/
-    - /download/thesis/master
-    - /download/
-    - /docs/2025/09/
-    - /docs/2026/03/
-    - /docs/2026/04/
-    - /docs/2026/05/
-    - /docs/2026/06/
-    - /test.html
-    
-
-# =========================
-# Build Settings
-# =========================
-markdown: kramdown
-highlighter: rouge
-permalink: /:categories/:title/
-
-# =========================
-# IMPORTANT: collections (让SEO结构化)
+# COLLECTIONS (GRAPH NODES)
 # =========================
 collections:
   docs:
@@ -64,79 +30,91 @@ collections:
     output: true
 
 # =========================
-# Defaults (核心修复点)
+# DEFAULTS (GRAPH SEMANTIC LAYER)
 # =========================
 defaults:
 
-  # 默认：全部页面允许 sitemap（不要全关）
+  # GLOBAL NODES
   - scope:
       path: ""
     values:
       sitemap: true
 
-  # 研究类高权重
+  # RESEARCH (HIGHEST SEMANTIC WEIGHT)
   - scope:
       path: "research"
     values:
       layout: page
       category: research
-      priority: 0.9
+      graph_type: research
+      priority: 0.95
+      ai_embedding_group: intelligence_systems
 
-  # 文档类
+  # DOCS (ENGINEERING GRAPH)
   - scope:
       path: "docs"
     values:
       layout: page
       category: docs
-      priority: 0.8
+      graph_type: engineering
+      priority: 0.85
+      ai_embedding_group: system_engineering
 
-  # 论文/成果
+  # PUBLICATIONS (AUTHORITY NODES)
   - scope:
       path: "publications"
     values:
       layout: page
       category: publications
-      priority: 0.95
-
-  # 首页特殊处理
-  - scope:
-      path: "index.html"
-    values:
-      sitemap: true
+      graph_type: authority
       priority: 1.0
+      ai_embedding_group: academic_output
+
+  # PROJECTS (APPLICATION LAYER)
+  - scope:
+      path: "projects"
+    values:
+      layout: page
+      category: projects
+      graph_type: application
+      priority: 0.8
+      ai_embedding_group: product_systems
 
 # =========================
-# Exclusions（只排除真正垃圾）
+# SITEMAP CONTROL (GRAPH-AWARE)
+# =========================
+sitemap:
+  filename: sitemap.xml
+  exclude:
+    - /assets/
+    - /audio/
+    - /award/
+    - /download/demo/
+    - /download/entertainment/
+    - /download/latex/
+    - /download/thesis/master/
+    - /github-recovery-codes.html
+    - /github-recovery-codes.md
+    - /test.html
+
+# =========================
+# BUILD SETTINGS
+# =========================
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+# =========================
+# EXCLUDE (MINIMAL PRINCIPLE)
 # =========================
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - github-recovery-codes.html
-  - github-recovery-codes.md
-  - googleaa9643b011ea1a36.html
   - node_modules
   - vendor
-  - header.html
-  - footer.html
-  - teaching.html
-  - award.html
-  - audio/
-  - award/
-  - download/demo/
-  - download/entertainment/
-  - download/latex/
-  - download/thesis/
-  - download/thesis/master/
-  - download/
-  - docs/2025/09/
-  - docs/2026/03/
-  - docs/2026/04/
-  - docs/2026/05/
-  - docs/2026/06/
-  
 
 # =========================
-# Safety
+# SEO SIGNAL BOOST
 # =========================
-safe: false
+future: true
