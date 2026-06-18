@@ -9,6 +9,7 @@ Disallow: /counter/
 Disallow: /css/
 Disallow: /github-recovery-codes.html
 Disallow: /github-recovery-codes.md
+Disallow: /googleaa9643b011ea1a36.html
 
 Sitemap: https://stevenzhou2017.github.io/sitemap.xml
 Host: stevenzhou2017.github.io
