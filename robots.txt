@@ -7,6 +7,8 @@ Disallow: /award/
 Disallow: /cgi-bin/
 Disallow: /counter/
 Disallow: /css/
+Disallow: /download/
+Disallow: /images/
 Disallow: /github-recovery-codes.html
 Disallow: /github-recovery-codes.md
 Disallow: /googleaa9643b011ea1a36.html
