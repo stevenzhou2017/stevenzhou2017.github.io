@@ -1,0 +1,13 @@
+{% assign related = site.pages | where_exp: "p", "p.tags contains page.tags[0]" %}
+
+<div class="semantic-graph">
+  <h3> Related Knowledge Graph </h3>
+
+  <ul>
+  {% for p in related limit:6 %}
+    <li>
+      <a href="{{ p.url }}">{{ p.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
