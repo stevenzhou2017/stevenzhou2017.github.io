@@ -35,6 +35,11 @@ sitemap:
     - /download/thesis/
     - /download/thesis/master
     - /download/
+    - /docs/2025/09/
+    - /docs/2026/03/
+    - /docs/2026/04/
+    - /docs/2026/05/
+    - /docs/2026/06/
     - /test.html
     
 
@@ -122,8 +127,13 @@ exclude:
   - download/entertainment/
   - download/latex/
   - download/thesis/
-  - download/thesis/master
+  - download/thesis/master/
   - download/
+  - docs/2025/09/
+  - docs/2026/03/
+  - docs/2026/04/
+  - docs/2026/05/
+  - docs/2026/06/
   
 
 # =========================
