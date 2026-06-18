@@ -1,0 +1,19 @@
+{
+  "nodes": [
+    {
+      "id": "zero_copy",
+      "type": "docs",
+      "title": "CUDA Zero Copy Pipeline",
+      "tags": ["cuda", "gpu", "memory"]
+    },
+    {
+      "id": "vision_kernel",
+      "type": "research",
+      "title": "Event-driven Vision Kernel",
+      "tags": ["vision", "event-driven"]
+    }
+  ],
+  "edges": [
+    ["zero_copy", "vision_kernel"]
+  ]
+}
