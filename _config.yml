@@ -123,6 +123,21 @@ exclude:
   - footer.html
   - teaching.html
   - award.html
+  - audio/
+  - award/
+  - cgi-bin/
+  - cgi-bin/counter/
+  - cgi-bin/counter/images/
+  - download/demo/
+  - download/entertainment/
+  - download/latex/
+  - download/thesis/
+  - download/thesis/master
+  - download/
+  - counter/
+  - css/
+  - images/
+  - images/icons/
   
 
 # =========================
