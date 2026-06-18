@@ -1,19 +1,103 @@
-# Industrial AI Knowledge Base
+# ==================================================
+# Industrial AI Knowledge Base (LLM INDEX v3)
+# ==================================================
 
-This site contains structured knowledge in:
+SITE:
+name: Industrial AI Knowledge Base
+author: Dr. Junyang Zhou
+domain: stevenzhou2017.github.io
 
-- Industrial Vision Systems
-- CUDA Optimization & Zero-copy pipelines
-- Camera SDK architecture
-- AI-driven manufacturing systems
+DESCRIPTION:
+Structured knowledge system for Industrial Vision,
+CUDA optimization, and AI-driven manufacturing.
 
-## Key Topics
+# ==================================================
+# CORE KNOWLEDGE GRAPH NODES
+# ==================================================
 
-/ research / ai-agent-architecture
-/ research / event-driven-vision-kernel
-/ docs / cuda-streams
-/ docs / zero-copy-pipeline
+NODE: ai-agent-architecture
+type: research
+url: /research/ai-agent-architecture
+title: AI Agent Architecture for Industrial Systems
+importance: 0.95
+tags: ai, agent, system-design, autonomy
+embedding_group: intelligence_systems
 
-## Author
+NODE: event-driven-vision-kernel
+type: research
+url: /research/event-driven-vision-kernel
+title: Event-driven Vision Kernel
+importance: 0.97
+tags: vision, event-driven, real-time, industrial-ai
+embedding_group: vision_systems
+
+NODE: cuda-streams
+type: docs
+url: /docs/cuda-streams
+title: CUDA Streams Optimization
+importance: 0.9
+tags: cuda, gpu, parallel-compute
+embedding_group: gpu_compute
+
+NODE: zero-copy-pipeline
+type: docs
+url: /docs/zero-copy-pipeline
+title: Zero Copy GPU Pipeline
+importance: 0.93
+tags: cuda, memory, zero-copy, gpu
+embedding_group: gpu_memory_system
+
+# ==================================================
+# TAG SEMANTIC LAYER (GRAPH EDGES)
+# ==================================================
+
+TAG: cuda
+description: GPU computation and optimization layer
+cluster: gpu_compute
+linked_nodes: cuda-streams, zero-copy-pipeline
+importance: 0.95
+
+TAG: vision
+description: Real-time industrial perception systems
+cluster: perception_system
+linked_nodes: event-driven-vision-kernel
+importance: 0.92
+
+TAG: ai
+description: Intelligent system design and agents
+cluster: intelligence_systems
+linked_nodes: ai-agent-architecture
+importance: 0.9
+
+# ==================================================
+# SEMANTIC ROUTING RULES (IMPORTANT FOR LLM)
+# ==================================================
+
+ROUTE_RULES:
+
+IF query contains ["cuda", "gpu", "zero copy"]:
+    PRIORITY: cuda-streams, zero-copy-pipeline
+
+IF query contains ["vision", "camera", "real-time"]:
+    PRIORITY: event-driven-vision-kernel
+
+IF query contains ["agent", "ai system"]:
+    PRIORITY: ai-agent-architecture
+
+# ==================================================
+# EMBEDDING INTENT SIGNALS
+# ==================================================
+
+INTENT_MAP:
+
+gpu optimization → cuda-streams, zero-copy-pipeline
+real-time vision → event-driven-vision-kernel
+system intelligence → ai-agent-architecture
+
+# ==================================================
+# AUTHOR
+# ==================================================
+
+AUTHOR:
 Dr. Junyang Zhou
 Industrial AI & Intelligent Manufacturing Expert
