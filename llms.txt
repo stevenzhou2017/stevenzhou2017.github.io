@@ -1,0 +1,19 @@
+# Industrial AI Knowledge Base
+
+This site contains structured knowledge in:
+
+- Industrial Vision Systems
+- CUDA Optimization & Zero-copy pipelines
+- Camera SDK architecture
+- AI-driven manufacturing systems
+
+## Key Topics
+
+/ research / ai-agent-architecture
+/ research / event-driven-vision-kernel
+/ docs / cuda-streams
+/ docs / zero-copy-pipeline
+
+## Author
+Dr. Junyang Zhou
+Industrial AI & Intelligent Manufacturing Expert
