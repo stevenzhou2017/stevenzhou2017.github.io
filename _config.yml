@@ -101,6 +101,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - github-recovery-codes.html
+  - github-recovery-codes.md
   - node_modules
   - vendor
   - header.html
