@@ -1,18 +1,22 @@
 User-agent: *
 Allow: /
 
-# 禁止抓取不必要的目录
+# =========================
+# BLOCK LOW-VALUE ASSETS
+# =========================
 Disallow: /audio/
 Disallow: /award/
 Disallow: /download/demo/
 Disallow: /download/entertainment/
 Disallow: /download/latex/
-Disallow: /download/thesis/
-Disallow: /download/thesis/master
-Disallow: /download/
+Disallow: /download/thesis/master/
 Disallow: /github-recovery-codes.html
 Disallow: /github-recovery-codes.md
-Disallow: /googleaa9643b011ea1a36.html
 
+# =========================
+# IMPORTANT: DO NOT BLOCK ENTIRE /download/
+# (it breaks knowledge graph)
+# =========================
+
+# Sitemap
 Sitemap: https://stevenzhou2017.github.io/sitemap.xml
-Host: stevenzhou2017.github.io
