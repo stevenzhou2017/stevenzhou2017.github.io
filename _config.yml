@@ -35,8 +35,6 @@ sitemap:
     - /download/thesis/
     - /download/thesis/master
     - /download/
-    - /images/
-    - /images/icons/
     - /test.html
     
 
@@ -126,8 +124,6 @@ exclude:
   - download/thesis/
   - download/thesis/master
   - download/
-  - images/
-  - images/icons/
   
 
 # =========================
