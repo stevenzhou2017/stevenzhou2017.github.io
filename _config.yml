@@ -27,13 +27,21 @@ sitemap:
   filename: sitemap.xml
   exclude:
     - /assets/
-    - /cgi-bin/
-    - /download/private/
     - /audio/
+    - /award/
+    - /cgi-bin/
+    - /cgi-bin/counter/
+    - /cgi-bin/counter/images/
+    - /download/private/
+    - /download/entertainment/
+    - /download/latex/
+    - /download/thesis/
+    - /download/thesis/master
+    - /download/
     - /counter/
     - /css/
     - /images/
-    - /download/
+    - /images/icons/
     - /test.html
     
 
