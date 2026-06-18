@@ -1,43 +1,112 @@
+# =========================
+# Site Identity
+# =========================
 title: 周均扬博士 | Dr. Junyang Zhou
-description: 工业AI与智能制造专家 | 25+年AI领导经验 | 锂电池智能制造 | 具身智能
+description: >-
+  工业AI与智能制造专家 | 25+年AI领导经验 | 锂电池智能制造 | 具身智能
 url: "https://stevenzhou2017.github.io"
 baseurl: ""
 
 timezone: Asia/Shanghai
 
+# =========================
+# SEO Plugins
+# =========================
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
 
-# ==================== 重要：排除不需要的内容 ====================
+whitelist:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# =========================
+# Sitemap Behavior (关键优化)
+# =========================
+sitemap:
+  filename: sitemap.xml
+  exclude:
+    - /assets/
+    - /cgi-bin/
+    - /download/private/
+    - /test.html
+
+# =========================
+# Build Settings
+# =========================
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+# =========================
+# IMPORTANT: collections (让SEO结构化)
+# =========================
+collections:
+  docs:
+    output: true
+  research:
+    output: true
+  publications:
+    output: true
+  projects:
+    output: true
+
+# =========================
+# Defaults (核心修复点)
+# =========================
+defaults:
+
+  # 默认：全部页面允许 sitemap（不要全关）
+  - scope:
+      path: ""
+    values:
+      sitemap: true
+
+  # 研究类高权重
+  - scope:
+      path: "research"
+    values:
+      layout: page
+      category: research
+      priority: 0.9
+
+  # 文档类
+  - scope:
+      path: "docs"
+    values:
+      layout: page
+      category: docs
+      priority: 0.8
+
+  # 论文/成果
+  - scope:
+      path: "publications"
+    values:
+      layout: page
+      category: publications
+      priority: 0.95
+
+  # 首页特殊处理
+  - scope:
+      path: "index.html"
+    values:
+      sitemap: true
+      priority: 1.0
+
+# =========================
+# Exclusions（只排除真正垃圾）
+# =========================
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
   - github-recovery-codes.html
-  - cgi-bin/
-  - assets/
+  - node_modules
+  - vendor
   - header.html
   - footer.html
-  - docs/2025/
-  - docs/2026/              # 先全部排除笔记页（等你完善后再逐步放开）
-  - docs/
-  - download/               # PDF 文件太多，建议不放进 sitemap
-  - test.html
 
-
-# ==================== 只收录核心高质量页面 ====================
-defaults:
-  - scope:
-      path: ""              # 所有页面默认不收录
-    values:
-      sitemap: false
-
-  - scope:
-      path: "index.html"
-    values:
-      sitemap: true
-      last_modified_at: "now"
-
-- scope: { path: "publication.html" }    values: { sitemap: true }
-- scope: { path: "research.html" } values: { sitemap: true }
-- scope: { path: "resource.html" } values: { sitemap: true }
+# =========================
+# Safety
+# =========================
+safe: false
