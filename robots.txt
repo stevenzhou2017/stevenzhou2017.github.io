@@ -4,8 +4,6 @@ Allow: /
 # 禁止抓取不必要的目录
 Disallow: /audio/
 Disallow: /award/
-Disallow: /images/
-Disallow: /images/icons/
 Disallow: /download/demo/
 Disallow: /download/entertainment/
 Disallow: /download/latex/
