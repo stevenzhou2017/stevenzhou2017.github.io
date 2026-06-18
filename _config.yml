@@ -29,7 +29,12 @@ sitemap:
     - /assets/
     - /cgi-bin/
     - /download/private/
+    - /audio/
+    - /counter/
+    - /css/
+    - /images/
     - /test.html
+    
 
 # =========================
 # Build Settings
@@ -102,10 +107,14 @@ exclude:
   - README.md
   - github-recovery-codes.html
   - github-recovery-codes.md
+  - googleaa9643b011ea1a36.html
   - node_modules
   - vendor
   - header.html
   - footer.html
+  - teaching.html
+  - award.html
+  
 
 # =========================
 # Safety
