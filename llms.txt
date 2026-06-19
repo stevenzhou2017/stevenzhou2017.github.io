@@ -1,5 +1,5 @@
 # ==================================================
-# Industrial AI Knowledge Base (LLM INDEX v3)
+# Industrial AI Knowledge Base
 # ==================================================
 
 SITE:
@@ -10,6 +10,34 @@ domain: stevenzhou2017.github.io
 DESCRIPTION:
 Structured knowledge system for Industrial Vision,
 CUDA optimization, and AI-driven manufacturing.
+
+## Research
+
+- [AI Agent Architecture](https://stevenzhou2017.github.io/research/ai-agent-architecture/)
+- [Event-driven Vision Kernel](https://stevenzhou2017.github.io/research/event-driven-vision-kernel/)
+- [Industrial Vision OS](https://stevenzhou2017.github.io/research/vision-os/)
+
+## Documentation
+
+- [CUDA Streams](https://stevenzhou2017.github.io/docs/cuda-streams/)
+- [CUDA Zero Copy Pipeline](https://stevenzhou2017.github.io/docs/zero-copy-pipeline/)
+- [Camera SDK Architecture](https://stevenzhou2017.github.io/docs/camera-sdk/)
+- [Industrial Vision SDK](https://stevenzhou2017.github.io/docs/industrial-vision-sdk/)
+
+## Projects
+
+- [Algorithm SDK](https://stevenzhou2017.github.io/projects/algorithm-sdk/)
+- [Vision OS](https://stevenzhou2017.github.io/projects/vision-os/)
+
+## Publications
+
+- [Publications](https://stevenzhou2017.github.io/publication.html)
+
+## Knowledge Graph
+
+Machine-readable knowledge graph:
+
+- [graph.json](https://stevenzhou2017.github.io/graph.json)
 
 # ==================================================
 # CORE KNOWLEDGE GRAPH NODES
@@ -100,4 +128,4 @@ system intelligence → ai-agent-architecture
 
 AUTHOR:
 Dr. Junyang Zhou
-Industrial AI & Intelligent Manufacturing Expert
+Industrial AI, Intelligent Manufacturing Expert, Industrial Vision, CUDA Optimization, AI Agents.
