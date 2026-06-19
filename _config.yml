@@ -9,6 +9,13 @@ baseurl: ""
 
 timezone: Asia/Shanghai
 
+lang: zh-CN
+
+locale: zh_CN
+
+author:
+  name: Dr. Junyang Zhou
+
 # =========================
 # SEO PLUGINS
 # =========================
