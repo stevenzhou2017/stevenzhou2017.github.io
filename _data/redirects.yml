@@ -1,0 +1,20 @@
+- from: /camera
+  to: /software/camera-sdk/
+
+- from: /sdk
+  to: /software/
+
+- from: /vision
+  to: /research/vision/
+
+- from: /workflow
+  to: /projects/workflow/
+
+- from: /paper/kernel
+  to: /research/event-driven-kernel/
+
+- from: /cv
+  to: /about/
+
+- from: /research/os
+  to: /research/vision-os/
