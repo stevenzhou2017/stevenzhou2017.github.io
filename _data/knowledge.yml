@@ -1,19 +1,122 @@
-version: 1.0
+version: 2.0
 
-domains:
+nodes:
 
-  - id: industrial-ai
-    title: Industrial AI
+- id: vision-os
 
-  - id: industrial-vision
-    title: Industrial Vision
+  title: Vision Operating System
 
-  - id: gpu-computing
-    title: GPU Computing
+  type: research
 
-  - id: ai-agent
-    title: AI Agent
+  url: /research/vision-os/
 
-  - id: robotics
-    title: Robotics
-    
+  topic:
+    - industrial-ai
+    - industrial-vision
+
+  cluster:
+    - vision-platform
+
+  series:
+    - vision-os
+
+  tags:
+    - vision
+    - operating-system
+    - ai-agent
+
+  importance: 0.99
+
+  featured: true
+
+  related:
+
+    - camera-sdk
+
+    - algorithm-sdk
+
+    - event-driven-kernel
+
+# ------------------------------------------------
+
+- id: camera-sdk
+
+  title: Cross Platform CameraSDK
+
+  type: project
+
+  url: /projects/camera-sdk/
+
+  topic:
+    - industrial-vision
+
+  cluster:
+    - perception
+
+  series:
+    - camera-sdk
+
+  featured: true
+
+# ------------------------------------------------
+
+- id: cuda-streams
+
+  title: CUDA Async Streams
+
+  type: docs
+
+  url: /docs/cuda-streams/
+
+  topic:
+    - gpu-computing
+
+  cluster:
+    - gpu-runtime
+
+  series:
+    - gpu
+
+  featured: true
+
+# ------------------------------------------------
+
+- id: zero-copy
+
+  title: CPU GPU Zero Copy
+
+  type: docs
+
+  url: /docs/zero-copy/
+
+  topic:
+    - gpu-computing
+
+  cluster:
+    - gpu-memory
+
+  related:
+
+    - cuda-streams
+
+# ------------------------------------------------
+
+- id: ai-agent
+
+  title: Industrial AI Agent
+
+  type: research
+
+  url: /research/ai-agent/
+
+  topic:
+
+    - industrial-ai
+
+  cluster:
+
+    - intelligent-system
+
+  series:
+
+    - industrial-agent
