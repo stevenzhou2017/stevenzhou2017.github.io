@@ -1,0 +1,152 @@
+
+{% include hero.html %}
+
+{% include hubs.html %}
+
+<section>
+
+<h2>Latest Research</h2>
+
+<div class="card-grid">
+
+{% assign items = site.research | sort:"date" | reverse %}
+
+{% for post in items limit:6 %}
+
+<article>
+
+<h3>
+
+<a href="{{ post.url }}">
+
+{{ post.title }}
+
+</a>
+
+</h3>
+
+<p>
+
+{{ post.description }}
+
+</p>
+
+</article>
+
+{% endfor %}
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Latest Docs</h2>
+
+<div class="card-grid">
+
+{% assign docs = site.docs | sort:"date" | reverse %}
+
+{% for post in docs limit:6 %}
+
+<article>
+
+<h3>
+
+<a href="{{ post.url }}">
+
+{{ post.title }}
+
+</a>
+
+</h3>
+
+<p>
+
+{{ post.description }}
+
+</p>
+
+</article>
+
+{% endfor %}
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Latest Projects</h2>
+
+<div class="card-grid">
+
+{% assign projects = site.projects %}
+
+{% for project in projects %}
+
+<article>
+
+<h3>
+
+<a href="{{ project.url }}">
+
+{{ project.title }}
+
+</a>
+
+</h3>
+
+<p>
+
+{{ project.description }}
+
+</p>
+
+</article>
+
+{% endfor %}
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Latest Publications</h2>
+
+<div class="card-grid">
+
+{% assign pubs = site.publications %}
+
+{% for pub in pubs %}
+
+<article>
+
+<h3>
+
+<a href="{{ pub.url }}">
+
+{{ pub.title }}
+
+</a>
+
+</h3>
+
+<p>
+
+{{ pub.description }}
+
+</p>
+
+</article>
+
+{% endfor %}
+
+</div>
+
+</section>
+
+
