@@ -1,0 +1,24 @@
+nodes:
+
+  - camera-sdk
+  - algorithm-sdk
+  - event-driven-kernel
+  - ai-workflow
+
+edges:
+
+  - source: camera-sdk
+    target: algorithm-sdk
+    relation: depends
+
+  - source: algorithm-sdk
+    target: event-driven-kernel
+    relation: implements
+
+  - source: ai-workflow
+    target: event-driven-kernel
+    relation: based-on
+
+  - source: algorithm-sdk
+    target: ai-workflow
+    relation: supports
