@@ -1,39 +1,33 @@
-topics:
-
-- id: industrial-ai
-
-  title: Industrial AI
-
-  description: AI for intelligent manufacturing.
-
-  icon: 🤖
-
-  url: /topics/industrial-ai/
-
-- id: industrial-vision
-
+vision:
   title: Industrial Vision
+  color: "#0066CC"
+  icon: camera
 
-  icon: 👁️
+ai:
+  title: Artificial Intelligence
+  color: "#FF6600"
+  icon: cpu
 
-  url: /topics/industrial-vision/
+measurement:
+  title: Precision Measurement
+  color: "#00AA88"
+  icon: ruler
 
-- id: gpu-computing
+sdk:
+  title: SDK Architecture
+  color: "#AA22FF"
 
-  title: GPU Computing
+camera:
+  title: Camera System
 
-  icon: 🚀
+workflow:
+  title: Workflow Engine
 
-  url: /topics/gpu/
+vision-os:
+  title: Vision Operating System
 
-- id: embodied-ai
+operating-system:
+  title: Operating System
 
-  title: Embodied AI
-
-- id: robotics
-
-  title: Robotics
-
-- id: intelligent-manufacturing
-
-  title: Intelligent Manufacturing
+event-driven:
+  title: Event-driven System
