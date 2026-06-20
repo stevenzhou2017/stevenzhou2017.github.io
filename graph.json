@@ -1,128 +1,65 @@
 {
-  "graph_version": "4.0",
-  "graph_type": "ai_search_engine",
+  "@context":"https://schema.org",
 
-  "nodes": [
+  "@graph":[
+
     {
-      "id": "zero_copy_pipeline",
-      "type": "docs",
-      "title": "CUDA Zero Copy Pipeline",
-      "url": "/docs/zero-copy-pipeline",
-      "summary": "GPU zero-copy architecture for real-time industrial vision systems",
-      "tags": ["cuda", "gpu", "memory", "zero-copy"],
-      "embedding_vector_id": "emb_zero_copy_pipeline",
-      "importance": 0.93,
-      "retrieval_weight": 0.95,
-      "last_updated": "2026-06"
+
+      "@type":"Person",
+
+      "name":"Steven Zhou",
+
+      "url":"https://stevenzhou2017.github.io"
+
     },
+
     {
-      "id": "event_driven_vision_kernel",
-      "type": "research",
-      "title": "Event-driven Vision Kernel",
-      "url": "/research/event-driven-vision-kernel",
-      "summary": "Real-time event-driven architecture for industrial vision systems",
-      "tags": ["vision", "event-driven", "real-time", "ai-system"],
-      "embedding_vector_id": "emb_vision_kernel",
-      "importance": 0.97,
-      "retrieval_weight": 1.0,
-      "last_updated": "2026-06"
+
+      "@type":"WebSite",
+
+      "name":"Industrial AI Knowledge Portal"
+
     },
+
     {
-      "id": "ai_agent_architecture",
-      "type": "research",
-      "title": "AI Agent Architecture for Industrial Systems",
-      "url": "/research/ai-agent-architecture",
-      "summary": "Autonomous AI agent system for industrial automation",
-      "tags": ["ai", "agent", "system-design", "autonomy"],
-      "embedding_vector_id": "emb_ai_agent",
-      "importance": 0.96,
-      "retrieval_weight": 0.98,
-      "last_updated": "2026-06"
+
+      "@type":"CollectionPage",
+
+      "name":"AI Technology Documentation Hub",
+
+      "url":"https://stevenzhou2017.github.io/docs/"
+
+    },
+
+    {
+
+      "@type":"CollectionPage",
+
+      "name":"AI Research Hub",
+
+      "url":"https://stevenzhou2017.github.io/research/"
+
+    },
+
+    {
+
+      "@type":"CollectionPage",
+
+      "name":"AI Project Hub",
+
+      "url":"https://stevenzhou2017.github.io/projects/"
+
+    },
+
+    {
+
+      "@type":"CollectionPage",
+
+      "name":"Publications Hub",
+
+      "url":"https://stevenzhou2017.github.io/publications/"
+
     }
-  ],
 
-  "edges": [
-    {
-      "from": "zero_copy_pipeline",
-      "to": "event_driven_vision_kernel",
-      "type": "dataflow_dependency",
-      "direction": "bidirectional",
-      "weight": 0.92,
-      "semantic_reason": "Shared real-time GPU processing pipeline",
-      "retrieval_boost": 1.2
-    },
-    {
-      "from": "event_driven_vision_kernel",
-      "to": "ai_agent_architecture",
-      "type": "system_architecture_dependency",
-      "direction": "bidirectional",
-      "weight": 0.88,
-      "semantic_reason": "AI agent consumes vision kernel outputs",
-      "retrieval_boost": 1.15
-    }
-  ],
-
-  "tag_index": {
-    "cuda": {
-      "cluster": "gpu_compute",
-      "type": "retrieval_router",
-      "weight": 0.98,
-      "entry_nodes": ["zero_copy_pipeline"],
-      "synonyms": ["gpu", "cuda-core", "parallel compute"]
-    },
-    "vision": {
-      "cluster": "perception_system",
-      "type": "retrieval_router",
-      "weight": 0.97,
-      "entry_nodes": ["event_driven_vision_kernel"],
-      "synonyms": ["camera", "perception", "real-time vision"]
-    },
-    "ai": {
-      "cluster": "intelligence_systems",
-      "type": "retrieval_router",
-      "weight": 0.95,
-      "entry_nodes": ["ai_agent_architecture"],
-      "synonyms": ["agent", "llm system", "autonomous system"]
-    }
-  },
-
-  "retrieval_layers": {
-    "layer_1_keyword": {
-      "enabled": true,
-      "weight": 0.3
-    },
-    "layer_2_semantic": {
-      "enabled": true,
-      "weight": 0.5
-    },
-    "layer_3_graph": {
-      "enabled": true,
-      "weight": 0.2
-    }
-  },
-
-  "search_routing_rules": [
-    {
-      "if_query_contains": ["cuda", "gpu", "zero copy"],
-      "route_to": ["zero_copy_pipeline"],
-      "boost": 1.5
-    },
-    {
-      "if_query_contains": ["vision", "camera", "real-time"],
-      "route_to": ["event_driven_vision_kernel"],
-      "boost": 1.5
-    },
-    {
-      "if_query_contains": ["agent", "ai system", "autonomy"],
-      "route_to": ["ai_agent_architecture"],
-      "boost": 1.6
-    }
-  ],
-
-  "ai_indexing_meta": {
-    "supports_rag": true,
-    "supports_llm_routing": true,
-    "embedding_model": "text-embedding-3-large",
-    "graph_search_enabled": true
-  }
+  ]
 }
