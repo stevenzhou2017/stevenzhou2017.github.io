@@ -1,0 +1,44 @@
+software:
+  title: Software
+
+research:
+  title: Research
+
+projects:
+  title: Projects
+
+publications:
+  title: Publications
+
+docs:
+  title: Documentation
+
+blog:
+  title: Blog
+
+software_children:
+
+  sdk:
+    title: SDK
+
+  framework:
+    title: Framework
+
+research_children:
+
+  ai:
+    title: AI
+
+  vision:
+    title: Vision
+
+  robotics:
+    title: Robotics
+
+publication_children:
+
+  journal:
+    title: Journal
+
+  conference:
+    title: Conference
