@@ -1,31 +1,16 @@
-series:
+- id: industrial-vision
+  title: Industrial Vision Architecture
+  description: Cross-platform industrial vision ecosystem.
 
 - id: vision-os
-
   title: Vision Operating System
+  description: Event-driven industrial operating system.
 
-  description: Industrial AI Runtime Architecture
+- id: ai-manufacturing
+  title: AI Manufacturing
 
-- id: camera-sdk
+- id: edge-ai
+  title: Edge AI Computing
 
-  title: CameraSDK
-
-- id: algorithm-sdk
-
-  title: AlgorithmSDK
-
-- id: industrial-agent
-
-  title: Industrial AI Agent
-
-- id: gpu
-
-  title: CUDA Optimization
-
-- id: battery-ai
-
-  title: Battery AI
-
-- id: embodied-ai
-
-  title: Embodied AI
+- id: digital-twin
+  title: Digital Twin
