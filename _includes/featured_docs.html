@@ -1,2 +1,24 @@
-to be done
+<section>
 
+    <div class="container">
+
+        <h2>Latest Documentation</h2>
+
+        <div class="card-grid">
+
+            {% assign docs=site.docs
+             | sort:"date"
+             | reverse
+            %}
+
+            {% for post in docs limit:8 %}
+
+            {% include cards/article_card.html post=post %}
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
