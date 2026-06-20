@@ -20,6 +20,7 @@ author:
 # SEO PLUGINS
 # =========================
 plugins:
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
