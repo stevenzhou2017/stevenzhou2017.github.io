@@ -1,0 +1,60 @@
+- id: camera-sdk
+  title: CameraSDK
+
+  language:
+    - C++
+    - Python
+
+  platform:
+    - Windows
+    - Linux
+    - Android
+
+  modules:
+
+    - Device
+    - Stream
+    - Buffer
+    - Plugin
+
+  github: https://github.com/xxx/camera-sdk
+
+- id: algorithm-sdk
+
+  title: AlgorithmSDK
+
+  language:
+    - C++
+    - Python
+
+  modules:
+
+    - Calibration
+
+    - Measurement
+
+    - CVToolkit
+
+    - AI
+
+    - OCR
+
+    - Detection
+
+    - 3D
+
+- id: vision-os
+
+  title: VisionOS
+
+  modules:
+
+    - Scheduler
+
+    - Workflow
+
+    - EventBus
+
+    - AI Agent
+
+    - Knowledge Graph
