@@ -9,6 +9,11 @@ sitemap: true
 # Publications
 Academic + Industrial Papers
 
+  - Research Papers
+  - Technical Reports
+  - Architecture Articles
+  - Tutorials
+
 
 ## Vision Operating System
 
