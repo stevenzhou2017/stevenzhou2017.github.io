@@ -1,1 +1,24 @@
-to be done
+<section>
+
+    <div class="container">
+
+        <h2>Featured Research</h2>
+
+        <div class="card-grid">
+
+            {% assign posts = site.research
+               | sort:"importance"
+               | reverse
+            %}
+
+            {% for post in posts limit:6 %}
+
+            {% include cards/article_card.html post=post %}
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
