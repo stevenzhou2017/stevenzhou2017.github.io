@@ -1,0 +1,65 @@
+{% assign paper = include.item %}
+
+<div class="portal-card publication-card">
+
+    <h3>
+
+        <a href="{{ paper.url }}">
+
+            {{ paper.title }}
+
+        </a>
+
+    </h3>
+
+    <div class="authors">
+
+        {{ paper.authors | join:", " }}
+
+    </div>
+
+    <div class="venue">
+
+        {{ paper.venue }}
+
+        {% if paper.year %}
+
+        ({{ paper.year }})
+
+        {% endif %}
+
+    </div>
+
+    {% if paper.abstract %}
+
+    <p>
+
+        {{ paper.abstract | truncate:180 }}
+
+    </p>
+
+    {% endif %}
+
+    <div class="publication-links">
+
+        {% if paper.pdf %}
+
+        <a href="{{ paper.pdf }}">PDF</a>
+
+        {% endif %}
+
+        {% if paper.code %}
+
+        <a href="{{ paper.code }}">Code</a>
+
+        {% endif %}
+
+        {% if paper.slides %}
+
+        <a href="{{ paper.slides }}">Slides</a>
+
+        {% endif %}
+
+    </div>
+
+</div>
