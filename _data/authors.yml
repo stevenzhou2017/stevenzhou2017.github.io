@@ -1,0 +1,35 @@
+junyang-zhou:
+
+  name: Dr. Junyang Zhou
+
+  avatar: /assets/images/profile.jpg
+
+  email: example@email.com
+
+  homepage: /
+
+  organization:
+
+    - hkbu
+
+  interests:
+
+    - Industrial Vision
+
+    - AI
+
+    - Edge Computing
+
+    - Operating Systems
+
+    - Robotics
+
+  social:
+
+    github: username
+
+    scholar: scholar-id
+
+    linkedin: profile
+
+    orcid: 0000-0000-0000-0000
