@@ -1,0 +1,42 @@
+header:
+
+- title: Home
+  url: /
+
+- title: Research
+  url: /research/
+
+- title: Documentation
+  url: /docs/
+
+- title: Projects
+  url: /projects/
+
+- title: Publications
+  url: /publications/
+
+- title: Resources
+  url: /resource.html
+
+- title: Bookmarks
+  url: /links.html
+
+footer:
+
+- title: GitHub
+  url: https://github.com/stevenzhou2017
+
+- title: LinkedIn
+  url: https://linkedin.com
+
+- title: Knowledge Graph
+  url: /graph.json
+
+- title: Sitemap
+  url: /sitemap.xml
+
+- title: Robots
+  url: /robots.txt
+
+- title: LLMs
+  url: /llms.txt
