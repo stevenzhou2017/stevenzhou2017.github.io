@@ -1,0 +1,66 @@
+# Industrial AI Knowledge Base
+
+Website
+https://stevenzhou2017.github.io
+
+Author
+Dr. Junyang Zhou
+
+Description
+Industrial AI Knowledge Base focusing on Industrial Vision,
+Vision Operating System, AI Agent, GPU Computing,
+CUDA Optimization, Intelligent Manufacturing,
+Computer Vision and Robotics.
+
+## Main Portals
+
+Home
+https://stevenzhou2017.github.io/
+
+Documentation Hub
+https://stevenzhou2017.github.io/docs/
+
+Research Hub
+https://stevenzhou2017.github.io/research/
+
+Projects Hub
+https://stevenzhou2017.github.io/projects/
+
+Publications Hub
+https://stevenzhou2017.github.io/publications/
+
+Knowledge Graph
+https://stevenzhou2017.github.io/graph.json
+
+Sitemap
+https://stevenzhou2017.github.io/sitemap.xml
+
+## Core Topics
+
+Industrial AI
+Industrial Vision
+Vision Operating System
+CameraSDK
+AlgorithmSDK
+Vision Kernel
+AI Agent
+AI Security
+AI4S
+CUDA
+GPU Computing
+Embodied AI
+Robotics
+
+## Featured Research
+
+Industrial Vision Operating System
+Event-driven Vision Kernel
+AI Agent Architecture
+Industrial Security
+
+## Featured Documentation
+
+CUDA Async Streams
+CPU-GPU Zero Copy
+Camera SDK Architecture
+Industrial Vision SDK
