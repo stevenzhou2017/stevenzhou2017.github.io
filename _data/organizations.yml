@@ -1,0 +1,21 @@
+hkbu:
+  name: Hong Kong Baptist University
+  short: HKBU
+  logo: /assets/logo/hkbu.svg
+  website: https://hkbu.edu.hk
+
+sysu:
+  name: Sun Yat-sen University
+  short: SYSU
+  logo: /assets/logo/sysu.svg
+  website: https://www.sysu.edu.cn
+
+ieee:
+  name: IEEE
+  short: IEEE
+  logo: /assets/logo/ieee.svg
+  website: https://www.ieee.org
+
+industry:
+  name: Industrial Partner
+  short: Enterprise
