@@ -93,3 +93,13 @@ This documentation hub provides engineering notes, tutorials, architecture desig
 - [Brain & Cerebellum Architecture](../docs/2026/05/13_Framework_Brain_Cerebellum.html)
 - [Google & NVIDIA Robot Solution](../docs/2026/05/14_Robot_Development_Solution_Google_Nvidia.html)
 - [Open Source Embodied Robotics](../docs/2026/05/15_Mainstream_OpenSource_Embodied_Robotics_Projects_Ecosystems.html)
+
+---
+
+# Software Engineering
+
+ - [Prediction Confidence](../docs/2026/06/01_Prediction_Confidence_Interval_Calculation.html)
+ - [Optimal Stopping](../docs/2026/06/17_Achievements_And_Tools_Optimal_Stopping_Time.html)
+ - [Hand-Eye Calibration](../docs/2026/06/18_Daniilidis_Hand_Eye_Calibration_Method.html)
+ - [Python Websocket] (../docs/2026/06/19_Industrial_Vision_RT_Event-Driven_Computing_Kernel.html)
+
