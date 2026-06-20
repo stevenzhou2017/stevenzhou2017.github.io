@@ -1,0 +1,19 @@
+version: 1.0
+
+domains:
+
+  - id: industrial-ai
+    title: Industrial AI
+
+  - id: industrial-vision
+    title: Industrial Vision
+
+  - id: gpu-computing
+    title: GPU Computing
+
+  - id: ai-agent
+    title: AI Agent
+
+  - id: robotics
+    title: Robotics
+    
