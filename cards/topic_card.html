@@ -1,0 +1,35 @@
+{% assign topic = include.item %}
+
+<div class="portal-card topic-card">
+
+    <h3>
+
+        <a href="{{ topic.url }}">
+
+            {{ topic.title }}
+
+        </a>
+
+    </h3>
+
+    {% if topic.description %}
+
+    <p>
+
+        {{ topic.description }}
+
+    </p>
+
+    {% endif %}
+
+    <div class="topic-meta">
+
+        {% if topic.count %}
+
+        {{ topic.count }} Articles
+
+        {% endif %}
+
+    </div>
+
+</div>
