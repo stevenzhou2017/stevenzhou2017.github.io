@@ -10,7 +10,18 @@ sitemap: true
 # AI Research Hub
 
 This AI Research Hub provides Theory, Formula, Framework covering of AI Agent, Industrial AI, etc. 
- 
+
+---
+
+# Research Themes
+
+- Vision Operating System
+- Industrial AI
+- AI Systems
+- Industrial Safety
+- Embodied AI
+- Real-time AI
+
 ---
 
 # Vision Operating System
@@ -42,24 +53,9 @@ Real-time AI -> Optimal Stopping -> Scheduling -> Vision Kernel
 - [AI Agent Evolution](../docs/2026/04/12_AI_Agent_Evolution.html)
 - [Transformer Evolution](../docs/2026/04/01_Transformer_Evolution.html)
 
----
-
-# Embodied Intelligence
-
-Embodied Intelligence -> VLM -> VLA -> World Model
-
-- [World Model](../docs/2026/04/03_LLM_and_WM.html)
-
 
 ---
-
-# GPU Computing
-
-- [CPU-GPU Zero Copy](../docs/2026/06/08_AI_Inference_CPU-GPU_Zero_Copy.html)
-- [CUDA Async Streams](../docs/2026/06/09_AI_Inference_CUDA_Async_Streams.html)
-
----
-# OSDIP Research
+# Industrial Safety
 
 Industrial Safety -> OSDIP -> Research Gap -> Related Work -> Methodology -> Experiments
 
@@ -70,5 +66,23 @@ Industrial Safety -> OSDIP -> Research Gap -> Related Work -> Methodology -> Exp
 - [Industrial Safety](./osdip/IndustrialSafety/)
 - [Experiments](./osdip/analysis_and_experiment/)
 - [Paper Draft](./osdip/paper_main/)
+  
+---
+
+
+# Embodied AI
+
+Embodied Intelligence -> VLM -> VLA -> World Model
+
+- [World Model](../docs/2026/04/03_LLM_and_WM.html)
+
+
+---
+
+# Real-Time AI
+
+- [CPU-GPU Zero Copy](../docs/2026/06/08_AI_Inference_CPU-GPU_Zero_Copy.html)
+- [CUDA Async Streams](../docs/2026/06/09_AI_Inference_CUDA_Async_Streams.html)
+
 
 ---
