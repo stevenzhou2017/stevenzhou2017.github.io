@@ -1,1 +1,21 @@
-to be done
+<section>
+
+    <div class="container">
+
+        <h2>Latest Publications</h2>
+
+        <div class="card-grid">
+
+            {% assign pubs=site.publications %}
+
+            {% for post in pubs %}
+
+            {% include cards/publication_card.html post=post %}
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
