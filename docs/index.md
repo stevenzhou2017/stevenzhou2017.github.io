@@ -2,6 +2,8 @@
 title: "AI Technology Documentation Hub"
 description: "Comprehensive documentation covering AI, LLMs, Industrial Vision, CUDA, Robotics, and Software Engineering."
 type: docs
+layout: page
+sitemap: true
 ---
 
 # AI Technology Documentation Hub
