@@ -1,167 +1,389 @@
 :root{
-
     --primary:#0055aa;
-
     --secondary:#1976d2;
-
     --background:#fafafa;
-
     --text:#333;
-
     --card:#ffffff;
-
     --border:#e5e5e5;
-
     --radius:12px;
+
+
+    /* Theme */
+    --portal-bg:#ffffff;
+    --portal-surface:#fafafa;
+    --portal-border:#e6e8ec;
+    --portal-shadow: 0 2px 8px rgba(0,0,0,.04);
+    --portal-shadow-hover: 0 8px 28px rgba(0,0,0,.08);
+    --portal-radius:14px;
+    --portal-primary:#0057b8;
+    --portal-text:#202124;
+    --portal-text-light:#5f6368;
+    --portal-success:#20a464;
+    --portal-warning:#f59f00;
+    --portal-danger:#d94841;
 
 }
 
 body{
-
     margin:0;
-
     font-family:Inter,Arial,sans-serif;
-
     background:var(--background);
-
     color:var(--text);
-
     line-height:1.7;
-
 }
 
 .container{
-
     max-width:1200px;
-
     margin:auto;
-
     padding:0 20px;
-
 }
 
 .hero{
-
     padding:80px 0;
-
 }
 
 .hero-grid{
-
     display:grid;
-
     grid-template-columns:2fr 1fr;
-
     gap:40px;
-
     align-items:center;
-
 }
 
 .card-grid{
-
     display:grid;
-
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-
     gap:25px;
-
 }
 
 article{
-
     background:white;
-
     padding:25px;
-
     border-radius:var(--radius);
-
     border:1px solid var(--border);
-
     transition:.3s;
-
 }
 
 article:hover{
-
     transform:translateY(-5px);
-
     box-shadow:0 10px 30px rgba(0,0,0,.08);
-
 }
 
 .btn{
-
     display:inline-block;
-
     padding:12px 24px;
-
     border-radius:8px;
-
     background:var(--primary);
-
     color:white;
-
     text-decoration:none;
-
     margin-right:10px;
-
 }
 
 .tag-cloud{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.tag-cloud span{
+    background:#eef5ff;
+    padding:8px 16px;
+    border-radius:30px;
+}
+
+footer{
+    margin-top:80px;
+    padding:50px 0;
+    background:#20232a;
+    color:white;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+@media(max-width:768px){
+.hero-grid{
+    grid-template-columns:1fr;
+}
+
+.card-grid{
+    grid-template-columns:1fr;
+}
+}
+
+/*portal-card */
+.portal-card{
+    display:flex;
+    flex-direction:column;
+    background:var(--portal-bg);
+    border:1px solid var(--portal-border);
+    border-radius:var(--portal-radius);
+    overflow:hidden;
+    transition:.25s;
+    box-shadow:var(--portal-shadow);
+}
+
+.portal-card:hover{
+    transform:translateY(-4px);
+    box-shadow:var(--portal-shadow-hover);
+}
+
+
+/* card-cover */
+.card-cover{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    display:block;
+}
+
+/* card-body */
+.card-body{
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    flex:1;
+}
+
+
+.card-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/*title*/
+.portal-card h3{
+    margin:0;
+    font-size:1.18rem;
+    line-height:1.35;
+    font-weight:700;
+}
+
+.portal-card h3 a{
+    color:var(--portal-text);
+    text-decoration:none;
+}
+
+.portal-card h3 a:hover{
+    color:var(--portal-primary);
+}
+
+.card-subtitle{
+    color:var(--portal-text-light);
+    font-size:.92rem;
+}
+
+
+.card-summary{
+    color:var(--portal-text-light);
+    line-height:1.7;
+}
+
+.card-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    font-size:.82rem;
+    color:var(--portal-text-light);
+}
+
+.card-tags{
 
     display:flex;
 
     flex-wrap:wrap;
 
-    gap:12px;
+    gap:8px;
 
 }
 
-.tag-cloud span{
-
-    background:#eef5ff;
-
-    padding:8px 16px;
-
-    border-radius:30px;
-
+.card-tag{
+    padding:4px 10px;
+    border-radius:20px;
+    background:#eef3ff;
+    color:#2454d3;
+    font-size:.8rem;
 }
 
-footer{
+.card-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:auto;
+    padding-top:14px;
+    border-top:1px solid var(--portal-border);
+}
 
-    margin-top:80px;
 
-    padding:50px 0;
+.card-link{
+    color:var(--portal-primary);
+    text-decoration:none;
+    font-weight:600;
+}
 
-    background:#20232a;
+.card-link:hover{
+    text-decoration:underline;
+}
 
+.card-avatar{
+    width:72px;
+    height:72px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.card-logo{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+}
+
+.badge{
+    padding:4px 10px;
+    border-radius:20px;
+    font-size:.78rem;
+    font-weight:600;
+}
+
+.status{
     color:white;
+}
+
+.status.active{
+    background:var(--portal-success);
+}
+
+.status.beta{
+    background:var(--portal-warning);
+}
+
+.status.archived{
+    background:#888;
+}
+
+.status.paper{
+    background:#2454d3;
+}
+
+.status.opensource{
+    background:#00897b;
+}
+
+.tech-stack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
 
 }
 
-.footer-grid{
+.tech{
+    background:#f5f5f5;
+    border-radius:4px;
+    padding:4px 8px;
+    font-size:.8rem;
+}
 
+.author-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+}
+
+.author{
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+.social-links{
+    display:flex;
+    gap:10px;
+}
+
+.social-links a{
+    color:var(--portal-text-light);
+}
+
+.social-links a:hover{
+    color:var(--portal-primary);
+}
+
+.portal-grid{
     display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-    gap:30px;
-
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:24px;
 }
 
-@media(max-width:768px){
-
-.hero-grid{
-
-    grid-template-columns:1fr;
-
+.portal-card.horizontal{
+    flex-direction:row;
 }
 
-.card-grid{
-
-    grid-template-columns:1fr;
-
+.portal-card.horizontal .card-cover{
+    width:280px;
+    aspect-ratio:auto;
 }
 
+.portal-card.compact{
+    padding:18px;
 }
+
+.portal-card.compact .card-body{
+    padding:0;
+}
+
+.portal-card.hero{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+}
+
+.portal-card.hero .card-cover{
+    height:100%;
+}
+
+.person-card{
+    align-items:center;
+    text-align:center;
+}
+
+.person-card .card-avatar{
+    margin-top:24px;
+}
+
+.publication-card{
+    border-left:4px solid #2454d3;
+}
+
+.software-card{
+    border-left:4px solid #00a464;
+}
+
+.dataset-card{
+    border-left:4px solid #ff9800;
+}
+
+.organization-card{
+    border-left:4px solid #8e44ad;
+}
+
+
+.article-card{}
+.project-card{}
+.publication-card{}
+.person-card{}
+.topic-card{}
+.software-card{}
+.organization-card{}
+.dataset-card{}
+.series-card{}
+.graph-node-card{}
