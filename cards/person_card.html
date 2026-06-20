@@ -1,0 +1,85 @@
+{% assign person = include.item %}
+
+<div class="portal-card person-card">
+
+    <img class="avatar"
+
+         src="{{ person.avatar | relative_url }}"
+
+         alt="{{ person.name }}">
+
+    <h3>
+
+        {{ person.name }}
+
+    </h3>
+
+    {% if person.position %}
+
+    <div class="position">
+
+        {{ person.position }}
+
+    </div>
+
+    {% endif %}
+
+    {% if person.organization %}
+
+    <div class="organization">
+
+        {{ person.organization }}
+
+    </div>
+
+    {% endif %}
+
+    {% if person.interests %}
+
+    <div class="interest-list">
+
+        {% for t in person.interests %}
+
+        <span>{{ t }}</span>
+
+        {% endfor %}
+
+    </div>
+
+    {% endif %}
+
+    <div class="social">
+
+        {% if person.github %}
+
+        <a href="https://github.com/{{ person.github }}">
+
+            GitHub
+
+        </a>
+
+        {% endif %}
+
+        {% if person.scholar %}
+
+        <a href="{{ person.scholar }}">
+
+            Scholar
+
+        </a>
+
+        {% endif %}
+
+        {% if person.linkedin %}
+
+        <a href="{{ person.linkedin }}">
+
+            LinkedIn
+
+        </a>
+
+        {% endif %}
+
+    </div>
+
+</div>
