@@ -1,0 +1,39 @@
+topics:
+
+- id: industrial-ai
+
+  title: Industrial AI
+
+  description: AI for intelligent manufacturing.
+
+  icon: 🤖
+
+  url: /topics/industrial-ai/
+
+- id: industrial-vision
+
+  title: Industrial Vision
+
+  icon: 👁️
+
+  url: /topics/industrial-vision/
+
+- id: gpu-computing
+
+  title: GPU Computing
+
+  icon: 🚀
+
+  url: /topics/gpu/
+
+- id: embodied-ai
+
+  title: Embodied AI
+
+- id: robotics
+
+  title: Robotics
+
+- id: intelligent-manufacturing
+
+  title: Intelligent Manufacturing
