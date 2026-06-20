@@ -1,122 +1,67 @@
-version: 2.0
-
-nodes:
-
-- id: vision-os
-
-  title: Vision Operating System
-
-  type: research
-
-  url: /research/vision-os/
-
-  topic:
-    - industrial-ai
-    - industrial-vision
-
-  cluster:
-    - vision-platform
-
-  series:
-    - vision-os
-
-  tags:
-    - vision
-    - operating-system
-    - ai-agent
-
-  importance: 0.99
-
-  featured: true
-
-  related:
-
-    - camera-sdk
-
-    - algorithm-sdk
-
-    - event-driven-kernel
-
-# ------------------------------------------------
+# 每一个节点就是一个 Knowledge Node
 
 - id: camera-sdk
-
-  title: Cross Platform CameraSDK
-
-  type: project
-
-  url: /projects/camera-sdk/
-
-  topic:
+  type: software
+  title: CameraSDK
+  summary: Cross-platform industrial camera framework.
+  url: /software/camera-sdk/
+  topics:
+    - vision
+    - sdk
+    - camera
+  series:
     - industrial-vision
-
-  cluster:
-    - perception
-
-  series:
-    - camera-sdk
-
+  organization:
+    - hkbu
+  authors:
+    - junyang-zhou
+  year: 2025
   featured: true
 
-# ------------------------------------------------
-
-- id: cuda-streams
-
-  title: CUDA Async Streams
-
-  type: docs
-
-  url: /docs/cuda-streams/
-
-  topic:
-    - gpu-computing
-
-  cluster:
-    - gpu-runtime
-
+- id: algorithm-sdk
+  type: software
+  title: AlgorithmSDK
+  summary: Industrial Vision Algorithm Library.
+  url: /software/algorithm-sdk/
+  topics:
+    - vision
+    - ai
+    - measurement
   series:
-    - gpu
-
+    - industrial-vision
+  organization:
+    - hkbu
+  authors:
+    - junyang-zhou
+  year: 2025
   featured: true
 
-# ------------------------------------------------
-
-- id: zero-copy
-
-  title: CPU GPU Zero Copy
-
-  type: docs
-
-  url: /docs/zero-copy/
-
-  topic:
-    - gpu-computing
-
-  cluster:
-    - gpu-memory
-
-  related:
-
-    - cuda-streams
-
-# ------------------------------------------------
-
-- id: ai-agent
-
-  title: Industrial AI Agent
-
-  type: research
-
-  url: /research/ai-agent/
-
-  topic:
-
-    - industrial-ai
-
-  cluster:
-
-    - intelligent-system
-
+- id: event-driven-kernel
+  type: paper
+  title: Event-driven Vision Operating System Kernel
+  url: /research/event-driven-kernel/
+  topics:
+    - vision-os
+    - operating-system
+    - event-driven
   series:
+    - vision-os
+  organization:
+    - ieee
+  authors:
+    - junyang-zhou
+  year: 2026
+  featured: true
 
-    - industrial-agent
+- id: ai-workflow
+  type: project
+  title: AI Workflow Engine
+  url: /projects/workflow/
+  topics:
+    - workflow
+    - ai
+    - automation
+  series:
+    - vision-os
+  authors:
+    - junyang-zhou
