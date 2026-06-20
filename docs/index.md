@@ -10,6 +10,15 @@ sitemap: true
 
 This documentation hub provides engineering notes, tutorials, architecture designs, SDK documentation and implementation guides for Industrial AI systems.
 
+ - Industrial Vision
+ - GPU
+ - LLM
+ - AI Agent
+ - AI4S
+ - AI for Security
+ - Robotics
+ - Software Engineering
+
 ---
 
 # Industrial Vision Platform
