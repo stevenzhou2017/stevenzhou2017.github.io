@@ -8,7 +8,9 @@ sitemap: true
 
 
 # AI Project Hub
-Industrial product systems
+Industrial product systems:
+
+Architecture -> Documentation -> Examples -> Benchmarks -> Roadmap
 
 - Vision OS
 - Camera SDK
