@@ -1,65 +1,172 @@
 {
-  "@context":"https://schema.org",
-
-  "@graph":[
+  "@context": "https://schema.org",
+  "@graph": [
 
     {
-
-      "@type":"Person",
-
-      "name":"Steven Zhou",
-
-      "url":"https://stevenzhou2017.github.io"
-
+      "@id": "https://stevenzhou2017.github.io/#person",
+      "@type": "Person",
+      "name": "Steven Zhou",
+      "url": "https://stevenzhou2017.github.io",
+      "jobTitle": "Industrial AI Researcher",
+      "knowsAbout": [
+        "Industrial AI",
+        "Industrial Vision",
+        "Vision Operating System",
+        "AI Agent",
+        "Computer Vision",
+        "CUDA",
+        "Embodied AI",
+        "Robotics"
+      ]
     },
 
     {
-
-      "@type":"WebSite",
-
-      "name":"Industrial AI Knowledge Portal"
-
+      "@id": "https://stevenzhou2017.github.io/#website",
+      "@type": "WebSite",
+      "url": "https://stevenzhou2017.github.io",
+      "name": "Industrial AI Knowledge Portal",
+      "description": "Research and engineering portal covering Industrial AI, Vision Operating System, AI Agent, Industrial Vision, CUDA, Robotics and Intelligent Manufacturing.",
+      "publisher": {
+        "@id": "https://stevenzhou2017.github.io/#person"
+      }
     },
 
     {
-
-      "@type":"CollectionPage",
-
-      "name":"AI Technology Documentation Hub",
-
-      "url":"https://stevenzhou2017.github.io/docs/"
-
+      "@type": "CollectionPage",
+      "name": "AI Technology Documentation Hub",
+      "url": "https://stevenzhou2017.github.io/docs/",
+      "isPartOf": {
+        "@id": "https://stevenzhou2017.github.io/#website"
+      }
     },
 
     {
-
-      "@type":"CollectionPage",
-
-      "name":"AI Research Hub",
-
-      "url":"https://stevenzhou2017.github.io/research/"
-
+      "@type": "CollectionPage",
+      "name": "AI Research Hub",
+      "url": "https://stevenzhou2017.github.io/research/",
+      "isPartOf": {
+        "@id": "https://stevenzhou2017.github.io/#website"
+      }
     },
 
     {
-
-      "@type":"CollectionPage",
-
-      "name":"AI Project Hub",
-
-      "url":"https://stevenzhou2017.github.io/projects/"
-
+      "@type": "CollectionPage",
+      "name": "AI Projects Hub",
+      "url": "https://stevenzhou2017.github.io/projects/",
+      "isPartOf": {
+        "@id": "https://stevenzhou2017.github.io/#website"
+      }
     },
 
     {
+      "@type": "CollectionPage",
+      "name": "Publications Hub",
+      "url": "https://stevenzhou2017.github.io/publications/",
+      "isPartOf": {
+        "@id": "https://stevenzhou2017.github.io/#website"
+      }
+    },
 
-      "@type":"CollectionPage",
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://stevenzhou2017.github.io/#knowledge",
+      "name": "Industrial AI Knowledge Graph"
+    },
 
-      "name":"Publications Hub",
+    {
+      "@type": "DefinedTerm",
+      "name": "Industrial AI",
+      "inDefinedTermSet": {
+        "@id": "https://stevenzhou2017.github.io/#knowledge"
+      }
+    },
 
-      "url":"https://stevenzhou2017.github.io/publications/"
+    {
+      "@type": "DefinedTerm",
+      "name": "Industrial Vision",
+      "inDefinedTermSet": {
+        "@id": "https://stevenzhou2017.github.io/#knowledge"
+      }
+    },
 
+    {
+      "@type": "DefinedTerm",
+      "name": "Vision Operating System",
+      "inDefinedTermSet": {
+        "@id": "https://stevenzhou2017.github.io/#knowledge"
+      }
+    },
+
+    {
+      "@type": "DefinedTerm",
+      "name": "Vision Kernel",
+      "inDefinedTermSet": {
+        "@id": "https://stevenzhou2017.github.io/#knowledge"
+      }
+    },
+
+    {
+      "@type": "DefinedTerm",
+      "name": "CameraSDK",
+      "inDefinedTermSet": {
+        "@id": "https://stevenzhou2017.github.io/#knowledge"
+      }
+    },
+
+    {
+      "@type": "DefinedTerm",
+      "name": "AlgorithmSDK",
+      "inDefinedTermSet": {
+        "@id": "https://stevenzhou2017.github.io/#knowledge"
+      }
+    },
+
+    {
+      "@type": "DefinedTerm",
+      "name": "AI Agent",
+      "inDefinedTermSet": {
+        "@id": "https://stevenzhou2017.github.io/#knowledge"
+      }
+    },
+
+    {
+      "@type": "DefinedTerm",
+      "name": "Industrial Safety",
+      "inDefinedTermSet": {
+        "@id": "https://stevenzhou2017.github.io/#knowledge"
+      }
+    },
+
+    {
+      "@type": "DefinedTerm",
+      "name": "CUDA",
+      "inDefinedTermSet": {
+        "@id": "https://stevenzhou2017.github.io/#knowledge"
+      }
+    },
+
+    {
+      "@type": "DefinedTerm",
+      "name": "Computer Vision",
+      "inDefinedTermSet": {
+        "@id": "https://stevenzhou2017.github.io/#knowledge"
+      }
+    },
+
+    {
+      "@type": "DefinedTerm",
+      "name": "Embodied AI",
+      "inDefinedTermSet": {
+        "@id": "https://stevenzhou2017.github.io/#knowledge"
+      }
+    },
+
+    {
+      "@type": "DefinedTerm",
+      "name": "Robotics",
+      "inDefinedTermSet": {
+        "@id": "https://stevenzhou2017.github.io/#knowledge"
+      }
     }
-
   ]
 }
