@@ -10,6 +10,9 @@ sitemap: true
 Academic + Industrial Papers
 
   - Research Papers
+  - Journal Papers
+  - Conference Papers
+  - White Papers
   - Technical Reports
   - Architecture Articles
   - Tutorials
