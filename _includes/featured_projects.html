@@ -1,1 +1,21 @@
-to be done
+<section>
+
+    <div class="container">
+
+        <h2>Featured Projects</h2>
+
+        <div class="card-grid">
+
+           {% assign projects=site.projects %}
+
+           {% for post in projects limit:6 %}
+
+           {% include cards/project_card.html post=post %}
+
+           {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
