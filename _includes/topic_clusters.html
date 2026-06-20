@@ -1,0 +1,19 @@
+<section>
+
+    <div class="container">
+
+        <h2>Research Topics</h2>
+
+        <div class="topic-grid">
+
+            {% for topic in site.data.topics.topics %}
+
+            <a href="{{topic.url}}" class="topic">{{topic.title}}</a>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
