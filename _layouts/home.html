@@ -5,37 +5,22 @@
 
 <section>
 
-<h2>Latest Research</h2>
+    <h2>Latest Research</h2>
 
-<div class="card-grid">
+    <div class="card-grid">
 
-{% assign items = site.research | sort:"date" | reverse %}
+        {% assign items = site.research | sort:"date" | reverse %}
 
-{% for post in items limit:6 %}
+        {% for post in items limit:6 %}
 
-<article>
+            <article>
+                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <p>{{ post.description }}</p>
+            </article>
 
-<h3>
+        {% endfor %}
 
-<a href="{{ post.url }}">
-
-{{ post.title }}
-
-</a>
-
-</h3>
-
-<p>
-
-{{ post.description }}
-
-</p>
-
-</article>
-
-{% endfor %}
-
-</div>
+    </div>
 
 </section>
 
