@@ -1,16 +1,140 @@
+# ==================================================
 # Industrial AI Knowledge Base
+# ==================================================
 
-Website
-https://stevenzhou2017.github.io
+SITE:
+name: Industrial AI Knowledge Base
+author: Dr. Junyang Zhou
+domain: stevenzhou2017.github.io
+Website: https://stevenzhou2017.github.io
 
-Author
-Dr. Junyang Zhou
 
-Description
+DESCRIPTION:
 Industrial AI Knowledge Base focusing on Industrial Vision,
 Vision Operating System, AI Agent, GPU Computing,
 CUDA Optimization, Intelligent Manufacturing,
 Computer Vision and Robotics.
+
+
+## Research
+
+- [AI Agent Architecture](https://stevenzhou2017.github.io/research/ai-agent-architecture/)
+- [Event-driven Vision Kernel](https://stevenzhou2017.github.io/research/event-driven-vision-kernel/)
+- [Industrial Vision OS](https://stevenzhou2017.github.io/research/vision-os/)
+
+## Documentation
+
+- [CUDA Streams](https://stevenzhou2017.github.io/docs/cuda-streams/)
+- [CUDA Zero Copy Pipeline](https://stevenzhou2017.github.io/docs/zero-copy-pipeline/)
+- [Camera SDK Architecture](https://stevenzhou2017.github.io/docs/camera-sdk/)
+- [Industrial Vision SDK](https://stevenzhou2017.github.io/docs/industrial-vision-sdk/)
+
+## Projects
+
+- [Algorithm SDK](https://stevenzhou2017.github.io/projects/algorithm-sdk/)
+- [Vision OS](https://stevenzhou2017.github.io/projects/vision-os/)
+
+## Publications
+
+- [Publications](https://stevenzhou2017.github.io/publication.html)
+
+## Knowledge Graph
+
+Machine-readable knowledge graph:
+
+- [graph.json](https://stevenzhou2017.github.io/graph.json)
+
+# ==================================================
+# CORE KNOWLEDGE GRAPH NODES
+# ==================================================
+
+NODE: ai-agent-architecture
+type: research
+url: /research/ai-agent-architecture
+title: AI Agent Architecture for Industrial Systems
+importance: 0.95
+tags: ai, agent, system-design, autonomy
+embedding_group: intelligence_systems
+
+NODE: event-driven-vision-kernel
+type: research
+url: /research/event-driven-vision-kernel
+title: Event-driven Vision Kernel
+importance: 0.97
+tags: vision, event-driven, real-time, industrial-ai
+embedding_group: vision_systems
+
+NODE: cuda-streams
+type: docs
+url: /docs/cuda-streams
+title: CUDA Streams Optimization
+importance: 0.9
+tags: cuda, gpu, parallel-compute
+embedding_group: gpu_compute
+
+NODE: zero-copy-pipeline
+type: docs
+url: /docs/zero-copy-pipeline
+title: Zero Copy GPU Pipeline
+importance: 0.93
+tags: cuda, memory, zero-copy, gpu
+embedding_group: gpu_memory_system
+
+# ==================================================
+# TAG SEMANTIC LAYER (GRAPH EDGES)
+# ==================================================
+
+TAG: cuda
+description: GPU computation and optimization layer
+cluster: gpu_compute
+linked_nodes: cuda-streams, zero-copy-pipeline
+importance: 0.95
+
+TAG: vision
+description: Real-time industrial perception systems
+cluster: perception_system
+linked_nodes: event-driven-vision-kernel
+importance: 0.92
+
+TAG: ai
+description: Intelligent system design and agents
+cluster: intelligence_systems
+linked_nodes: ai-agent-architecture
+importance: 0.9
+
+# ==================================================
+# SEMANTIC ROUTING RULES (IMPORTANT FOR LLM)
+# ==================================================
+
+ROUTE_RULES:
+
+IF query contains ["cuda", "gpu", "zero copy"]:
+    PRIORITY: cuda-streams, zero-copy-pipeline
+
+IF query contains ["vision", "camera", "real-time"]:
+    PRIORITY: event-driven-vision-kernel
+
+IF query contains ["agent", "ai system"]:
+    PRIORITY: ai-agent-architecture
+
+# ==================================================
+# EMBEDDING INTENT SIGNALS
+# ==================================================
+
+INTENT_MAP:
+
+gpu optimization → cuda-streams, zero-copy-pipeline
+real-time vision → event-driven-vision-kernel
+system intelligence → ai-agent-architecture
+
+# ==================================================
+# AUTHOR
+# ==================================================
+
+AUTHOR:
+Dr. Junyang Zhou
+Industrial AI, Intelligent Manufacturing Expert, Industrial Vision, CUDA Optimization, AI Agents.
+
 
 ## Main Portals
 
@@ -64,3 +188,9 @@ CUDA Async Streams
 CPU-GPU Zero Copy
 Camera SDK Architecture
 Industrial Vision SDK
+
+
+
+
+
+
