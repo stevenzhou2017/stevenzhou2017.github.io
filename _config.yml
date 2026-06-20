@@ -47,6 +47,13 @@ defaults:
     values:
       sitemap: true
 
+  # Index
+  - scope:
+      path: "index.html"
+    values:
+      sitemap: true
+      priority: 1.0
+
   # RESEARCH (HIGHEST SEMANTIC WEIGHT)
   - scope:
       path: "research"
