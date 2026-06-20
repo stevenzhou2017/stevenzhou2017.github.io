@@ -1,0 +1,63 @@
+{% assign item = include.item %}
+
+<article class="portal-card article-card">
+
+    {% if item.image %}
+    <a href="{{ item.url | relative_url }}">
+        <img class="card-cover"
+             src="{{ item.image | relative_url }}"
+             alt="{{ item.title }}">
+    </a>
+    {% endif %}
+
+    <div class="card-body">
+
+        <div class="card-meta">
+
+            {% if item.category %}
+            <span class="card-category">
+                {{ item.category }}
+            </span>
+            {% endif %}
+
+            {% if item.date %}
+            <span class="card-date">
+                {{ item.date | date: "%Y-%m-%d" }}
+            </span>
+            {% endif %}
+
+        </div>
+
+        <h3>
+
+            <a href="{{ item.url | relative_url }}">
+                {{ item.title }}
+            </a>
+
+        </h3>
+
+        {% if item.summary %}
+        <p>
+
+            {{ item.summary | truncate: 140 }}
+
+        </p>
+        {% endif %}
+
+        {% if item.tags %}
+
+        <div class="card-tags">
+
+            {% for tag in item.tags %}
+
+            <span>{{ tag }}</span>
+
+            {% endfor %}
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</article>
