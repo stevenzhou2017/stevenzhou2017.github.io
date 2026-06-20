@@ -9,9 +9,13 @@ sitemap: true
 
 # AI Research Hub
 
+This AI Research Hub provides Theory, Formula, Framework covering of AI Agent, Industrial AI, etc. 
+ 
 ---
 
 # Vision Operating System
+
+Vision OS -> Vision Kernel -> Environment-Centric Vision -> Industrial AI
 
 - [Industrial Vision Operating System](../docs/2026/05/10_Industrial_Vision_Operating_System.html)
 - [Industrial Vision RT Event Kernel](../docs/2026/06/19_Industrial_Vision_RT_Event-Driven_Computing_Kernel.html)
@@ -20,6 +24,8 @@ sitemap: true
 ---
 
 # Industrial AI
+
+Manufacturing AI -> Industrial AI Agent -> Industrial Foundation Model -> Industrial Security
 
 - [Industrial Vision AI Agent](../docs/2026/05/17_Industrial_Vision_AI_Agent_Solution.html)
 - [Manufacturing AI Agent](../docs/2026/05/18_Manufacturing_AI_Agent.html)
@@ -30,10 +36,18 @@ sitemap: true
 
 # AI Systems
 
+Real-time AI -> Optimal Stopping -> Scheduling -> Vision Kernel
+
 - [AI Agent Architectures](../docs/2026/04/09_AI_Agent_Architectures.html)
 - [AI Agent Evolution](../docs/2026/04/12_AI_Agent_Evolution.html)
 - [World Model](../docs/2026/04/03_LLM_and_WM.html)
 - [Transformer Evolution](../docs/2026/04/01_Transformer_Evolution.html)
+
+---
+
+# Embodied Intelligence
+
+Embodied Intelligence -> VLM -> VLA -> World Model
 
 ---
 
@@ -43,8 +57,9 @@ sitemap: true
 - [CUDA Async Streams](../docs/2026/06/09_AI_Inference_CUDA_Async_Streams.html)
 
 ---
-<! -- released after work published
 # OSDIP Research
+
+Industrial Safety -> OSDIP -> Research Gap -> Related Work -> Methodology -> Experiments
 
 - [Research Overview](./osdip/)
 - [Research Gap](./osdip/research_gap/)
@@ -54,4 +69,4 @@ sitemap: true
 - [Experiments](./osdip/analysis_and_experiment/)
 - [Paper Draft](./osdip/paper_main/)
 
--->
+---
