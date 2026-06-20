@@ -1,0 +1,67 @@
+{% assign item = include.item %}
+
+<div class="portal-card project-card">
+
+    <div class="project-header">
+
+        <h3>
+
+            <a href="{{ item.url }}">
+                {{ item.title }}
+            </a>
+
+        </h3>
+
+        {% if item.status %}
+
+        <span class="status {{ item.status | downcase }}">
+
+            {{ item.status }}
+
+        </span>
+
+        {% endif %}
+
+    </div>
+
+    <p>
+
+        {{ item.summary }}
+
+    </p>
+
+    {% if item.tech %}
+
+    <div class="tech-stack">
+
+        {% for tech in item.tech %}
+
+        <span>{{ tech }}</span>
+
+        {% endfor %}
+
+    </div>
+
+    {% endif %}
+
+    <div class="project-footer">
+
+        {% if item.github %}
+
+        <a href="{{ item.github }}">
+            GitHub
+        </a>
+
+        {% endif %}
+
+        {% if item.demo %}
+
+        <a href="{{ item.demo }}">
+            Demo
+        </a>
+
+        {% endif %}
+
+    </div>
+
+</div>
