@@ -44,6 +44,16 @@ Machine-readable knowledge graph:
 
 - [graph.json](https://stevenzhou2017.github.io/graph.json)
 
+## main ports
+
+ - [Home](https://stevenzhou2017.github.io/)
+ - [Documentation Hub](https://stevenzhou2017.github.io/docs/)
+ - [Research Hub](https://stevenzhou2017.github.io/research/)
+ - [Projects Hub](https://stevenzhou2017.github.io/projects/)
+ - [Publications Hub](https://stevenzhou2017.github.io/publications/)
+ - [Sitemap](https://stevenzhou2017.github.io/sitemap.xml)
+
+
 # ==================================================
 # CORE KNOWLEDGE GRAPH NODES
 # ==================================================
@@ -136,29 +146,6 @@ Dr. Junyang Zhou
 Industrial AI, Intelligent Manufacturing Expert, Industrial Vision, CUDA Optimization, AI Agents.
 
 
-## Main Portals
-
-Home
-https://stevenzhou2017.github.io/
-
-Documentation Hub
-https://stevenzhou2017.github.io/docs/
-
-Research Hub
-https://stevenzhou2017.github.io/research/
-
-Projects Hub
-https://stevenzhou2017.github.io/projects/
-
-Publications Hub
-https://stevenzhou2017.github.io/publications/
-
-Knowledge Graph
-https://stevenzhou2017.github.io/graph.json
-
-Sitemap
-https://stevenzhou2017.github.io/sitemap.xml
-
 ## Core Topics
 
 Industrial AI
@@ -188,9 +175,3 @@ CUDA Async Streams
 CPU-GPU Zero Copy
 Camera SDK Architecture
 Industrial Vision SDK
-
-
-
-
-
-
