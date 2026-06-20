@@ -1,1 +1,41 @@
-to be done
+<section>
+
+    <div class="container">
+
+        <h2>Knowledge Portal</h2>
+
+        <div class="hub-grid"> 
+
+            {% include cards/topic_card.html
+            title="Research Hub"
+            url="/research/"
+            icon="🧠"
+            description="Industrial AI Research"
+            %}
+
+            {% include cards/topic_card.html
+            title="Documentation Hub"
+            url="/docs/"
+            icon="📘"
+            description="Engineering Documentation"
+            %}
+
+            {% include cards/topic_card.html
+            title="Projects Hub"
+            url="/projects/"
+            icon="⚙️"
+            description="Engineering Projects"
+            %}
+
+            {% include cards/topic_card.html
+            title="Publications Hub"
+            url="/publications/"
+            icon="📄"
+            description="Academic Publications"
+            %}
+
+        </div>
+
+    </div>
+
+</section>
