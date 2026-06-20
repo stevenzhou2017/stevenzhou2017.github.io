@@ -1,0 +1,37 @@
+Home
+│
+├── Docs Hub
+│
+│     AI Foundation
+│     AI Systems
+│     Industrial Vision
+│     GPU Computing
+│     AI Agent
+│     AI4S
+│     AI Security
+│     Robotics
+│     Software Engineering
+│
+├── Research Hub
+│
+│     Vision Operating System
+│     Industrial AI
+│     AI Agent Systems
+│     Industrial Safety
+│     Real-time AI
+│     Embodied Intelligence
+│
+├── Projects Hub
+│
+│     CameraSDK
+│     AlgorithmSDK
+│     VisionOS
+│     Vision Kernel
+│     AI Agent Platform
+│
+└── Publications Hub
+
+      Research Papers
+      Technical Reports
+      Architecture Articles
+      Tutorials
