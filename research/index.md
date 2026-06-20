@@ -27,8 +27,8 @@ Vision OS -> Vision Kernel -> Environment-Centric Vision -> Industrial AI
 
 Manufacturing AI -> Industrial AI Agent -> Industrial Foundation Model -> Industrial Security
 
-- [Industrial Vision AI Agent](../docs/2026/05/17_Industrial_Vision_AI_Agent_Solution.html)
 - [Manufacturing AI Agent](../docs/2026/05/18_Manufacturing_AI_Agent.html)
+- [Industrial Vision AI Agent](../docs/2026/05/17_Industrial_Vision_AI_Agent_Solution.html)
 - [Industrial AI Security](../docs/2026/06/03_AI_Industrial_Security_Application.html)
 - [Industrial Vision in Security](../docs/2026/06/02_Industrial_Vision_in_Security.html)
 
@@ -40,7 +40,6 @@ Real-time AI -> Optimal Stopping -> Scheduling -> Vision Kernel
 
 - [AI Agent Architectures](../docs/2026/04/09_AI_Agent_Architectures.html)
 - [AI Agent Evolution](../docs/2026/04/12_AI_Agent_Evolution.html)
-- [World Model](../docs/2026/04/03_LLM_and_WM.html)
 - [Transformer Evolution](../docs/2026/04/01_Transformer_Evolution.html)
 
 ---
@@ -48,6 +47,9 @@ Real-time AI -> Optimal Stopping -> Scheduling -> Vision Kernel
 # Embodied Intelligence
 
 Embodied Intelligence -> VLM -> VLA -> World Model
+
+- [World Model](../docs/2026/04/03_LLM_and_WM.html)
+
 
 ---
 
