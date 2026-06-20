@@ -1,42 +1,36 @@
-header:
+main:
 
-- title: Home
-  url: /
+  - title: Home
+    url: /
 
-- title: Research
-  url: /research/
+  - title: Research
+    url: /research/
 
-- title: Documentation
-  url: /docs/
+  - title: Projects
+    url: /projects/
 
-- title: Projects
-  url: /projects/
+  - title: Software
+    url: /software/
 
-- title: Publications
-  url: /publications/
+  - title: Publications
+    url: /publications/
 
-- title: Resources
-  url: /resource.html
+  - title: Docs
+    url: /docs/
 
-- title: Bookmarks
-  url: /links.html
+  - title: Knowledge Graph
+    url: /knowledge/
+
+  - title: CV
+    url: /cv/
 
 footer:
 
-- title: GitHub
-  url: https://github.com/stevenzhou2017
+  - title: Privacy
+    url: /privacy/
 
-- title: LinkedIn
-  url: https://linkedin.com
+  - title: RSS
+    url: /feed.xml
 
-- title: Knowledge Graph
-  url: /graph.json
-
-- title: Sitemap
-  url: /sitemap.xml
-
-- title: Robots
-  url: /robots.txt
-
-- title: LLMs
-  url: /llms.txt
+  - title: Sitemap
+    url: /sitemap.xml
