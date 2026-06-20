@@ -1,0 +1,13 @@
+routes:
+
+- keywords:
+
+  - cuda
+
+  - gpu
+
+  priority:
+
+  - cuda-streams
+
+  - zero-copy
