@@ -1,1 +1,23 @@
-to be done
+<section>
+
+    <div class="container">
+
+        <h2>Knowledge Graph</h2>
+
+        <div class="graph">
+
+            {% for node in site.data.knowledge.nodes %}
+
+            <div class="graph-node">
+
+                <a href="{{node.url}}">{{node.title}}</a>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
