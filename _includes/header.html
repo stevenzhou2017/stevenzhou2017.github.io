@@ -1,0 +1,22 @@
+<header class="site-header">
+    <div class="container">
+        <div class="logo">
+            <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        </div>
+        
+        <nav id="main-nav">
+            <ul>
+                <li><a href="{{ '/' | relative_url }}">首页 / Home</a></li>
+                <li><a href="{{ '/research/' | relative_url }}">研究 / Research</a></li>
+                <li><a href="{{ '/docs/' | relative_url }}">文档 / Docs</a></li>
+                <li><a href="{{ '/projects/' | relative_url }}">项目 / Projects</a></li>
+                <li><a href="{{ '/publications/' | relative_url }}">论文 / Publications</a></li>
+                <li><a href="{{ '/resource.html' | relative_url }}">资源</a></li>
+                <li><a href="{{ '/links.html' | relative_url }}">书签</a></li>
+            </ul>
+        </nav>
+
+        <button id="hamburger" class="mobile-menu" aria-label="Toggle menu">☰</button>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+</header>
