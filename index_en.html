@@ -10,7 +10,11 @@
     
     <link rel="stylesheet" href="/css/portal.css">
     <link rel="icon" href="/images/favicon.ico">
-    
+
+    <!-- Preload Critical Resources (LCP 关键) -->
+    <link rel="preload" href="/assets/images/personal_photo.webp" as="image" type="image/webp">
+    <link rel="preload" as="style" href="/css/portal.css">
+
     <!-- Open Graph -->
     <meta property="og:title" content="Dr. Junyang Zhou | Industrial AI Knowledge Portal">
     <meta property="og:description" content="Research, Projects, Documentation and Publications in Industrial AI and Vision Operating System">
@@ -79,17 +83,68 @@
                     <a href="/publications/" class="btn">Publications</a>
                 </div>
             </div>
-            
+
+
             <div>
-                <img src="/assets/images/personal_photo.webp" 
-                     alt="Dr. Junyang Zhou - Industrial AI Expert" 
-                     class="profile-image"
-                     width="320" height="400" 
-                     loading="eager" decoding="async">
+                <picture>
+                    <source srcset="/assets/images/personal_photo.webp" type="image/webp">
+                    <img src="/assets/images/personal_photo.webp" 
+                         alt="Dr. Junyang Zhou - Industrial AI Expert" 
+                         class="profile-image"
+                         width="320" height="400" 
+                         loading="eager" decoding="async" fetchpriority="high">
+                </picture>
             </div>
         </div>
     </section>
 
+     <!-- ==================== 新增：Professional Experience (LCP 之后加载) ==================== -->
+    <section class="featured-section" style="padding-top:40px;">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            
+            <div class="portal-grid">
+                <!-- 经历卡片 1 -->
+                <div class="portal-card">
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3>AI Director / Digital Intelligence Director</h3>
+                            <span class="badge status">BAK Power</span>
+                        </div>
+                        <p class="card-subtitle">2022 – 2026 </p>
+                        <p class="card-summary">
+                            Led smart factory transformation initiatives. Designed and deployed Industrial AI platform covering Vision Operating System, AI Agents, and real-time quality inspection systems.
+                        </p>
+                        <div class="card-meta">
+                            <span>80+ patents</span>
+                            <span>IEEE Senior Member</span>
+                        </div>
+                        <a href="https://www.linkedin.com/in/junyang-zhou-2593a9100" class="card-link">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- 可继续添加更多经历卡片 -->
+                <!-- 示例卡片 2 -->
+                <div class="portal-card">
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3>Industrial AI Platform Architect</h3>
+                            <span class="badge status">Previous Role</span>
+                        </div>
+                        <p class="card-subtitle">2021 – 2022</p>
+                        <p class="card-summary">
+                            Architected end-to-end Vision Operating System and CUDA-accelerated industrial vision pipelines for intelligent manufacturing.
+                        </p>
+                        <a href="https://www.linkedin.com/in/junyang-zhou-2593a9100" class="card-link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 其余部分（Knowledge Portals、Featured Research 等）保持之前版本结构不变 -->
+   
+    
     <!-- ==================== KNOWLEDGE PORTALS ==================== -->
     <section class="hub-section">
         <div class="container">
@@ -293,6 +348,7 @@
     </section>
 
     <!-- ==================== PROFESSIONAL PROFILE ==================== -->
+    <!-- ==================== PROFESSIONAL PROFILE (精简版) ==================== -->  
     <section class="profile-section">
         <div class="container">
             <h2>Professional Profile</h2>
@@ -300,10 +356,9 @@
             <ul>
                 <li>25+ years in Computer Science and Applied Mathematics</li>
                 <li>15+ years leading Industrial AI transformation</li>
-                <li>IEEE Senior Member</li>
                 <li>80+ patents</li>
-                <li>Industrial AI Platform Architect</li>
-                <li>Vision Operating System Researcher</li>
+                <li>IEEE Senior Member</li>
+                <li>Former AI Director at BAK Power</li>
             </ul>
         </div>
     </section>
