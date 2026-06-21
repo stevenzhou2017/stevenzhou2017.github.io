@@ -1,35 +1,21 @@
 junyang-zhou:
-
   name: Dr. Junyang Zhou
-
-  avatar: /assets/images/profile.jpg
-
-  email: example@email.com
-
-  homepage: /
-
+  avatar: /assets/images/jyzhou.gif
+  email: junyang.zhou@gmail.com
+  homepage: https://stevenzhou2017.github.io/
   organization:
-
-    - hkbu
-
+    - IEEE
   interests:
-
     - Industrial Vision
-
+    - Security
     - AI
-
+    - Bayesian Network
     - Edge Computing
-
     - Operating Systems
-
     - Robotics
 
   social:
-
-    github: username
-
-    scholar: scholar-id
-
-    linkedin: profile
-
-    orcid: 0000-0000-0000-0000
+    github: stevenzhou2017
+    scholarGPS: 86366355717182
+    linkedin: in/junyang-zhou-2593a9100
+    orcid: 0009-0008-8147-5804
