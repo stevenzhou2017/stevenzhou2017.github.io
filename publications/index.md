@@ -4,7 +4,7 @@ description: Academic + Industrial Papers
 type: publication
 layout: page
 sitemap: true
-permalink	/publications/
+permalink: /publications/
 ---
 
 # Publications
