@@ -1,63 +1,38 @@
-<footer>
-
+<footer class="site-footer">
     <div class="container">
-
         <div class="footer-grid">
-
             <div>
-
-                <h3>Knowledge Portal</h3>
-
+                <h3>Industrial AI</h3>
                 <ul>
-
-                    <li><a href="/research/">Research</a></li>
-
-                    <li><a href="/docs/">Documentation</a></li>
-
-                    <li><a href="/projects/">Projects</a></li>
-
-                    <li><a href="/publications/">Publications</a></li>
-
+                    <li><a href="{{ '/research/' | relative_url }}">Research</a></li>
+                    <li><a href="{{ '/docs/' | relative_url }}">Documentation</a></li>
+                    <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+                    <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
                 </ul>
-
             </div>
-
             <div>
-
                  <h3>Resources</h3>
-
                  <ul>
-
                       <li><a href="/graph.json">Knowledge Graph</a></li>
-
                       <li><a href="/llms.txt">LLMs</a></li>
-
                       <li><a href="/robots.txt">Robots</a></li>
-
                      <li><a href="/sitemap.xml">Sitemap</a></li>
-
                 </ul>
 
             </div>
-
+            
             <div>
-
                 <h3>Contact</h3>
-
-                <p>Email <br><a href="mailto:junyang.zhou@gmail.com">junyang.zhou@gmail.com</a></p>
-
-                <p><a href="https://github.com/stevenzhou2017">GitHub</a></p>
-
-                <p><a href="https://www.linkedin.com/in/junyang-zhou-2593a9100/">LinkedIn</a></p>
-
+                <ul>
+                    <li><a href="mailto:junyang.zhou@gmail.com">Email</a></li>
+                    <li><a href="https://github.com/stevenzhou2017" target="_blank">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/junyang-zhou-2593a9100" target="_blank">LinkedIn</a></li>
+                </ul>
             </div>
-
         </div>
-
         <hr>
-
-        <p> © {{ site.time | date:"%Y" }} Dr. Junyang Zhou Industrial AI Knowledge Portal </p>
-
+        <p>&copy; {{ 'now' | date: "%Y" }} Dr. Junyang Zhou — Industrial AI Knowledge Portal</p>
     </div>
-
 </footer>
+
+
