@@ -1,36 +1,44 @@
 <footer class="site-footer">
     <div class="container">
         <div class="footer-grid">
+            
+            <!-- Column 1 -->
             <div>
                 <h3>Industrial AI</h3>
                 <ul>
-                    <li><a href="{{ '/research/' | relative_url }}">研究</a></li>
-                    <li><a href="{{ '/docs/' | relative_url }}">文档</a></li>
-                    <li><a href="{{ '/projects/' | relative_url }}">项目</a></li>
-                    <li><a href="{{ '/publications/' | relative_url }}">论文</a></li>
+                    <li><a href="{{ '/research/' | relative_url }}">研究 Research</a></li>
+                    <li><a href="{{ '/docs/' | relative_url }}">文档 Documentation</a></li>
+                    <li><a href="{{ '/projects/' | relative_url }}">项目 Projects</a></li>
+                    <li><a href="{{ '/publications/' | relative_url }}">论文 Publications</a></li>
                 </ul>
             </div>
+
+            <!-- Column 2 -->
             <div>
-                 <h3>Resources</h3>
-                 <ul>
-                      <li><a href="/graph.json">Knowledge Graph</a></li>
-                      <li><a href="/llms.txt">LLMs</a></li>
-                      <li><a href="/robots.txt">Robots</a></li>
-                      <li><a href="/sitemap.xml">Sitemap</a></li>
+                <h3>资源 Resources</h3>
+                <ul>
+                    <li><a href="{{ '/resource.html' | relative_url }}">资源导航</a></li>
+                    <li><a href="{{ '/links.html' | relative_url }}">书签 Bookmarks</a></li>
+                    <li><a href="{{ '/sitemap.xml' | relative_url }}">站点地图</a></li>
                 </ul>
-            </div>            
+            </div>
+
+            <!-- Column 3 -->
             <div>
-                <h3>联系方式</h3>
+                <h3>联系方式 Contact</h3>
                 <ul>
                     <li><a href="mailto:junyang.zhou@gmail.com">Email</a></li>
-                    <li><a href="https://github.com/stevenzhou2017" target="_blank">GitHub</a></li>
-                    <li><a href="https://linkedin.com/in/junyang-zhou-2593a9100" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/stevenzhou2017" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/junyang-zhou-2593a9100" target="_blank" rel="noopener">LinkedIn</a></li>
                 </ul>
             </div>
+
         </div>
+
         <hr>
-        <p>&copy; {{ 'now' | date: "%Y" }} Dr. Junyang Zhou — Industrial AI Knowledge Portal</p>
+        <p>
+            &copy; {{ 'now' | date: "%Y" }} Dr. Junyang Zhou — 
+            Industrial AI Knowledge Portal
+        </p>
     </div>
 </footer>
-
-
