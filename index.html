@@ -12,6 +12,8 @@
         <meta name="author" content="Dr. Junyang Zhou" >
         <link rel="canonical" href="https://stevenzhou2017.github.io/" >
 
+		<!-- Preload Critical Resources (LCP 关键) -->
+        <link rel="preload" href="/assets/images/personal_photo.webp" as="image" type="image/webp">
 		
         <!-- Open Graph 协议 - 社交分享优化 -->
         <meta property="og:title" content="Dr. Junyang Zhou | 周均扬博士 | 工业AI与智能制造专家" />
@@ -85,21 +87,28 @@
 		<tr><td height=10></td></tr>					
 		<!---photo and name --->
 		<tr>
-           	<td width=150><div align="left">
-                       	<img  src="./assets/images/personal_photo.webp"
-                              alt="Dr. Junyang Zhou (周均扬博士), Industrial AI, Machine Vision, CUDA Optimization and Intelligent Manufacturing Expert"
-                              width="110"
-                              height="150"
-                              loading="eager"
-                              decoding="async"
-                              fetchpriority="high">
-		    </div></td>
+           	<td width=150>
+
+				<div align="left">
+					<picture>
+                        <source srcset="/assets/images/personal_photo.webp" type="image/webp">
+						    <img  src="/assets/images/personal_photo.webp"
+                                  alt="Dr. Junyang Zhou (周均扬博士), Industrial AI, Machine Vision, CUDA Optimization and Intelligent Manufacturing Expert"
+                                  width="110"
+                                  height="150"
+                                  loading="eager"
+                                  decoding="async"
+                                  fetchpriority="high">
+					</picture>
+		        </div>
+			</td>
                         
 		     <td><table width=400 border=0 cellpadding=0 cellspacing=0>
 					<tr><td><div align="left"><H1>Zhou Junyang</H1</div></td></tr>
 					<tr><td height="20"></td></tr>
 					
-					<tr><td><div align="left"> 
+					<tr><td>
+						<div align="left"> 
                             <img src="./images/chi_name.gif"
                                  alt="Chinese Characters for Zhou Junyang"
                                  width="93"
@@ -107,8 +116,8 @@
                                  loading="eager"
                                  decoding="async"
                                  fetchpriority="high">
-					
-					</div></td></tr>
+					    </div>
+				    </td></tr>
 			  </table></td>
 	    </tr>
 
