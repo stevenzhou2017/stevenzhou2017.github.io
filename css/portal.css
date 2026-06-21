@@ -289,3 +289,51 @@ html { scroll-behavior: smooth; }
 /* Utility */
 .text-center { text-align: center; }
 .mt-0 { margin-top: 0; }
+
+/* ====================== Mobile Menu ====================== */
+.mobile-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 8px;
+    color: var(--text);
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+
+    nav#main-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--surface);
+        border-top: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        padding: 20px 24px;
+        gap: 16px;
+    }
+
+    nav#main-nav ul.show {
+        display: flex;
+    }
+
+    nav#main-nav ul li a {
+        font-size: 1.1rem;
+        padding: 8px 0;
+    }
+}
+
+/* Header container adjustment */
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
