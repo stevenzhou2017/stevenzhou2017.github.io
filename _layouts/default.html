@@ -1,24 +1,90 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang }}" dir="ltr">
-
+<html lang="{{ page.lang | default: site.lang | default: 'zh-CN' }}" dir="ltr">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Dr. Junyang Zhou">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    
+    <!-- Canonical + SEO -->
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    {% seo %}
 
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta name="author"  content="Dr. Junyang Zhou">
-            <meta name="robots" content="index,follow,max-image-preview:large">
-            <link rel="canonical"  href="{{ page.url | absolute_url }}">
+    <!-- Critical Resources -->
+    <link rel="stylesheet" href="{{ '/css/portal.css' | relative_url }}">
+    <link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}">
 
-            {% seo %}
+    <!-- Preload Key Assets -->
+    <link rel="preload" href="{{ '/assets/images/personal_photo.webp' | relative_url }}" as="image" type="image/webp">
+    <link rel="preload" as="style" href="{{ '/css/portal.css' | relative_url }}">
 
-            <link rel="stylesheet"  href="/css/jyzhou.css">
+    <!-- Open Graph / Twitter Card 增强 -->
+    <meta property="og:locale" content="{{ site.locale | default: 'zh_CN' }}">
+    <meta property="og:type" content="{% if page.collection == 'publications' %}article{% else %}website{% endif %}">
+    
+    {% if page.image or site.default_og_image %}
+        <meta property="og:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ site.default_og_image | absolute_url }}{% endif %}">
+    {% endif %}
 
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 </head>
 
 <body>
 
-{{ content }}
+    {% include header.html %}
+
+    <main role="main">
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <!-- Dark Mode + Hamburger Menu Script -->
+    <script>
+        // ==================== Dark Mode ====================
+        const toggle = document.getElementById('theme-toggle');
+        if (toggle) {
+            const currentTheme = localStorage.getItem('theme') || 
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+            if (currentTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                toggle.textContent = '☀️';
+            }
+
+            toggle.addEventListener('click', () => {
+                if (document.documentElement.getAttribute('data-theme') === 'dark') {
+                    document.documentElement.removeAttribute('data-theme');
+                    localStorage.setItem('theme', 'light');
+                    toggle.textContent = '🌙';
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('theme', 'dark');
+                    toggle.textContent = '☀️';
+                }
+            });
+        }
+
+        // ==================== Mobile Hamburger Menu ====================
+        const hamburger = document.getElementById('hamburger');
+        const navUl = document.querySelector('#main-nav ul');
+
+        if (hamburger && navUl) {
+            hamburger.addEventListener('click', () => {
+                navUl.classList.toggle('show');
+                hamburger.textContent = navUl.classList.contains('show') ? '✕' : '☰';
+                hamburger.setAttribute('aria-expanded', navUl.classList.contains('show'));
+            });
+
+            // Close menu when clicking a link
+            document.querySelectorAll('#main-nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navUl.classList.remove('show');
+                    hamburger.textContent = '☰';
+                });
+            });
+        }
+    </script>
 
 </body>
-
 </html>
