@@ -26,26 +26,29 @@ This documentation hub provides engineering notes, tutorials, architecture desig
 
 ## Vision Operating System
 
-- [**Tesla of Photon Counting Perception**](../docs/2026/05/07_Tesla_Photon_Counting_Perception.html)
-- [**Industrial Vision Operating System**](../docs/2026/05/10_Industrial_Vision_Operating_System.html)
-- [**Industrial Vision Platform Framework**](../docs/2026/06/04_Framework_Industrial_Vision_Platform.html)
-- [**Industrial of Vision Application Resource**](../docs/2026/05/16_Industrial_Vision_Application_Resource.html)
-- [**Industrial Vision RT Event-Driven Computing Kernel**](../docs/2026/06/19_Industrial_Vision_RT_Event-Driven_Computing_Kernel.html)
-- [**Environment-Centric Vision**](../docs/2026/06/16_Environment_Centric_Vision.html)
+- [**Tesla of Photon Counting Perception**](../docs/2026/05/07_Tesla_Photon_Counting_Perception.html) -- Real-time photon counting perception architecture inspired by advanced autonomous systems
+- [**Industrial Vision Operating System**](../docs/2026/05/10_Industrial_Vision_Operating_System.html) -- Core real-time AI runtime for industrial perception, reasoning and execution
+- [**Industrial Vision Platform Framework**](../docs/2026/06/04_Framework_Industrial_Vision_Platform.html) -- Overall architecture and framework of the industrial vision platform
+- [**Industrial of Vision Application Resource**](../docs/2026/05/16_Industrial_Vision_Application_Resource.html) -- Resource management and optimization for vision applications
+- [**Industrial Vision RT Event-Driven Computing Kernel**](../docs/2026/06/19_Industrial_Vision_RT_Event-Driven_Computing_Kernel.html) -- High-performance event-driven real-time computing kernel with GPU acceleration
+- [**Environment-Centric Vision**](../docs/2026/06/16_Environment_Centric_Vision.html) -- Environment-centric vision system design and implementation
+
 
 ---
 
 ## Camera SDK
 
-- [**Cross Platform Camera SDK**](../docs/2026/06/05_Cross_Platform_CameraSDK.html)
-- [**Unified Frame Data Contract**](../docs/2026/06/06_Unified_Frame_Data.html)
+- **[Cross Platform Camera SDK](../docs/2026/06/05_Cross_Platform_CameraSDK.html)** -- Multi-protocol industrial camera SDK (GigE, USB3, GMSL, MIPI)
+- **[Unified Frame Data Contract](../docs/2026/06/06_Unified_Frame_Data.html)** -- Standardized frame data structure and zero-copy pipeline
+
 
 ---
 
 ## Algorithm SDK
 
-- [**Industrial Vision Algorithm SDK**](../docs/2026/06/07_Industrial_Vision_AlgorithmSDK.html)
-- [**Daniilidis Hand-Eye Calibration**](../docs/2026/06/18_Daniilidis_Hand_Eye_Calibration_Method.html)
+- **[Industrial Vision Algorithm SDK](../docs/2026/06/07_Industrial_Vision_AlgorithmSDK.html)** -- Full-featured industrial vision algorithm library
+- **[Daniilidis Hand-Eye Calibration](../docs/2026/06/18_Daniilidis_Hand_Eye_Calibration_Method.html)** -- High-precision hand-eye calibration method
+
 
 ---
 
