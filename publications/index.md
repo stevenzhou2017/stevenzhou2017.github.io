@@ -27,15 +27,15 @@ Academic + Industrial Papers
 
 ## Journal Papers
 
-- [Dynamic Classification](https://ieeexplore.ieee.org/abstract/document/11018435) --  Ziyuan Zhong and Junyang Zhou, "Dynamic Classification: Leveraging Self-Supervised Classification to Enhance Prediction Performance," in IEEE Access, vol. 13, pp. 97249-97259, 2025, doi: 10.1109/ACCESS.2025.3575232. 
+- [Dynamic Classification](https://doi.org/10.1109/access.2025.3575232) --  Ziyuan Zhong and Junyang Zhou, "Dynamic Classification: Leveraging Self-Supervised Classification to Enhance Prediction Performance," in IEEE Access, vol. 13, pp. 97249-97259, 2025, doi: 10.1109/ACCESS.2025.3575232. 
 
-- [Positioning and Privacy](https://doi.org/10.4018/978-1-61520-761-9.ch014) -- Haibo Hu, Junyang Zhou, Jianliang Xu, and Joseph Kee-Yin Ng,	"Positioning and Privacy in Location-Based Services", In W. Hu & Y. Zuo (Eds.), Handheld Computing for Mobile Commerce: Applications, Concepts and Technologies</I>, pp. 279-299. IGI Global Scientific Publishing. https://doi.org/10.4018/978-1-61520-761-9.ch014. 
+- [Positioning and Privacy](https://doi.org/10.4018/978-1-61520-761-9.ch014) -- Haibo Hu, Junyang Zhou, Jianliang Xu, and Joseph Kee-Yin Ng,	"Positioning and Privacy in Location-Based Services", In W. Hu & Y. Zuo (Eds.), Handheld Computing for Mobile Commerce: Applications, Concepts and Technologies</I>, pp. 279-299. IGI Global Scientific Publishing. 
 
-- [A Train-Once Approach for Location Estimation](https://doi.org/10.1109/tvt.2007.912602) -- Joseph K. Ng, Junyang Zhou, Kenneth M. Chu, and  Karl R.P.H Leung, "A Train-Once Approach for Location Estimation using the Directional Propagation Model (DPM)", IEEE Transactions on Vehicular Technology, vol 57, issue 4, pp. 2242-2256, July 2008, IEEE Vehicular Technology Society. http://ieeexplore.ieee.org/Xplore/defdeny.jsp?url=/iel5/25/4356907/04384143.pdf&tp=&arnumber=4384143&isnumber=4356907&code=2
+- [A Train-Once Approach for Location Estimation](https://doi.org/10.1109/tvt.2007.912602) -- Joseph K. Ng, Junyang Zhou, Kenneth M. Chu, and  Karl R.P.H Leung, "A Train-Once Approach for Location Estimation using the Directional Propagation Model (DPM)", IEEE Transactions on Vehicular Technology, vol 57, issue 4, pp. 2242-2256, July 2008, IEEE Vehicular Technology Society. 
 
-- [Provide Mobile Location Estimation Services](https://doi.org/10.4304/jcp.1.7.41-50) -- Junyang Zhou and Joseph K. Ng, Using LDA Method to Provide Mobile Location Estimation Services within a Cellular Network, JOURNAL OF COMPUTERS (ISSN : 1796-203X), vol 1, issue 7, pp.41-50, 2006, Academy Publilsher. http://www.academypublisher.com/jcp/vol01/no07/index.html
+- [Provide Mobile Location Estimation Services](https://doi.org/10.4304/jcp.1.7.41-50) -- Junyang Zhou and Joseph K. Ng, Using LDA Method to Provide Mobile Location Estimation Services within a Cellular Network, JOURNAL OF COMPUTERS (ISSN : 1796-203X), vol 1, issue 7, pp.41-50, 2006, Academy Publilsher. 
 		
-- [Ellipse Propagation Model](https://doi.org/10.1504/ijwmc.2010.033058) -- Junyang Zhou, Kenneth M. Chu, Joseph K. Ng, "Using the Ellipse Propagation Model for Mobile Location Estimation", International Journal of Wireless and Mobile Computing(ISSN (Online): 1741-1092 --- ISSN (Paper): 1741-1084): Special Issue on Network Protocols and Applications, 2006 , Inderscience Publishers. https://www.inderscience.com/sample.php?id=46
+- [Ellipse Propagation Model](https://doi.org/10.1504/ijwmc.2010.033058) -- Junyang Zhou, Kenneth M. Chu, Joseph K. Ng, "Using the Ellipse Propagation Model for Mobile Location Estimation", International Journal of Wireless and Mobile Computing(ISSN (Online): 1741-1092 --- ISSN (Paper): 1741-1084): Special Issue on Network Protocols and Applications, 2006 , Inderscience Publishers.
 
 
 ## Conference Papers
