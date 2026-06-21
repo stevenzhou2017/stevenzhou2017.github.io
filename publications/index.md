@@ -18,12 +18,15 @@ Academic + Industrial Papers
   - Architecture Articles
   - Tutorials
 
+---
+
 ## Industry Speeches
 
 - [Digital Transformation](https://mp.weixin.qq.com/s?__biz=MzA3OTcxODIyOA==&mid=2651045540&idx=1&sn=5806b8edd78a7579ab14e15f3ea52c07&chksm=84582c9fb32fa589a4bea40415c2bad3386407eeba13bbab40d3e61beacf623a8dd788508f47&scene=27) -- Exploration of Digital Transformation of New Energy Enterprises, Shenzhen Alumni Association of the School of Mathematics and Computing, Sun Yat sen University, August 2023
 
 - [AI Industry Alliance](https://news.eeworld.com.cn/robot/ic589022.html) -- SVOLT AI Industry Alliance and Its Exploration in Lithium Battery Manufacturing, High Tech Robotics Annual Conference, December 2021
 
+---
 
 ## Journal Papers
 
@@ -37,6 +40,7 @@ Academic + Industrial Papers
 		
 - [Ellipse Propagation Model](https://doi.org/10.1504/ijwmc.2010.033058) -- Junyang Zhou, Kenneth M. Chu, Joseph K. Ng, "Using the Ellipse Propagation Model for Mobile Location Estimation", International Journal of Wireless and Mobile Computing(ISSN (Online): 1741-1092 --- ISSN (Paper): 1741-1084): Special Issue on Network Protocols and Applications, 2006 , Inderscience Publishers.
 
+---
 
 ## Conference Papers
 
@@ -44,7 +48,7 @@ Academic + Industrial Papers
 
 - [A Probabilistic Approach](https://doi.org/10.1109/rtcsa.2009.43) -- Junyang Zhou, Kenneth Man-Kin Chu, Joseph Kee-Yin Ng, "A Probabilistic Approach to Mobile Location Estimation within Cellular Networks",  in RTCSA 2009: 341-348
 
-- [Indoor Positioning](https://doi.org/10.1109/aina.2008.106)/) -- Junyang Zhou, Wilson M. Yeung and Joseph K. Ng, "Enhancing Indoor Positioning Accuracy by utilizing signals from both the mobile phone network and the Wireless Local Area Network",  in Proceedings of the IEEE 22nd International Conference on Advanced Information Networking and Applications, pp 138-145, March 25-28, 2008, GinoWan, Okinawa, Japan. IEEE Computer Society.
+- [Indoor Positioning](https://doi.org/10.1109/aina.2008.106) -- Junyang Zhou, Wilson M. Yeung and Joseph K. Ng, "Enhancing Indoor Positioning Accuracy by utilizing signals from both the mobile phone network and the Wireless Local Area Network",  in Proceedings of the IEEE 22nd International Conference on Advanced Information Networking and Applications, pp 138-145, March 25-28, 2008, GinoWan, Okinawa, Japan. IEEE Computer Society.
   
 - [Fingerprint-based Location Estimation](https://doi.org/10.1007/978-3-540-77090-9_25) -- Wilson M. Yeung, Junyang Zhou and Joseph K. Ng, "Enhanced Fingerprint-based Location Estimation System in Wireless LAN Environment",  in Proceedings of the 1st International Workshop on System and Software for Wireless SoC (in conjunction with EUC 2007), pp 273-284, December 17-20, 2007, Taipei, Taiwan, Springer. 
 
@@ -58,7 +62,7 @@ Academic + Industrial Papers
 						
 - [Providing Location Services](https://doi.org/10.1109/aina.2005.286) -- Junyang Zhou, Kenneth M. Chu, Joseph K. Ng, "Providing Location Services within a Radio Cellular Network using the Ellipse Propagation Model", in Proceedings of the 19th International Conference on Advanced Information Networking and Applications, pp 559-564, March 28-30,2005, Taipei, Taiwan, IEEE Computer Society.
 						
-
+---
 
 ## Vision Operating System
 
