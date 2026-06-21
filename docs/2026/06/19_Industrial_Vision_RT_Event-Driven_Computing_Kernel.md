@@ -571,11 +571,13 @@ function send(){
 
 ## 4.  **控制中枢架构(类似轻量MES/SCADA)**：工业视觉 + 多设备控制 + 实时调度系统
 
-“工业视觉 + 多设备控制 + 实时调度系统”的**工业视觉分布式控制系统（Vision SCADA / Edge Orchestration System）**本质是：
+“工业视觉 + 多设备控制 + 实时调度系统”的 **工业视觉分布式控制系统（Vision SCADA / Edge Orchestration System）** 本质是：
 
-> **Camera / PLC / AI / Storage / Robot = 分布式设备 Agent
-> Python = 实时调度控制平面（Control Plane）
-> Web = 可视化操作台（HMI）**
+> **Camera / PLC / AI / Storage / Robot = 分布式设备 Agent**
+> 
+> **Python = 实时调度控制平面（Control Plane）**
+> 
+> **Web = 可视化操作台（HMI）**
 
 按**可落地工程架构 + 最小可运行骨架 + 可扩展设计**完整拆开。
 
