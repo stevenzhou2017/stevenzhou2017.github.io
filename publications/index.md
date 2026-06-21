@@ -10,7 +10,7 @@ permalink: /publications/
 # Publications
 Academic + Industrial Papers
 
-  - Research Papers
+  - Industry Speeches
   - Journal Papers
   - Conference Papers
   - White Papers
