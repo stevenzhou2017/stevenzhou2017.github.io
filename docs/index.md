@@ -37,8 +37,8 @@ This documentation hub provides engineering notes, tutorials, architecture desig
 
 ## Camera SDK
 
-- [Cross Platform Camera SDK](../docs/2026/06/05_Cross_Platform_CameraSDK.html)
-- [Unified Frame Data Contract](../docs/2026/06/06_Unified_Frame_Data.html)
+- [**Cross Platform Camera SDK**](../docs/2026/06/05_Cross_Platform_CameraSDK.html)
+- [**Unified Frame Data Contract**](../docs/2026/06/06_Unified_Frame_Data.html)
 
 ---
 
@@ -93,8 +93,8 @@ This documentation hub provides engineering notes, tutorials, architecture desig
 - [**AI Skillization**](../docs/2026/05/08_AI_Skillization.html)
 - [**Industrial Vision AI Agent**](../docs/2026/05/17_Industrial_Vision_AI_Agent_Solution.html)
 - [**Manufacturing AI Agent**](../docs/2026/05/18_Manufacturing_AI_Agent.html)
-- [**AI Agent Collaboration Platform**](../docs/2026/06/12_AI_Agent-Driven_Collaboration_Platform.html)
-- [**AI Agent Logistics Platform**](../docs/2026/06/14_AI_Agent-Driven_Intelligent_Logistics_Platform.html)
+- [**AI Agent Collaboration**](../docs/2026/06/12_AI_Agent-Driven_Collaboration_Platform.html)
+- [**Logistics AI Agent**](../docs/2026/06/14_AI_Agent-Driven_Intelligent_Logistics_Platform.html)
 - [**Prompt Context Harness**](../docs/2026/04/05_Prompt_Context_Harness.html)
 
 
@@ -103,7 +103,7 @@ This documentation hub provides engineering notes, tutorials, architecture desig
 # AI4S
 
 - [**AI4S Tools**](../docs/2026/03/01_AI4S_Tools.html)
-- [**Prediction and Confidence Inteval Calculation**](../docs/2026/06/01_Prediction_Confidence_Interval_Calculation.html)
+- [**Prediction and Confidence Inteval**](../docs/2026/06/01_Prediction_Confidence_Interval_Calculation.html)
 - [**Optimal Stopping Time**](../docs/2026/06/17_Achievements_And_Tools_Optimal_Stopping_Time.html)
 - [**Diffusion Diffusion Model**](../docs/2026/05/01_Diffusion_Model.html)
 - [**Stable Stable Diffusion**](../docs/2026/05/02_Stable_Diffusion.html)
