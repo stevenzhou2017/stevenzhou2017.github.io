@@ -1,102 +1,119 @@
 # =========================
 # SITE IDENTITY (GRAPH ROOT)
 # =========================
-title: 周均扬博士 | Dr. Junyang Zhou
+title: "周均扬博士 | Dr. Junyang Zhou"
 description: >-
-  Industrial AI | Smart Manufacturing | Vision Systems | CUDA Optimization | 25+年AI领导经验 | 锂电池智能制造 | 具身智能
+  Industrial AI Researcher | Vision Operating System | AI Agent | 
+  Industrial Vision | CUDA | Embodied AI | 25+ Years in Intelligent Manufacturing
 url: "https://stevenzhou2017.github.io"
 baseurl: ""
-
 timezone: Asia/Shanghai
-
 lang: zh-CN
-
 locale: zh_CN
 
 author:
   name: Dr. Junyang Zhou
+  email: junyang.zhou@gmail.com
+  github: stevenzhou2017
+  linkedin: junyang-zhou-2593a9100
+  bio: >-
+    Industrial AI researcher and engineering leader specializing in 
+    Vision Operating System, AI Agents, and Intelligent Manufacturing.
 
 # =========================
-# SEO PLUGINS
+# SOCIAL & OPEN GRAPH
+# =========================
+social:
+  github: stevenzhou2017
+  linkedin: junyang-zhou-2593a9100
+  email: junyang.zhou@gmail.com
+
+# Default Open Graph image
+default_og_image: /assets/images/Industrial_AI_expert.webp
+
+# =========================
+# SEO & PLUGINS
 # =========================
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-relative-links   # 推荐添加，提升内部链接体验
 
 # =========================
-# COLLECTIONS (GRAPH NODES)
+# COLLECTIONS (KNOWLEDGE GRAPH NODES)
 # =========================
 collections:
   docs:
     output: true
+    permalink: /docs/:path/
   research:
     output: true
+    permalink: /research/:path/
   publications:
     output: true
+    permalink: /publications/:path/
   projects:
     output: true
+    permalink: /projects/:path/
 
 # =========================
-# DEFAULTS (GRAPH SEMANTIC LAYER)
+# DEFAULT FRONT MATTER
 # =========================
 defaults:
-
-  # GLOBAL NODES
+  # Global
   - scope:
       path: ""
     values:
       sitemap: true
+      layout: default
+      image: /assets/images/default-og.webp
 
-  # Index
+  # Home
   - scope:
       path: "index.html"
     values:
-      sitemap: true
-      priority: 1.0
+      sitemap_priority: 1.0
+      layout: home
 
-  # RESEARCH (HIGHEST SEMANTIC WEIGHT)
+  # Research (高权重)
   - scope:
       path: "research"
     values:
       layout: page
       category: research
       graph_type: research
-      priority: 0.95
-      ai_embedding_group: intelligence_systems
+      sitemap_priority: 0.95
 
-  # DOCS (ENGINEERING GRAPH)
+  # Documentation (工程文档)
   - scope:
       path: "docs"
     values:
       layout: page
       category: docs
       graph_type: engineering
-      priority: 0.85
-      ai_embedding_group: system_engineering
+      sitemap_priority: 0.90
 
-  # PUBLICATIONS (AUTHORITY NODES)
+  # Publications
   - scope:
       path: "publications"
     values:
       layout: page
       category: publications
       graph_type: authority
-      priority: 1.0
-      ai_embedding_group: academic_output
+      sitemap_priority: 1.0
 
-  # PROJECTS (APPLICATION LAYER)
+  # Projects
   - scope:
       path: "projects"
     values:
       layout: page
       category: projects
       graph_type: application
-      priority: 0.8
-      ai_embedding_group: product_systems
+      sitemap_priority: 0.85
 
 # =========================
-# SITEMAP CONTROL (GRAPH-AWARE)
+# SITEMAP & SEO
 # =========================
 sitemap:
   filename: sitemap.xml
@@ -111,17 +128,24 @@ sitemap:
     - /github-recovery-codes.html
     - /github-recovery-codes.md
     - /googleaa9643b011ea1a36.html
-    - /test.html
 
 # =========================
 # BUILD SETTINGS
 # =========================
 markdown: kramdown
 highlighter: rouge
-permalink: /:categories/:title/
+permalink: pretty                # 更友好的 URL（无 .html）
+relative_links: true
+incremental: true                # 加快本地构建速度
+future: true                     # 显示未来文章（便于提前发布）
+
+# Sass 配置
+sass:
+  sass_dir: _sass
+  style: compressed              # 生产环境压缩 CSS
 
 # =========================
-# EXCLUDE (MINIMAL PRINCIPLE)
+# EXCLUDE
 # =========================
 exclude:
   - Gemfile
@@ -129,8 +153,18 @@ exclude:
   - README.md
   - node_modules
   - vendor
+  - .github
+  - .jekyll-cache
+  - .sass-cache
+
 
 # =========================
-# SEO SIGNAL BOOST
+# ADDITIONAL OPTIMIZATIONS
 # =========================
-future: true
+# Compress HTML (需添加 jekyll-compress-html 插件)
+# compress_html:
+#   clippings: all
+#   comments: all
+#   endings: all
+#   profile: false
+#   blanklines: false
