@@ -33,6 +33,18 @@ This documentation hub provides engineering notes, tutorials, architecture desig
 - [Environment-Centric Vision](../docs/2026/06/16_Environment_Centric_Vision.html)
 
 
+<div class="portal-grid">
+
+- [ **Tesla of Photon Counting Perception** ](../docs/2026/05/07_Tesla_Photon_Counting_Perception.html)Real-time photon counting perception architecture inspired by advanced autonomous systems.
+- [ **Industrial Vision Operating System** ](../docs/2026/05/10_Industrial_Vision_Operating_System.html)Core real-time AI runtime for industrial perception, reasoning and execution.
+- [ **Industrial Vision Platform Framework** ](../docs/2026/06/04_Framework_Industrial_Vision_Platform.html)Overall architecture and framework of the industrial vision platform.
+- [ **Industrial Vision Application Resource** ](../docs/2026/05/16_Industrial_Vision_Application_Resource.html)Resource management and optimization for vision applications.
+- [ **Industrial Vision RT Event-Driven Computing Kernel** ](../docs/2026/06/19_Industrial_Vision_RT_Event-Driven_Computing_Kernel.html)High-performance event-driven real-time computing kernel with GPU acceleration.
+- [ **Environment-Centric Vision** ](../docs/2026/06/16_Environment_Centric_Vision.html)Environment-centric vision system design and implementation.
+
+</div>
+
+
 ---
 
 ## Camera SDK
