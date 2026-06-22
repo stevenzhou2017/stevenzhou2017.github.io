@@ -12,7 +12,7 @@
   series:
     - industrial-vision
   organization:
-    - hkbu
+    - IEEE
   authors:
     - junyang-zhou
   year: 2025
@@ -30,7 +30,7 @@
   series:
     - industrial-vision
   organization:
-    - hkbu
+    - IEEE
   authors:
     - junyang-zhou
   year: 2025
@@ -47,7 +47,7 @@
   series:
     - vision-os
   organization:
-    - ieee
+    - IEEE
   authors:
     - junyang-zhou
   year: 2026
