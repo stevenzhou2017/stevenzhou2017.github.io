@@ -35,6 +35,7 @@ Vision OS -> Vision Kernel -> Environment-Centric Vision -> Industrial AI
 - [**Industrial Vision**](../docs/2026/06/04_Framework_Industrial_Vision_Platform.html)
 - [**Industrial Vision Algorithm**](../docs/2026/06/07_Industrial_Vision_AlgorithmSDK.html)
 - [**RT Event-Driven Computing Kernel**](../docs/2026/06/19_Industrial_Vision_RT_Event-Driven_Computing_Kernel.html)
+- [**Event-Based Visoin Recorder**](../docs/2026/06/20_Event-Based_Vision_Recoder.html)
 - [**Environment-Centric Vision**](../docs/2026/06/16_Environment_Centric_Vision.html)
 
 
