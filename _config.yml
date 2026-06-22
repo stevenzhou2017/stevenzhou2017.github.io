@@ -65,7 +65,6 @@ defaults:
   - scope:
       path: ""
     values:
-      sitemap: true
       layout: default
       image: /assets/images/default-og.webp
 
@@ -125,8 +124,6 @@ sitemap:
     - /download/entertainment/
     - /download/latex/
     - /download/thesis/master/
-    - /github-recovery-codes.html
-    - /github-recovery-codes.md
     - /googleaa9643b011ea1a36.html
 
 # =========================
@@ -135,9 +132,9 @@ sitemap:
 markdown: kramdown
 highlighter: rouge
 permalink: pretty                # 更友好的 URL（无 .html）
-relative_links: true
-incremental: true                # 加快本地构建速度
-future: true                     # 显示未来文章（便于提前发布）
+
+incremental: false                # 加快本地构建速度
+future: false                     # 显示未来文章（便于提前发布）
 
 # Sass 配置
 sass:
@@ -156,7 +153,17 @@ exclude:
   - .github
   - .jekyll-cache
   - .sass-cache
-
+  - assets/
+  - audio/
+  - award/
+  - download/demo/
+  - download/entertainment/
+  - download/latex/
+  - download/thesis/master/
+  - googleaa9643b011ea1a36.html
+  - Framework.txt
+  - Framework2.md
+  - Information_Architecture.txt
 
 # =========================
 # ADDITIONAL OPTIMIZATIONS
