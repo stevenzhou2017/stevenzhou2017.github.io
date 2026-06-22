@@ -1,7 +1,7 @@
 items:
 
   - id: vision_os_paper
-    title: Vision Operating System: An Industrial AI Runtime
+    title: Vision Operating System--An Industrial AI Runtime
     type: paper
     domain: vision_os
     links:
