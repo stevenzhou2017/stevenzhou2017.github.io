@@ -1,0 +1,9 @@
+items:
+
+  - id: vision_os
+    name: Vision Operating System
+    type: system
+    nodes:
+      - camera_sdk
+      - algorithm_sdk
+      - workflow_engine
