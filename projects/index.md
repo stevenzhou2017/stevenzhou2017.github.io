@@ -25,6 +25,7 @@ Workflow -> Runtime -> Event Bus -> Vision Kernel -> Node Graph
 - [**Vision Operating System**](../docs/2026/05/10_Industrial_Vision_Operating_System.html)
 - [**Vision Workflow Engine**](../docs/2026/06/04_Framework_Industrial_Vision_Platform.html)
 - [**Event-Driven Visoin Kernel**](../docs/2026/06/19_Industrial_Vision_RT_Event-Driven_Computing_Kernel.html)
+- [**Event-Based Visoin Recorder**](../docs/2026/06/20_Event-Based_Vision_Recoder.html)
 - [**Environment-Centric Vision**](../docs/2026/06/16_Environment_Centric_Vision.html)
 
 
