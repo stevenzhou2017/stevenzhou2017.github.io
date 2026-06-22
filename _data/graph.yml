@@ -1,24 +1,39 @@
 nodes:
 
-  - camera-sdk
-  - algorithm-sdk
-  - event-driven-kernel
-  - ai-workflow
+  - id: industrial_ai
+    name: Industrial AI
+    type: domain
+
+  - id: vision_os
+    name: Vision Operating System
+    type: system
+
+  - id: camera_sdk
+    name: CameraSDK
+    type: software
+
+  - id: algorithm_sdk
+    name: AlgorithmSDK
+    type: software
+
+  - id: workflow_engine
+    name: Workflow Engine
+    type: system
 
 edges:
 
-  - source: camera-sdk
-    target: algorithm-sdk
-    relation: depends
+  - source: industrial_ai
+    target: vision_os
+    relation: contains
 
-  - source: algorithm-sdk
-    target: event-driven-kernel
-    relation: implements
+  - source: vision_os
+    target: camera_sdk
+    relation: depends_on
 
-  - source: ai-workflow
-    target: event-driven-kernel
-    relation: based-on
+  - source: vision_os
+    target: algorithm_sdk
+    relation: depends_on
 
-  - source: algorithm-sdk
-    target: ai-workflow
-    relation: supports
+  - source: vision_os
+    target: workflow_engine
+    relation: integrates
