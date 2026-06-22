@@ -70,6 +70,7 @@ Real-time AI -> Optimal Stopping -> Scheduling -> Vision Kernel
 
 ---
 
+
 # Industrial Safety
 
 Industrial Safety -> OSDIP -> Research Gap -> Related Work -> Methodology -> Experiments
