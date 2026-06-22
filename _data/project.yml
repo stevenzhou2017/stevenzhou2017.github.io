@@ -1,0 +1,10 @@
+items:
+
+  - id: camera_sdk
+    name: CameraSDK
+    type: project
+    domain: vision_os
+    tech:
+      - C++
+      - Python
+      - CUDA
