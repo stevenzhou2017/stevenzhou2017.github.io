@@ -1,4 +1,4 @@
-# 工业视觉事件回溯录制系统（Event-based Vision Recorder）”
+# 工业视觉事件回溯录制系统（Event-based Vision Recorder）
 
 author: 周均扬
 
