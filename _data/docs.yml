@@ -1,0 +1,11 @@
+items:
+
+  - id: camera_sdk_doc
+    title: CameraSDK Developer Guide
+    category: sdk
+    project: camera_sdk
+
+  - id: cuda_pipeline
+    title: CUDA Zero Copy Pipeline
+    category: gpu
+    project: algorithm_sdk
