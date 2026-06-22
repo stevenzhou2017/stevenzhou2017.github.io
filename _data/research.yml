@@ -1,0 +1,10 @@
+items:
+
+  - id: vision_os_paper
+    title: Vision Operating System: An Industrial AI Runtime
+    type: paper
+    domain: vision_os
+    links:
+      code: /projects/vision-os
+      pdf: /assets/papers/vision_os.pdf
+      github: https://github.com/stevenzhou2017
