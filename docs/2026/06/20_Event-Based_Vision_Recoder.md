@@ -14,10 +14,7 @@ date： 2026.06.22
 - SCADA子模块
 
 
-下面提供一套**真正“工业级可扩展架构”**的实现方案：
-
->  Vision Event Recorder + AI SCADA + GPU Video System
-> （事件录像 + AI检测 + GPU视频流 + SCADA控制）
+提供一套**“工业级可扩展架构”**的实现方案：Vision Event Recorder + AI SCADA + GPU Video System（事件录像 + AI检测 + GPU视频流 + SCADA控制）。
 
 
 ###  1️. 工业级总体架构
@@ -354,16 +351,12 @@ while True:
 系统为**GPU加速 + 事件驱动 + 工业级视觉 SCADA 操作系统**， 具备：
 
  - 实时采集（CameraSDK）：工业相机抽象层
-
-- GPU推理链路： AI事件驱动
-
-- Ring Buffer录像：工业事件回溯系统
-
-- SCADA控制：事件 → 控制 → 告警
-
-- 可扩展架构：可接 PLC / MES / Robot / Cloud
+ - GPU推理链路： AI事件驱动
+ - Ring Buffer录像：工业事件回溯系统
+ - SCADA控制：事件 → 控制 → 告警
+ - 可扩展架构：可接 PLC / MES / Robot / Cloud
 
 
- 一句话总结是：**“GPU Vision SCADA + Event Recorder 核心内核”**
+ 一句话总结是：**“GPU Vision SCADA + Event Recorder 核心内核”**。
 
 ---
