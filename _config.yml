@@ -123,6 +123,7 @@ sitemap:
     - /download/entertainment/
     - /download/latex/
     - /download/thesis/master/
+    - /projects/algorithmsdk/
     - /googleaa9643b011ea1a36.html
 
 # =========================
@@ -158,6 +159,7 @@ exclude:
   - download/entertainment/
   - download/latex/
   - download/thesis/master/
+  - projects/algorithmsdk/
   - googleaa9643b011ea1a36.html
   - Framework.txt
   - Framework2.md
