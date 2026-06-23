@@ -10,6 +10,8 @@ Disallow: /download/demo/
 Disallow: /download/entertainment/
 Disallow: /download/latex/
 Disallow: /download/thesis/master/
+Disallow: /projects/algorithmsdk/
+Disallow: /projects/camerasdk/
 Disallow: /github-recovery-codes.html
 Disallow: /github-recovery-codes.md
 
