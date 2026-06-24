@@ -1,5 +1,7 @@
 # AlgorithmSDK 交付文档
 
+---
+
 > **版本**: 1.0.0 (commit 7bde9b2)
 > **交付日期**: 2026-06-23
 > **适用范围**: Windows 10+ / Visual Studio 2026 / Python 3.14
