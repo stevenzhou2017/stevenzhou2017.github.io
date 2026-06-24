@@ -75,14 +75,14 @@ Real-time AI -> Optimal Stopping -> Scheduling -> Vision Kernel
 
 Industrial Safety -> OSDIP -> Research Gap -> Related Work -> Methodology -> Experiments
 
-  ## AI Security
+## AI Security
 
  - [**Industrial Vision Security**](../docs/2026/06/02_Industrial_Vision_in_Security.html)
  - [**AI Industrial Security**](../docs/2026/06/03_AI_Industrial_Security_Application.html)
  - [**Perception Security**](../docs/2026/06/13_Combining_OST_Environmental_Perception_Industrial_Vision.html)
 
    
- ## OSDIP
+## OSDIP
 
  - [**Research Overview**](./osdip/)
  - [**Research Gap**](./osdip/research_gap/)
