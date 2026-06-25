@@ -8,7 +8,7 @@
 |------|------|
 | [SDK 交付手册](./released.md) | 完整交付文档：安装、架构、模块详解、部署、FAQ（v1.0.0） |
 | [YOLO 推理全流程指南](./YOLO_Inference_Guide.md) | YOLO 模型加载、推理、后处理完整流程 |
-<!-- | [YOLOE 集成计划](/superpowers/plans/2026-06-15-yoloe-integration.md) | YOLOE 模型集成方案与实现计划 | -->
+| [YOLOE 集成计划](./2026-06-15-yoloe-integration.md) | YOLOE 模型集成方案与实现计划 | 
 
 ## 模块参考
 
