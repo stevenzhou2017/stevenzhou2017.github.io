@@ -65,7 +65,7 @@ date: 2026.06.25
 
 ---
 
-### 3. 可运行 Demo（Python）
+### 3. 可运行 Demo（Python + Html）
 
 #### 1 安装依赖
 
