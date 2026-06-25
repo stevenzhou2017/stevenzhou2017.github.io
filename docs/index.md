@@ -148,6 +148,7 @@ This documentation hub provides engineering notes, tutorials, architecture desig
  - [**Optimal Stopping Time**](../docs/2026/06/17_Achievements_And_Tools_Optimal_Stopping_Time.html)
  - [**Hand-Eye Calibration**](../docs/2026/06/18_Daniilidis_Hand_Eye_Calibration_Method.html)
  - [**Python Websocket**](../docs/2026/06/19_Industrial_Vision_RT_Event-Driven_Computing_Kernel.html)
+ - [**Vision Event System**](../docs/2026/06/21_Industrial_Vision_Event_System.html)
 
 
 ---
