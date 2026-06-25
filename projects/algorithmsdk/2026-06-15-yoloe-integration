@@ -1,0 +1,148 @@
+# YOLOE Integration into AlgorithmSDK — Implementation Plan
+
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox () syntax for tracking.
+
+**Goal:** Make AlgorithmSDK support YOLOE (open-vocabulary YOLO) models by making class names and input size configurable via per-model YAML files, eliminating all hardcoded assumptions that prevent custom/vocabulary-varied models from working.
+
+**Architecture:** Approach A — Minimal config-driven approach. YOLOE ONNX models (after fuse()) produce standard-format output identical to regular YOLO: [1, 300, 6] for detection, [1, 300, 38] + [1, 32, 160, 160] for segmentation. Therefore no new TaskType is needed. Instead, we fix the foundational problem that blocks ANY custom model: hardcoded class names (kClassNames = COCO 80) and hardcoded input size (kInputW/kInputH = 640). These become loaded from a .yaml file that ships alongside each .onnx model. A YOLOE model is then just a DETECT or SEGMENT model with a YAML specifying its vocabulary. This also fixes an existing param-name mismatch bug ("confidence" vs "conf").
+
+**Tech Stack:** C++17, ONNX Runtime C++ API, OpenCV, yaml-cpp, pybind11, CMake
+
+---
+
+## File Structure Map
+
+| File | Action | Purpose |
+|------|--------|---------|
+| core/include/.../AIToolkit/adapters/ONNXAdapter.h | Modify | Add model-level config members (class_names, input_size); remove hardcoded constexpr constants |
+| core/src/aitoolkit/adapters/ONNXAdapter.cpp | Modify | Load class names and input size from YAML; fix param-name mismatch; remove hardcoded kClassNames |
+| core/include/.../AIToolkit/common/ConfigManager.h | Modify | Add getStringList() method for reading YAML sequence-of-strings |
+| core/src/aitoolkit/common/ConfigManager.cpp | Modify | Implement getStringList() |
+| core/src/aitoolkit/EngineFactory.cpp | Modify | Add YOLOE-aware path inference comment |
+| config/models.yaml | Modify | Document YOLOE model entries |
+| docs/YOLO_Inference_Guide.md | Modify | Add YOLOE section, update custom model docs to use YAML config |
+| assets/ | New files | yoloe_n_detect.yaml, yoloe_n_seg.yaml — example configs |
+
+
+## Background: Why Approach A over Approach B
+
+### Approach A (Recommended): Reuse DETECT/SEGMENT paths with configurable metadata
+
+**How it works for YOLOE:**
+1. User exports YOLOE model **with fuse()** — this bakes text embeddings into the model weights
+2. The fused ONNX model has standard YOLO output format: [1, 300, 6] (detect) or [1, 300, 38] + [1, 32, 160, 160] (seg)
+3. User provides a model_name.yaml alongside the .onnx with classes: and optional input_size:
+4. No new TaskType, no new inference code path, no text encoder needed in C++
+
+**Justification:**
+- **YOLOE ONNX output after fuse() is IDENTICAL to standard YOLO.** The head difference (YOLOEDetect vs Detect) is resolved at export time. The exported graph has the same [1, 300, 6] output tensor. The SDK preprocessing (letterbox + blobFromImage) and postprocessing (bbox decode + letterbox reversal) apply unchanged.
+- **Zero new inference code required.** Every line of infer(), postprocess(), and postprocessSeg() works without modification.
+- **Fixes the root problem, not just YOLOE.** The hardcoded COCO class list blocks ALL custom models (industrial inspection with scratch/dent/crack, medical imaging, robotics). Making this configurable is the No.1 blocker for production use regardless of YOLOE.
+- **Text prompt flexibility is preserved through model selection.** For open-vocabulary use, the user exports multiple fused YOLOE models with different vocabularies. The SDK loads whichever model is needed. This is actually more practical than runtime text prompts for most industrial deployments where vocabularies are domain-fixed.
+- **Approach B is premature.** Text prompt support requires: (a) CLIP tokenizer in C++ or Python pre-processing, (b) dual-input ONNX models (image + text embeddings), (c) new IInferenceEngine API surface, (d) new pybind11 bindings. This adds ~500+ lines of complex C++ for a feature that can be satisfied by fused models today, and would only benefit interactive/exploratory use cases.
+
+### When Approach B would make sense (future work, out of scope)
+- Interactive applications where the user types arbitrary categories at runtime
+- When the YOLOE model must be shared across many users with different vocabularies
+- When text embeddings need to change per-frame
+
+---
+### Task 1: Add getStringList() to ConfigManager
+
+**Goal:** The yaml-cpp-based ConfigManager needs a method to read YAML sequences of strings (class name lists).
+
+**Files:**
+- Modify: core/include/IndustrialVisionSDK/AIToolkit/common/ConfigManager.h
+- Modify: core/src/aitoolkit/common/ConfigManager.cpp
+
+- [ ] **Step 1.1: Add declaration to header**
+
+In core/include/IndustrialVisionSDK/AIToolkit/common/ConfigManager.h, add after the getBool declaration (after line 39 inside the class):
+
+```cpp
+    // Get a list of strings from a YAML sequence node
+    // e.g. config YAML: classes:
+  - cat
+  - dog  -> returns {"cat", "dog"}
+    std::vector<std::string> getStringList(const std::string& key,
+                                           const std::vector<std::string>& defaultVal = {}) const;
+```
+
+- [ ] **Step 1.2: Add implementation to .cpp**
+
+In core/src/aitoolkit/common/ConfigManager.cpp, add after the getBool implementation (after line 41):
+
+```cpp
+std::vector<std::string> ConfigManager::getStringList(
+    const std::string& key,
+    const std::vector<std::string>& defaultVal) const {
+    auto node = getNode(key);
+    if (!node || !node.IsSequence()) {
+        return defaultVal;
+    }
+    std::vector<std::string> result;
+    for (const auto& item : node) {
+        result.push_back(item.as<std::string>());
+    }
+    return result;
+}
+```
+
+- [ ] **Step 1.3: Build and verify compilation**
+
+```bash
+cd D:/nnd/AlgorithmSDK/build
+cmake --build . --config Release --target algorithm_vision_aitoolkit
+```
+
+Expected: PASS — getStringList is accessible from ONNXAdapter.
+
+---
+### Task 2: Fix Param Name Mismatch Bug
+
+**Goal:** AIToolkit.cpp calls setParam("confidence", ...) but ONNXAdapter::postprocess() reads getParam("conf"). The confidence threshold set by the user is silently ignored. Fix by standardizing on "conf" in both places.
+
+**Files:**
+- Modify: core/src/aitoolkit/AIToolkit.cpp (lines 29, 52)
+
+- [ ] **Step 2.1: Fix AIToolkit.cpp setParam calls**
+
+In core/src/aitoolkit/AIToolkit.cpp, change two occurrences:
+
+Line 29: change "confidence" to "conf"
+```cpp
+// Before:
+        engine_->setParam("confidence", conf_threshold_);
+// After:
+        engine_->setParam("conf", conf_threshold_);
+```
+
+Line 52: change "confidence" to "conf"
+```cpp
+// Before:
+        if (engine_) engine_->setParam("confidence", conf);
+// After:
+        if (engine_) engine_->setParam("conf", conf);
+```
+
+The "iou" param name is already consistent — no change needed.
+
+- [ ] **Step 2.2: Build and verify**
+
+```bash
+cd D:/nnd/AlgorithmSDK/build
+cmake --build . --config Release --target algorithm_vision_aitoolkit
+```
+
+Expected: PASS
+
+---
+TASK3_CONTENT
+### Task 3: Make ONNXAdapter Load Config from Per-Model YAML
+
+**Goal:** When loadModel() is called, ONNXAdapter automatically looks for a .yaml file alongside the .onnx and loads class names + input size from it. Falls back to COCO 80 defaults if no YAML file exists (backward compatibility).
+
+**Files to modify:**
+- core/include/IndustrialVisionSDK/AIToolkit/adapters/ONNXAdapter.h
+- core/src/aitoolkit/adapters/ONNXAdapter.cpp
+
