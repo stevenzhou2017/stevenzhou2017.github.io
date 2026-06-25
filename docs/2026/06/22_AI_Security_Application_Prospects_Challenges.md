@@ -200,4 +200,4 @@ AI + 安全的本质变化是：从“被动防御工具” → “主动自治�
 ---
 
 ** “AI安全系统架构图（SOC + Agent + Event Bus）” **
-[AI Security Framework](AI_Security_System_Framework.png "AI Security System Framework")
+![AI Security Framework](AI_Security_System_Framework.png "AI Security System Framework")
