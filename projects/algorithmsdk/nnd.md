@@ -25,6 +25,143 @@ c.财务：刘凤、吴志波
 1.项目： 复合机器人3D标定； WebSocket + WebRTCdemo
 2.技术平台开发： 上库版本测试及问题修改
 
+
+
+WebRTC视频升级为视觉成像引擎
+WebRTC + NVENC + AI超分辨率 + ISP Pipeline
+1.总体架构
+┌────────────────────────────────────────────────────────────┐
+│                     Web UI / Client                       │
+│   - WebRTC Player (H264)                                  │
+│   - Event Timeline Replay                                 │
+└───────────────────────┬────────────────────────────────────┘
+                        │ WebRTC (low-latency H264)
+                        │
+┌───────────────────────▼────────────────────────────────────┐
+│                WebRTC Media Gateway (SFU-lite)            │
+│   - aiortc / mediasoup (optional upgrade)                 │
+│   - stream routing / multi-camera                         │
+└───────────────┬───────────────────────┬────────────────────┘
+                │                       │
+     ┌──────────▼──────────┐  ┌────────▼─────────┐
+     │   NVENC Encoder      │  │ Event System     │
+     │ (Zero-copy GPU path) │  │ Recorder + Index │
+     └──────────┬──────────┘  └────────┬─────────┘
+                │                       │
+     ┌──────────▼──────────────────────────────────┐
+     │        AI Imaging Pipeline (GPU)           │
+     │  - Super Resolution (ESRGAN / Real-ESRGAN) │
+     │  - Denoise (DnCNN / fast NLM)              │
+     │  - Sharpen + Deblur                        │
+     └──────────┬──────────────────────────────────┘
+                │
+     ┌──────────▼──────────────────────────────────┐
+     │          Industrial ISP Layer              │
+     │  - Gamma correction                       │
+     │  - Auto exposure lock                    │
+     │  - White balance stabilization           │
+     │  - CLAHE contrast enhancement            │
+     └──────────┬──────────────────────────────────┘
+                │
+     ┌──────────▼──────────────────────────────────┐
+     │            CameraSDK Layer                 │
+     │  USB / RTSP / GigE / File                 │
+     └────────────────────────────────────────────┘
+2.工业ISP层： camera/isp_pipeline.py
+3.AI超分辨率层： vision/super_resolution.py
+4.NVENC编码层： media/nvenc_encoder.py
+5.Imaging Pipeline： pipeline/imaging_pipeline.py
+6.WebRTC Track(融合全部能力): media/webrtc_track.py
+7.Server(整合工业系统): server.py
+8.成像链路效果提升总结
+a.ISP层(稳定画面)： 提升对比度 + 清晰稳定性
+i.gamma correction
+ii.CLAHE增强
+iii.sharpening
+b.AI超分层(核心视觉升级)： 提升 分辨率 + 纹理细节
+i.2X upscaling
+ii.edge restoration
+iii.detail enhancement
+c.NVENC(GPU编码)： 提升流畅性 + 低延迟 + 无CPU瓶颈
+i.low latency
+ii.high bitrate
+iii.stable H264 stream
+d.WebRTC层
+i.real-time delivery
+ii.SFU - ready
+iii.multi-client extension
+9.效果对比
+a.ISP： +对比度30%
+b.CLAHE： +局部细节增强
+c.SR： +2X清晰度
+d.NVENC： -CPU占用 80%
+e.WebRTC： <200ms延迟
+10.下一步计划
+a.Real Real-ESGRAN TensorRT版本(AI超分)
+b.多路4K WebRTC SFU
+c.Zero-copy CUDA pipeline
+d.HDR fusion ISP
+e.自动曝光锁定
+f.事件回溯 + 超分重渲染(Replay Enhancement)
+g.SCADA/PLC联动告警
+
+
+
+
+
+WebRTC视频流的成像效果优化
+WebRTC视频流成像效果优化，是一个端到端成像链路问题： Camera -> ISP/预处理 -> 编码 -> 网络 -> 解码 -> 渲染
+1.Camera层优化：决定原始画质上限
+a.曝光/增益/白平衡锁定： 工业场景最常见问题： 自动曝光抖动 -> 画面呼吸； 自动白平衡跳变 -> 颜色漂移；工业原则： WebRTC视频必须稳定，而不是自动优化
+b.FPS固定： 避免抖动，jitter butter放大延迟；fps = 25
+2.预处理层 (CameraSDK / AlgorithmSDK 之间)
+a.图像锐化，提升清晰度
+b.Gamma校正
+c.去噪
+3.WebRTC编码层优化
+a.强制码率控制，避免模糊： 
+i.python aiortc： transceiver.setCodecPreferences(...)
+ii.JS端： 
+const sender = pc.getSenders()[0];
+const params = sender.getParameters();
+params.encodings = [{   maxBitrate: 2500000,   // 2.5 Mbps     maxFramerate: 30,     scaleResolutionDownBy: 1.0}];
+sender.setParameters(params);
+b.禁止WebRTC自动降画质： 默认WebRT会， 网络稍差 -> 降分辨率(严重影响工业视觉)， 必须锁定分辨率： scaleResolutionDownBy: 1.0
+c.启用高分辨率约束： getUserMedia({   video: {  width: { ideal: 1280 },  height: { ideal: 720 },  frameRate: { ideal: 30 }  }})
+4.GPU编码优化(NVENC/硬编)
+a.OpenCV默认编码： 会出现模糊、延迟高、帧间不稳定
+b.GStreamer + NVENC： appsrc ! videoconvert ! nvh264enc bitrate=4000 ! h264parse ! rtph264pay
+i.NVENC关键参数： bitrate 3-8Mbps; preset  low-latency-hq; gop 30; rc-mode cbr
+5.WebRTC渲染层优化(UI端)
+a.禁止画面缩放模糊： video {  image-rendering: crisp-edges;    width: 100%; }
+b.其中硬件编码： chrome://gpu， 确认 Video Decode： hardware accelerated
+6.网络层优化
+a.强制 STUN + TURN： iceServers: [  { urls: "stun:stun.l.google.com:19302" },  { urls: "turn:your-turn-server", username: "xxx", credential: "xxx"}]
+b.禁止TCP fallback(尽量UDP)： WebRTC本质依赖UDP
+7.AI/Algorithm层优化
+a.原则： AI不能阻塞视频链路， 必须 Video Thread -> copy frame -> AI thread
+b.错误模式： frame = ai_process(frame) #blocking
+c.正确模式： queue.put(frame)
+8.推荐配置：WebRTC视频最佳实践参数， 分辨率： 1280*720； FPS： 30； 编码： H264(baseline/main)； bitrate： 2-5Mbps； GOP： 30； RC： CBR
+9.成像质量总结
+a.Camera： 自动曝光抖动
+b.Preprocess： 无gamma/无锐化
+c.Encoder： bitrate太低
+d.WebRTC： 自动降分辨率
+e.Network： jitter导致丢帧
+f.UI： CSS缩放模糊
+10.下一步计划
+a.ISP级图像增强(CLAHE + HDR)
+b.NVENC Zero-copy pipeline
+c.WebRTC SFU (多路4K)
+d.动态码率控制 (QoS)
+e.AI增强(超分辨率ESRGAN)
+f.事件回溯高清重编码(re-encode pipeline)
+
+
+
+
+
 事件驱动回溯录音系统Demo(工业视觉OS思路)
 可运行Demo(WebSocket + WebRTC + CameraSDK + AlgorithmSDK + 事件回溯录音系统)
 核心目标： Event-driven Video + AI + Replay System
