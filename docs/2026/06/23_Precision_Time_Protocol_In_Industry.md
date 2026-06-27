@@ -12,7 +12,7 @@ PTP（IEEE 1588 Precision Time Protocol）在工厂里的核心价值：**把分
 
 
 
-### 1. IEEE 1588 在工厂里解决的本质问题
+### 1. PTP (IEEE 1588) 在工厂里解决的本质问题
 
 工厂里典型的时间不一致问题：
 
@@ -26,7 +26,7 @@ PTP解决的是 **全工厂设备共享一个“统一物理时间轴”**。
 
 ---
 
-### 2. IEEE 1588 基本架构（工业版）
+### 2. PTP (IEEE 1588) 基本架构
 
 ![PTP Router](PTP_Network_Router.jfif  "PTP Router")
 
