@@ -31,7 +31,8 @@ Computer Vision and Robotics.
 
 ## Projects
 
-- [Algorithm SDK](https://stevenzhou2017.github.io/projects/algorithm-sdk/)
+- [Camera SDK](https://stevenzhou2017.github.io/projects/camerasdk/)
+- [Algorithm SDK](https://stevenzhou2017.github.io/projects/algorithmsdk/)
 - [Vision OS](https://stevenzhou2017.github.io/projects/vision-os/)
 
 ## Publications
@@ -168,6 +169,7 @@ Industrial Vision Operating System
 Event-driven Vision Kernel
 AI Agent Architecture
 Industrial Security
+Vision + PTP
 
 ## Featured Documentation
 
