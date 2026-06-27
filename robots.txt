@@ -4,8 +4,8 @@ Allow: /
 # =========================
 # BLOCK LOW-VALUE ASSETS
 # =========================
-Disallow: /audio/
 Disallow: /award/
+Disallow: /download/
 Disallow: /download/demo/
 Disallow: /download/entertainment/
 Disallow: /download/latex/
