@@ -119,6 +119,6 @@ Embodied Intelligence -> VLM -> VLA -> World Model
 - [**CUDA Async Streams**](../docs/2026/06/09_AI_Inference_CUDA_Async_Streams.html)
 - [**Python WebSocket**](../docs/2026/06/15_Python_WebSocket_Server_Browser_FrontEnd.html)
 - [**RT Event-Driven Computing Kernel**](../docs/2026/06/19_Industrial_Vision_RT_Event-Driven_Computing_Kernel.html)
-
+- [**Precision Time Protocol**](../docs/2026/06/23_Precision_Time_Protocol_In_Industry.html)
 
 ---
