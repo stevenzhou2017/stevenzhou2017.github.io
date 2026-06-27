@@ -15,7 +15,7 @@ author:
   name: Dr. Junyang Zhou
   email: junyang.zhou@gmail.com
   github: stevenzhou2017
-  linkedin: junyang-zhou-2593a9100
+  linkedin: in/junyang-zhou-2593a9100
   bio: >-
     Industrial AI researcher and engineering leader specializing in 
     Vision Operating System, AI Agents, and Intelligent Manufacturing.
@@ -119,8 +119,8 @@ defaults:
 sitemap:
   filename: sitemap.xml
   exclude:
-    - /audio/
     - /award/
+    - /download/
     - /download/demo/
     - /download/entertainment/
     - /download/latex/
@@ -156,8 +156,8 @@ exclude:
   - .github
   - .jekyll-cache
   - .sass-cache
-  - audio/
   - award/
+  - download/
   - download/demo/
   - download/entertainment/
   - download/latex/
