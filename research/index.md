@@ -80,6 +80,7 @@ Industrial Safety -> OSDIP -> Research Gap -> Related Work -> Methodology -> Exp
  - [**Industrial Vision Security**](../docs/2026/06/02_Industrial_Vision_in_Security.html)
  - [**AI Industrial Security**](../docs/2026/06/03_AI_Industrial_Security_Application.html)
  - [**Perception Security**](../docs/2026/06/13_Combining_OST_Environmental_Perception_Industrial_Vision.html)
+ - [**AI Security Prospects and_Challenges**](../docs/2026/06/22_AI_Security_Application_Prospects_Challenges.html)
 
    
 ## OSDIP
