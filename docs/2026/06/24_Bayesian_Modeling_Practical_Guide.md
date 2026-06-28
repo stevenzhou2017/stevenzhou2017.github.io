@@ -82,6 +82,72 @@ date：2026.06.28
 - 基于物理知识：μ 应在 87~93.5 附近，A 在合理幅度范围等。
 
 
+**Python代码例子**
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy.optimize import curve_fit
+
+# 数据
+soh = np.array([100.0, 90.65, 83.19, 80.66])
+voltage = np.array([2.7103, 2.7501, 2.7333, 2.7266])
+
+def gaussian(x, A, mu, sigma, b):
+    return A * np.exp( - (x - mu)**2 / (2 * sigma**2) ) + b
+
+def log_likelihood_pointwise(theta, x_i, y_i, sigma_noise=0.005):
+    y_pred = gaussian(x_i, *theta)
+    return -0.5 * ((y_i - y_pred)/sigma_noise)**2 - np.log(sigma_noise * np.sqrt(2*np.pi))
+
+# 1. 获取后验样本（Bootstrap + 强截断先验）
+np.random.seed(42)
+n_boot = 2000
+boot_params = []
+for _ in range(n_boot):
+    idx = np.random.choice(len(soh), len(soh), replace=True)
+    try:
+        p = curve_fit(gaussian, soh[idx], voltage[idx], p0=[0.04, 90, 6, 2.71], maxfev=5000)[0]
+        A, mu, sigma, b = p
+        if 0.035 < A < 0.048 and 87 < mu < 93.5 and 4.5 < sigma < 7.8 and 2.707 < b < 2.714:
+            boot_params.append(p)
+    except:
+        pass
+boot_params = np.array(boot_params)
+
+# 2. 点式对数似然矩阵
+n_data = len(soh)
+log_lik_matrix = np.array([[log_likelihood_pointwise(theta, soh[i], voltage[i]) 
+                            for i in range(n_data)] for theta in boot_params])
+
+# 3. WAIC
+lppd = np.sum(np.log(np.mean(np.exp(log_lik_matrix), axis=0)))
+p_waic = np.sum(np.var(log_lik_matrix, axis=0))
+WAIC = -2 * (lppd - p_waic)
+print(f"WAIC = {WAIC:.2f}, p_waic = {p_waic:.2f}")
+
+# 4. LOO-CV 近似
+elpd_loo = np.sum(np.log(np.mean(np.exp(log_lik_matrix), axis=0)))
+LOO = -2 * elpd_loo
+print(f"LOO ≈ {LOO:.2f}")
+
+# 5. PPC（后验预测检验）
+n_rep = 500
+y_rep = np.array([np.random.normal(gaussian(soh, *theta), 0.005) 
+                  for theta in boot_params[np.random.randint(len(boot_params), size=n_rep)]])
+
+plt.figure(figsize=(10, 6))
+sns.kdeplot(voltage, color='red', linewidth=3, label='Observed', fill=True)
+for r in range(min(100, n_rep)):
+    sns.kdeplot(y_rep[r], color='purple', alpha=0.1, linewidth=1)
+sns.kdeplot(np.mean(y_rep, axis=0), color='blue', linewidth=2.5, label='Mean Replicated')
+plt.title('Posterior Predictive Check (PPC)')
+plt.legend()
+plt.grid(True, alpha=0.3)
+plt.show()
+```
+
 ---
 
 
