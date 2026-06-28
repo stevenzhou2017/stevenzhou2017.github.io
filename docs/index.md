@@ -110,6 +110,8 @@ This documentation hub provides engineering notes, tutorials, architecture desig
 - [**Optimal Stopping Time**](../docs/2026/06/17_Achievements_And_Tools_Optimal_Stopping_Time.html)
 - [**Diffusion Diffusion Model**](../docs/2026/05/01_Diffusion_Model.html)
 - [**Stable Stable Diffusion**](../docs/2026/05/02_Stable_Diffusion.html)
+- [**Bayesian Modelling**](../docs/2026/06/24_Bayesian_Modeling_Practical_Guide.html)
+
 
 
 ---
@@ -120,6 +122,8 @@ This documentation hub provides engineering notes, tutorials, architecture desig
  - [**AI Industrial Security**](../docs/2026/06/03_AI_Industrial_Security_Application.html)
  - [**Perception Security**](../docs/2026/06/13_Combining_OST_Environmental_Perception_Industrial_Vision.html)
  - [**AI Security Prospects and_Challenges**](../docs/2026/06/22_AI_Security_Application_Prospects_Challenges.html)
+
+
 
 ---
 
