@@ -22,9 +22,11 @@
         "Industrial AI",
         "Vision Operating System",
         "Industrial Vision",
+        "AI4S",
         "AI Agent",
         "Embodied AI",
         "CUDA",
+        "Bayesian Network",
         "Computer Vision",
         "Intelligent Manufacturing",
         "Robotics",
@@ -88,6 +90,8 @@
         {"@type": "DefinedTerm", "name": "AlgorithmSDK"},
         {"@type": "DefinedTerm", "name": "Event-Driven Vision Kernel"},
         {"@type": "DefinedTerm", "name": "Embodied AI"},
+        {"@type": "DefinedTerm", "name": "AI4S"},
+        {"@type": "DefinedTerm", "name": "Bayesian Network"},
         {"@type": "DefinedTerm", "name": "CUDA Optimization"}
       ]
     }
