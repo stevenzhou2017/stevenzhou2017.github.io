@@ -31,3 +31,6 @@ operating-system:
 
 event-driven:
   title: Event-driven System
+
+ai4s:
+  title: Bayesian Model
