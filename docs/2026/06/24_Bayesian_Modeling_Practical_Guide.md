@@ -1,21 +1,3 @@
----
-title: 贝叶斯建模实战指南：从原理到模型选择、评估与平均
-layout: page
-category: docs
-
-tags:
-  - ai4s
-  - bayesian-network
-
-graph:
-  node_type: docs
-  weight: 0.95
-  links:
-    - projects
----
-
-
-
 # 贝叶斯建模实战指南：从原理到模型选择、评估与平均
 
 author: 周均扬
