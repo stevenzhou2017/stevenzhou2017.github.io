@@ -66,3 +66,12 @@ Manufacturing -> Vision -> Logistics -> Scheduling
 - [**Logistics AI Agent**](../docs/2026/06/14_AI_Agent-Driven_Intelligent_Logistics_Platform.html)
 
 ---
+
+## AI4S
+Data collection -> Data Exploration -> Data Modelling -> Result Evaluation -> Visualization
+
+- [**CI and PI**](../docs/2026/06/01_Prediction_Confidence_Interval_Calculation.html)
+- [**Bayesian Modelling**](../docs/2026/06/24_Bayesian_Modeling_Practical_Guide.html)
+
+
+---
