@@ -114,6 +114,3 @@ date： 2026.06.02
 **“工业视觉系统在安全领域的应用价值图”**
 ![Industrial Security](Industrial_Vision_Security_APP.png "Industrial Security")
 
-
-
-你希望我帮你画吗？
