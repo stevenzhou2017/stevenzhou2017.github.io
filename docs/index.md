@@ -122,7 +122,7 @@ This documentation hub provides engineering notes, tutorials, architecture desig
  - [**AI Industrial Security**](../docs/2026/06/03_AI_Industrial_Security_Application.html)
  - [**Perception Security**](../docs/2026/06/13_Combining_OST_Environmental_Perception_Industrial_Vision.html)
  - [**AI Security Prospects and_Challenges**](../docs/2026/06/22_AI_Security_Application_Prospects_Challenges.html)
-
+ - [**Industiral Spatial Safety**](../docs/2026/06/25_Industrial_Spatial_Safety.html)
 
 
 ---
