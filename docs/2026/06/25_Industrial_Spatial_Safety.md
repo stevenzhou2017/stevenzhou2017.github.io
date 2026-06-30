@@ -54,16 +54,7 @@ date: 2026.06.29
 不同设备彼此独立：
 
 ```
-Camera
-LiDAR
-Radar
-PLC
-AGV
-Robot
-
-↓
-
-各自独立报警
+Camera/LiDAR/Radar/PLC/AGV/Robot -> 各自独立报警
 ```
 
 问题：
@@ -75,9 +66,7 @@ Robot
 例如：
 
 * 机器人不知道人在哪里；
-
 * AGV不知道叉车在哪里；
-
 * MES不知道危险区域是否有人。
 
 
