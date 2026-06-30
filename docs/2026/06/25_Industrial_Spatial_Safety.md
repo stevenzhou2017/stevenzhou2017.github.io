@@ -420,5 +420,8 @@ PLC -> Robot -> AGV ->  Light -> Alarm -> Safety IO
 
 工业空间安全正从**"设备级安全（Device-centric Safety）"**演进到**"空间级智能安全（Space-centric Intelligent Safety）"**。未来的核心竞争力不再只是增加更多传感器，而是建立一个统一的**Industrial Spatial Safety OS**，实现多源感知融合、三维空间理解、风险预测、语义推理和自主闭环控制。
 
-
 ---
+
+
+**“工业空间安全框架”**
+![Industrial Spatial Safety](Industrial_Spatial_Safety_OS.png "Industrial Spatial Safety OS")
