@@ -346,4 +346,5 @@ Safety system → record event
 
 ---
 
-
+** Pack产线 安全系统的软件架构图 **
+![Pack line safety OS](Battery_Pack_Line_Industrial_Spatial_Safety_OS.png "Pack Line Safety OS")
