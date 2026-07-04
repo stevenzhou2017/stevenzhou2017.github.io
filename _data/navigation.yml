@@ -3,26 +3,32 @@ main:
   - title: Home
     url: /
 
-  - title: Research
-    url: /research/
+  - title: "Research"
+    url: "/research/"
+    children:
+      - title: "Industrial Spatial Safety for Battery Pack Lines"
+          url: "/research/industrial-spatial-safety-pack-lines/"
+          description: "Pack Safety OS for lithium battery Pack production lines."
 
-  - title: Projects
-    url: /projects/
 
-  - title: Software
-    url: /software/
 
-  - title: Publications
-    url: /publications/
+  - title: "Projects"
+    url: "/projects/"
 
-  - title: Docs
-    url: /docs/
+  - title: "Software"
+    url: "/software/"
 
-  - title: Knowledge Graph
-    url: /knowledge/
+  - title: "Publications"
+    url: "/publications/"
 
-  - title: CV
-    url: /cv/
+  - title: "Docs"
+    url: "/docs/"
+
+  - title: "Knowledge Graph"
+    url: "/knowledge/"
+
+  - title: "CV"
+    url: "/cv/"
 
 footer:
 
