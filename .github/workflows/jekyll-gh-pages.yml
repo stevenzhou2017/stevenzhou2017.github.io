@@ -19,7 +19,7 @@ permissions:
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   # Build job
@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
@@ -35,9 +35,21 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Inspect _site
+        run: |
+          echo "Listing _site"
+          ls -la ./_site
+          echo "Total size"
+          du -sh ./_site
+          echo "Find symlinks"
+          find ./_site -type l -print
+          echo "Large files"
+          find ./_site -type f -size +50M -print
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./_site
+          
   # Deployment job
   deploy:
     environment:
@@ -48,4 +60,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
