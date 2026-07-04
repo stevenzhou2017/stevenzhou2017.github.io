@@ -1,15 +1,14 @@
 main:
 
-  - title: Home
-    url: /
+  - title: "Home"
+    url: "/"
 
   - title: "Research"
     url: "/research/"
     children:
       - title: "Industrial Spatial Safety for Battery Pack Lines"
-          url: "/research/industrial-spatial-safety-pack-lines/"
-          description: "Pack Safety OS for lithium battery Pack production lines."
-
+        url: "/research/industrial-spatial-safety-pack-lines/"
+        description: "Pack Safety OS for lithium battery Pack production lines."
 
 
   - title: "Projects"
