@@ -63,5 +63,35 @@
     - automation
   series:
     - vision-os
+
+
+- id: industrial-spatial-safety-pack-lines
+  title: "Industrial Spatial Safety for Battery Pack Lines"
+  title_zh: "面向锂电 Pack 产线的工业空间安全"
+  type: "research_topic"
+  url: "/research/industrial-spatial-safety-pack-lines/"
+  summary: "A Safety OS architecture for lithium battery Pack production lines, integrating Camera, AGV, Robot, PLC, MES, Digital Twin, and AI Agent into a closed-loop industrial spatial safety system."
+  domains:
+    - Industrial AI
+    - Smart Manufacturing
+    - Battery Manufacturing
+    - Industrial Safety
+  related_systems:
+    - Pack Safety OS
+    - Vision OS
+    - CameraSDK
+    - AlgorithmSDK
+    - AI Safety Agent
+  keywords:
+    - spatial safety
+    - battery Pack line
+    - industrial vision
+    - AI Agent
+    - digital twin
+    - PLC
+    - AGV
+    - robot safety
+    - safety closed loop
+
   authors:
     - junyang-zhou
