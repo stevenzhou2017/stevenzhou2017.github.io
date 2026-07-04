@@ -248,7 +248,6 @@ Industrial Spatial Safety for Battery Pack Lines 可以作为工业 AI、智能�
 
 Zhou, J. (2026). *Industrial Spatial Safety for Battery Pack Lines: Toward a Closed-loop Safety OS for Lithium Battery Manufacturing*. Industrial AI Knowledge Portal.
 
-````
 
 ---
 
