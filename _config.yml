@@ -127,7 +127,7 @@ sitemap:
     - /download/thesis/master/
     - /projects/algorithmsdk/
     - /projects/camerasdk/
-    - /googleaa9643b011ea1a36.html
+
 
 # =========================
 # BUILD SETTINGS
@@ -164,7 +164,6 @@ exclude:
   - download/thesis/master/
   - projects/algorithmsdk/
   - projects/camerasdk/
-  - googleaa9643b011ea1a36.html
   - Framework.txt
   - Framework2.md
   - Information_Architecture.txt
