@@ -135,13 +135,11 @@ date: 2026.07.04
 
 ---
 
-## 5，关键落地方案
+## 5. 关键落地方案
 
 
 
 ### 方案1：Pack产线“统一空间坐标系”
-
-#### 目标
 
 所有设备统一到：**Factory Global Coordinate System (FGCS)**。
 
@@ -161,7 +159,7 @@ date: 2026.07.04
 
 ### 方案2：危险空间数字化（Safety Envelope）
 
-针对Pack产线定义：
+针对Pack产线定义安全空间：
 
 #### 1. Robot安全空间
 
@@ -227,6 +225,8 @@ Conveyor flow
 
 ### 方案5：AGV + Robot协同避障
 
+人 + AGV + Robot协同。
+
 ####  关键能力
 
 * AGV动态改道
@@ -246,7 +246,7 @@ Safety system → record event
 
 ### 方案6：MES + 安全系统融合
 
-让MES知道：
+MES与安全系统连通，让MES知道：
 
 * 当前工位是否安全
 * 是否允许启动工艺
@@ -276,7 +276,7 @@ Safety system → record event
 ## 6. 实施路径
 
 
-### Phase 1：可视化安全
+### Phase 1：可视化安全，可视化风险地图
 
 - 摄像头 + RTLS
 - 人员/AGV定位
@@ -286,7 +286,7 @@ Safety system → record event
 成果：可视化风险地图
 
 
-### Phase 2：空间数字孪生
+### Phase 2：空间数字孪生，Digital Twin Pack Line
 
 - Pack线3D模型
 - 设备空间占用建模
@@ -295,7 +295,7 @@ Safety system → record event
 成果：Digital Twin Pack Line
 
 
-### Phase 3：预测安全系统
+### Phase 3：预测安全系统， 提前预警
 
 - 轨迹预测
 - 碰撞检测
@@ -305,7 +305,7 @@ Safety system → record event
 
 
 
-### Phase 4：安全自治系统
+### Phase 4：安全自治系统，自主安全产线
 
 - Safety Agent OS
 - 自动联锁决策
