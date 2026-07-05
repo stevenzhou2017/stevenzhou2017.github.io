@@ -12,8 +12,7 @@ Disallow: /download/latex/
 Disallow: /download/thesis/master/
 Disallow: /projects/algorithmsdk/
 Disallow: /projects/camerasdk/
-Disallow: /github-recovery-codes.html
-Disallow: /github-recovery-codes.md
+
 
 # =========================
 # IMPORTANT: DO NOT BLOCK ENTIRE /download/
