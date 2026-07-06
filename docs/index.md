@@ -111,7 +111,7 @@ This documentation hub provides engineering notes, tutorials, architecture desig
 - [**Diffusion Diffusion Model**](../docs/2026/05/01_Diffusion_Model.html)
 - [**Stable Stable Diffusion**](../docs/2026/05/02_Stable_Diffusion.html)
 - [**Bayesian Modelling**](../docs/2026/06/24_Bayesian_Modeling_Practical_Guide.html)
-
+- [**Markov_Chain_Monte_Carlo**](../docs/2026/07/02_Markov_Chain_Monte_Carlo_Methods_AI4S_Revolution.html)
 
 
 ---
@@ -123,7 +123,7 @@ This documentation hub provides engineering notes, tutorials, architecture desig
  - [**Perception Security**](../docs/2026/06/13_Combining_OST_Environmental_Perception_Industrial_Vision.html)
  - [**AI Security Prospects and_Challenges**](../docs/2026/06/22_AI_Security_Application_Prospects_Challenges.html)
  - [**Industiral Spatial Safety**](../docs/2026/06/25_Industrial_Spatial_Safety.html)
-
+ - [**Pack Line Spatial Safety**](../docs/2026/07/01_Battery_Pack_Line_Industrial_Spatial_Safety_OS.html)
 
 ---
 
