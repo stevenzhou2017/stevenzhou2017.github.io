@@ -1,24 +1,3 @@
----
-layout: page
-title: "马尔科夫链蒙特卡洛方法：从“聪明随机漫步”到锂电池的AI4S革命"
-subtitle: "马尔科夫链蒙特卡洛方法如何帮助 AI 理解锂电池"
-description: "MCMC 可以拆成两个概念理解。第一是蒙特卡洛，它的核心思想是用大量随机样本去估计复杂问题；第二是马尔科夫链，它表示系统下一步往哪里走，只依赖当前状态，而不需要记住全部历史。把两者结合起来，MCMC 就像让一个随机探险者在复杂的参数空间中行走：它不会盲目乱走，而是按照一定规则，更多停留在更可能是真实答案的区域。"
-permalink: /docs/
-lang: zh-CN
-date: 2026-07-06
-last_modified_at: 2026-07-06
-author: "Dr. Junyang Zhou"
-category: /docs/
-tags:
-  - Industrial AI
-  - AI4S
-  - Battery Manufacturing
-  - AI Agent
-  - Smart Manufacturing
----
-
-
-
 # **马尔科夫链蒙特卡洛方法：从“聪明随机漫步”到锂电池的AI4S革命**
 
 author： 周均扬
