@@ -82,6 +82,7 @@ Industrial Safety -> OSDIP -> Research Gap -> Related Work -> Methodology -> Exp
  - [**Perception Security**](../docs/2026/06/13_Combining_OST_Environmental_Perception_Industrial_Vision.html)
  - [**AI Security Prospects and_Challenges**](../docs/2026/06/22_AI_Security_Application_Prospects_Challenges.html)
  - [**Industrial Spatial Safety**](../docs/2026/06/25_Industrial_Spatial_Safety.html)
+ - [**Pack Line Spatial Safety**](../docs/2026/07/01_Battery_Pack_Line_Industrial_Spatial_Safety_OS.html)
 
    
 ## OSDIP
