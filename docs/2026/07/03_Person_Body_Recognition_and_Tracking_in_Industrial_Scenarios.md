@@ -1,4 +1,4 @@
-# 工业场景的人物/人体识别跟踪
+# 工业场景的人物人体识别跟踪
 
 author： 周均扬
 
@@ -7,13 +7,12 @@ date: 2026.07.07
 
 ---
 
-提供面向**工业视觉 / 安防 / Pack产线安全 / AGV人车混行**的工业场景的人物/人体识别跟踪方案。
+提供面向**工业视觉 / 安防 / Pack产线安全 / AGV人车混行**的工业场景的人物人体识别跟踪方案。
 
----
 
 ### 1. 技术原理
 
-人物/人体识别跟踪通常分成四层：
+人物人体识别跟踪通常分成四层：
 
 ```mermaid
 flowchart LR
@@ -694,7 +693,7 @@ YOLO-Pose / RTMPose + Track ID + 姿态规则
 
 ---
 
-### 参考资料
+
 
 [1]: https://docs.ultralytics.com/modes/track "YOLO Multi-Object Tracking in Video | Ultralytics"
 [2]: https://arxiv.org/abs/2110.06864 "ByteTrack: Multi-Object Tracking by Associating Every Detection Box"
@@ -702,4 +701,3 @@ YOLO-Pose / RTMPose + Track ID + 姿态规则
 [4]: https://docs.opencv.org/4.x/d6/d0f/group__dnn.html "OpenCV: Deep Neural Network module"
 [5]: https://docs.opencv.org/4.x/d2/da2/classcv_1_1TrackerCSRT.html "OpenCV: cv::TrackerCSRT Class Reference"
 
----
