@@ -48,8 +48,8 @@ This documentation hub provides engineering notes, tutorials, architecture desig
 
 - **[Industrial Vision Algorithm SDK](../docs/2026/06/07_Industrial_Vision_AlgorithmSDK.html)** -- Full-featured industrial vision algorithm library
 - **[Daniilidis Hand-Eye Calibration](../docs/2026/06/18_Daniilidis_Hand_Eye_Calibration_Method.html)** -- High-precision hand-eye calibration method
-
-
+- **[Person/Body_Recognition_and_Tracking](../docs/2026/07/03_Person_Body_Recognition_and_Tracking_in_Industrial_Scenarios.html)**   --- Recognition and Tracking
+ 
 ---
 
 # GPU Computing
@@ -155,7 +155,8 @@ This documentation hub provides engineering notes, tutorials, architecture desig
  - [**Python Websocket**](../docs/2026/06/19_Industrial_Vision_RT_Event-Driven_Computing_Kernel.html)
  - [**Vision Event System**](../docs/2026/06/21_Industrial_Vision_Event_System.html)
  - [**Vision + PTP**](../docs/2026/06/23_Precision_Time_Protocol_In_Industry.html)
-
+ - [**Sensor + PTP**](../docs/2026/07/04_Industrial_Sensor_Integration_PTP.html)
+ - [**PTP Evolution and Deployment**](../docs/2026/07/05_PTP_Development_Evolution_Deployment_Cases.html)
 
 ---
 
