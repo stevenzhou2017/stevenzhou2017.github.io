@@ -598,8 +598,8 @@ PTP 应该作为 **工业空间安全系统的时间底座**。没有 PTP，系�
 
 ## 参考资料
 
-[1]: https://standards.ieee.org/standard/1588-2019.html?utm_source=chatgpt.com "IEEE SA - IEEE 1588-2019"
-[2]: https://www.automate.org/vision/vision-standards/vision-standards-gige-vision?utm_source=chatgpt.com "GigE Vision Standard"
-[3]: https://linuxptp.sourceforge.net/?utm_source=chatgpt.com "The Linux PTP Project"
+[1]: https://standards.ieee.org/standard/1588-2019.html "IEEE SA - IEEE 1588-2019"
+[2]: https://www.automate.org/vision/vision-standards/vision-standards-gige-vision "GigE Vision Standard"
+[3]: https://linuxptp.sourceforge.net/ "The Linux PTP Project"
 
 ---
