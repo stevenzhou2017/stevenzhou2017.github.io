@@ -697,8 +697,8 @@ YOLO-Pose / RTMPose + Track ID + 姿态规则
 ### 参考资料
 
 [1]: https://docs.ultralytics.com/modes/track "YOLO Multi-Object Tracking in Video | Ultralytics"
-[2]: https://arxiv.org/abs/2110.06864?utm_source=chatgpt.com "ByteTrack: Multi-Object Tracking by Associating Every Detection Box"
-[3]: https://arxiv.org/abs/1703.07402?utm_source=chatgpt.com "Simple Online and Realtime Tracking with a Deep ..."
+[2]: https://arxiv.org/abs/2110.06864 "ByteTrack: Multi-Object Tracking by Associating Every Detection Box"
+[3]: https://arxiv.org/abs/1703.07402 "Simple Online and Realtime Tracking with a Deep ..."
 [4]: https://docs.opencv.org/4.x/d6/d0f/group__dnn.html "OpenCV: Deep Neural Network module"
 [5]: https://docs.opencv.org/4.x/d2/da2/classcv_1_1TrackerCSRT.html "OpenCV: cv::TrackerCSRT Class Reference"
 
