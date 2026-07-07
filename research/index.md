@@ -20,6 +20,7 @@ This AI Research Hub provides Theory, Formula, Framework covering of AI Agent, I
 - Industrial AI
 - AI Systems
 - Industrial Safety
+- AI4S
 - Embodied AI
 - Real-time AI
 
@@ -97,6 +98,19 @@ Industrial Safety -> OSDIP -> Research Gap -> Related Work -> Methodology -> Exp
   
 ---
 
+
+## AI4S
+
+- [**AI4S Tools**](../docs/2026/03/01_AI4S_Tools.html)
+- [**PI and CI**](../docs/2026/06/01_Prediction_Confidence_Interval_Calculation.html)
+- [**Optimal Stopping Time**](../docs/2026/06/17_Achievements_And_Tools_Optimal_Stopping_Time.html)
+- [**Diffusion Model**](../docs/2026/05/01_Diffusion_Model.html)
+- [**Stable Diffusion(SD)**](../docs/2026/05/02_Stable_Diffusion.html)
+- [**Bayesian Modelling**](../docs/2026/06/24_Bayesian_Modeling_Practical_Guide.html)
+- [**Markov_Chain_Monte_Carlo(MCMC)**](../docs/2026/07/02_Markov_Chain_Monte_Carlo_Methods_AI4S_Revolution.html)
+
+
+---
 
 # Embodied AI
 
