@@ -54,6 +54,7 @@ Measurement ->  Calibration -> 3D -> AI -> Python ->CUDA
 - Python Binding
 - [**Vision Algorithm SDK**](../docs/2026/06/07_Industrial_Vision_AlgorithmSDK.html)
 - [**Hand_Eye Calibration**](../docs/2026/06/18_Daniilidis_Hand_Eye_Calibration_Method.html)
+- [**Person/Body_Recognition_and_Tracking**](../docs/2026/07/03_Person_Body_Recognition_and_Tracking_in_Industrial_Scenarios.html)
 
 ---
 
