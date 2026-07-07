@@ -72,6 +72,9 @@ Data collection -> Data Exploration -> Data Modelling -> Result Evaluation -> Vi
 
 - [**CI and PI**](../docs/2026/06/01_Prediction_Confidence_Interval_Calculation.html)
 - [**Bayesian Modelling**](../docs/2026/06/24_Bayesian_Modeling_Practical_Guide.html)
+- [**Markov_Chain_Monte_Carlo**](../docs/2026/07/02_Markov_Chain_Monte_Carlo_Methods_AI4S_Revolution.html)
+
+
 
 
 ---
