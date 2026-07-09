@@ -108,13 +108,13 @@ flowchart LR
 数据库、数据湖、缓存、日志仓库
 ```
 
----
+
 
 ### 5. 子程序 / 模块节点
 
 ```mermaid
 flowchart LR
-    M[["AI安全引擎<br/>Risk Engine"]]
+    M[["AI应用引擎<br/>Risk Engine"]]
 ```
 
 常用于：
@@ -185,7 +185,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    A["AI安全引擎"] -. "告警事件" .-> B["事件记录器"]
+    A["AI应用引擎"] -. "告警事件" .-> B["事件记录器"]
 ```
 
 适合表示：
@@ -214,7 +214,6 @@ flowchart LR
 安全闭环
 核心主链路
 ```
-
 
 
 ### 6. 多节点链式写法
@@ -278,7 +277,7 @@ flowchart TB
 flowchart LR
 
     subgraph L1["设备感知层"]
-        LT["立体安全传感器LT"]
+        Camera["工业相机"]
         AGV["AGV"]
         Robot["Robot"]
         PLC["PLC"]
@@ -290,7 +289,7 @@ flowchart LR
         PLCAdapter["PLC Adapter"]
     end
 
-    LT --> SDK
+    Camera --> SDK
     AGV --> ROS2
     Robot --> ROS2
     PLC --> PLCAdapter
@@ -304,7 +303,7 @@ flowchart LR
 flowchart LR
 
     subgraph S1["L1 设备感知层"]
-        A1["立体安全传感器LT"]
+        A1["工业相机"]
         A2["AGV"]
         A3["Robot"]
         A4["PLC"]
@@ -317,7 +316,7 @@ flowchart LR
         B4["Event Bus"]
     end
 
-    subgraph S3["L3 AI安全层"]
+    subgraph S3["L3 AI应用层"]
         C1["目标检测"]
         C2["轨迹预测"]
         C3["风险评分"]
@@ -360,7 +359,7 @@ flowchart TB
         A1["Camera"] --> A2["AGV"] --> A3["Robot"]
     end
 
-    A --> B["AI安全层"]
+    A --> B["AI应用层"]
 ```
 
 实际渲染时，子图不一定完全按 `direction LR` 排列。
@@ -385,7 +384,7 @@ Mermaid 推荐使用 `classDef` 定义样式，再通过 `class` 绑定到节点
 ```mermaid
 flowchart LR
     A["设备感知层"]
-    B["AI安全层"]
+    B["AI应用层"]
     C["控制执行层"]
 
     A --> B --> C
@@ -405,17 +404,17 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    LT["立体安全传感器LT"]
+    Camera["工业相机"]
     AGV["AGV"]
     Robot["Robot"]
     PLC["PLC"]
 
-    LT --> AGV
+    Camera --> AGV
     AGV --> Robot
     Robot --> PLC
 
     classDef device fill:#EAF4FF,stroke:#2F80ED,stroke-width:1.5px;
-    class LT,AGV,Robot,PLC device;
+    class Camera,AGV,Robot,PLC device;
 ```
 
 ---
@@ -424,7 +423,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    A["设备感知层"]:::sensor --> B["AI安全层"]:::ai
+    A["设备感知层"]:::sensor --> B["AI应用层"]:::ai
 
     classDef sensor fill:#EAF4FF,stroke:#2F80ED,stroke-width:1.5px;
     classDef ai fill:#FFF4E6,stroke:#F2994A,stroke-width:1.5px;
@@ -442,7 +441,7 @@ flowchart LR
     A["Camera"] --> B["CameraSDK"]
 
     %% 这是AI处理部分
-    B --> C["AI安全引擎"]
+    B --> C["AI应用引擎"]
 ```
 
 建议在复杂图中保留注释，方便后续维护。
@@ -458,7 +457,7 @@ flowchart LR
 ```mermaid
 flowchart LR
     A["工业相机<br/>人员/AGV/机器人感知"]
-    B["AI安全引擎<br/>检测/跟踪/预测/评分"]
+    B["AI应用引擎<br/>检测/跟踪/预测/评分"]
 
     A --> B
 ```
@@ -467,7 +466,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    工业相机 --> AI安全引擎
+    工业相机 --> AI应用引擎
 ```
 
 原因：
@@ -479,7 +478,7 @@ flowchart LR
 建议规范：
 
 ```text
-节点 ID 用英文：LT, AIEngine, RiskScore
+节点 ID 用英文：Camera, AIEngine, RiskScore
 节点显示文本用中文：["工业相机"]
 多行文本用 <br/>
 复杂文本加双引号
@@ -493,7 +492,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    A["感知"] --> B["AI安全"]
+    A["感知"] --> B["AI应用"]
     B --> C["风险评分"]
     C --> D["PLC急停"]
 
@@ -607,7 +606,7 @@ flowchart TB
 1. 图类型统一用 flowchart，不用旧写法 graph。
 2. 架构图优先用 LR。
 3. 流程图、状态升级图、组织图优先用 TB。
-4. 节点 ID 使用英文，例如 LT、CameraSDK、RiskEngine。
+4. 节点 ID 使用英文，例如 Camera、CameraSDK、RiskEngine。
 5. 中文显示文本放在 ["..."] 中。
 6. 多行文本使用 <br/>。
 7. 所有模块尽量使用 subgraph 分层。
@@ -640,7 +639,7 @@ flowchart TB
 内容：
 - 设备感知层：工业相机、AGV、Robot、PLC
 - 数据接入层：CameraSDK、ROS2 Adapter、PLC Adapter、Event Bus
-- AI安全层：目标检测、轨迹预测、风险评分
+- AI应用层：目标检测、轨迹预测、风险评分
 - 决策控制层：规则引擎、安全动作、控制命令
 - 平台应用层：Dashboard、事件回溯、安全报表
 ```
