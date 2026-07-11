@@ -1,0 +1,23 @@
+- title: "Safety OS"
+  url: "/projects/safety-os/"
+  type: "project"
+  description: "工业空间安全操作系统总体架构、MVP 场景、闭环与实施路线。"
+
+- title: "工业空间安全"
+  url: "/docs/industrial-space-safety/"
+  type: "docs"
+  children:
+    - title: "AGV + Robot + Camera融合算法"
+      url: "/docs/industrial-space-safety/agv-robot-camera-fusion/"
+    - title: "3D ToF + AI 工业价值闭环"
+      url: "/docs/industrial-space-safety/3d-tof-ai-value-loop/"
+
+- title: "AI + Safety 技术发展趋势"
+  url: "/research/ai-safety/"
+  type: "research"
+  description: "从 AI 辅助安全走向受治理的 Safety Intelligence。"
+
+- title: "AI 安全系统标准体系与开发规范"
+  url: "/docs/standards/ai-safety-development/"
+  type: "standards"
+  description: "功能安全、机械安全、网络安全、AI 治理和 V&V 标准框架。"
