@@ -249,3 +249,4 @@ Operation and Maintenance Manual
 - [Safety OS](/projects/safety-os/)
 - [AI + Safety 技术发展趋势](/research/ai-safety/)
 - [AGV + Robot + Camera融合算法](/docs/industrial-space-safety/agv-robot-camera-fusion/)
+
