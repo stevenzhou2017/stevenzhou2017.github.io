@@ -76,7 +76,7 @@ Real-time AI -> Optimal Stopping -> Scheduling -> Vision Kernel
 
 Industrial Safety -> OSDIP -> Research Gap -> Related Work -> Methodology -> Experiments
 
-## AI Security
+## AI Security & AI Safety
 
  - [**Industrial Vision Security**](../docs/2026/06/02_Industrial_Vision_in_Security.html)
  - [**AI Industrial Security**](../docs/2026/06/03_AI_Industrial_Security_Application.html)
@@ -84,6 +84,7 @@ Industrial Safety -> OSDIP -> Research Gap -> Related Work -> Methodology -> Exp
  - [**AI Security Prospects and_Challenges**](../docs/2026/06/22_AI_Security_Application_Prospects_Challenges.html)
  - [**Industrial Spatial Safety**](../docs/2026/06/25_Industrial_Spatial_Safety.html)
  - [**Pack Line Spatial Safety**](../docs/2026/07/01_Battery_Pack_Line_Industrial_Spatial_Safety_OS.html)
+ - [**AI Safety**](/research/ai-safety/)
 
    
 ## OSDIP
