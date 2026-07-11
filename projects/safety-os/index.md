@@ -17,11 +17,11 @@ version: V1.0
 last_modified_at: 2026-07-11
 ---
 
-# WONSOR Safety OS
+# Safety OS
 
 > 面向工业生产场景的人、车、机、料一体化工业空间安全操作系统。
 
-WONSOR Safety OS 将立体安全传感器 LT、AGV、机器人、PLC、安全门、急停和生产状态统一接入，以空间建模、风险融合、规则决策和控制联动形成可解释、可追溯、可持续优化的工业安全闭环。
+Safety OS 将立体安全传感器、AGV、机器人、PLC、安全门、急停和生产状态统一接入，以空间建模、风险融合、规则决策和控制联动形成可解释、可追溯、可持续优化的工业安全闭环。
 
 ## 1. 项目目标
 
@@ -48,7 +48,7 @@ flowchart TB
     end
 
     subgraph L2["L2 适配与数据接入层"]
-        LTA["LT Adapter / CameraSDK"]
+        LTA["Camera Adapter / CameraSDK"]
         AGVA["AGV Adapter"]
         ROBA["Robot Adapter"]
         PLCA["PLC Adapter"]
