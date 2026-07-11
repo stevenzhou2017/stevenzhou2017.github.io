@@ -127,9 +127,9 @@ This documentation hub provides engineering notes, tutorials, architecture desig
 
  - [**Industiral Spatial Safety**](../docs/2026/06/25_Industrial_Spatial_Safety.html)
  - [**Pack Line Spatial Safety**](../docs/2026/07/01_Battery_Pack_Line_Industrial_Spatial_Safety_OS.html)
- - [**Safety OS**](../docs/industrial-space-safety/)
- - [**AI Safety**](../research/ai-safety/)
- - [**3D + AI**](../docs/industrial-space-safety/3d-tof-ai-value-loop/)
+ - [**Safety OS**](/docs/industrial-space-safety/)
+ - [**AI Safety**](/research/ai-safety/)
+ - [**3D + AI**](/docs/industrial-space-safety/3d-tof-ai-value-loop/)
  - [**AI Safety Standards**](/docs/standards/ai-safety-development/)
 
 
