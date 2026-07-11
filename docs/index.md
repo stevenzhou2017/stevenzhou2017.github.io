@@ -122,8 +122,16 @@ This documentation hub provides engineering notes, tutorials, architecture desig
  - [**AI Industrial Security**](../docs/2026/06/03_AI_Industrial_Security_Application.html)
  - [**Perception Security**](../docs/2026/06/13_Combining_OST_Environmental_Perception_Industrial_Vision.html)
  - [**AI Security Prospects and_Challenges**](../docs/2026/06/22_AI_Security_Application_Prospects_Challenges.html)
+
+# AI Safety
+
  - [**Industiral Spatial Safety**](../docs/2026/06/25_Industrial_Spatial_Safety.html)
  - [**Pack Line Spatial Safety**](../docs/2026/07/01_Battery_Pack_Line_Industrial_Spatial_Safety_OS.html)
+ - [**Safety OS**](../docs/industrial-space-safety/)
+ - [**AI Safety**](../research/ai-safety/)
+ - [**3D + AI**](../docs/industrial-space-safety/3d-tof-ai-value-loop/)
+ - [**AI Safety Standards**](/docs/standards/ai-safety-development/)
+
 
 ---
 
