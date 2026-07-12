@@ -24,13 +24,7 @@ last_modified_at: 2026-07-11
 它不同于仅讨论大模型对齐的狭义“AI Safety”，更接近以下交叉领域：
 
 ```text
-Industrial Safety
-+ Functional Safety
-+ Machine Safety
-+ AI Assurance
-+ Cybersecurity
-+ AI Governance
-+ Safety Operations
+Industrial Safety + Functional Safety + Machine Safety + AI Assurance + Cybersecurity + AI Governance + Safety Operations
 ```
 
 ## 2. 技术演进
