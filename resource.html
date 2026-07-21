@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
-<HTML lang="zh-CN" dir="ltr">
-	<HEAD>
+<html lang="zh-CN" dir="ltr">
+	 <!-- ==================== HEAD ==================== -->
+	<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dr. Junyang Zhou | 周均扬博士 | 工业AI与智能制造专家</title>
@@ -17,7 +18,7 @@
         <!-- Open Graph 协议 - 社交分享优化 -->
         <meta property="og:title" content="Dr. Junyang Zhou | 周均扬博士 | 工业AI与智能制造专家" />
         <meta property="og:description" content="周均扬博士（Dr. Junyang Zhou），香港浸会大学（HKBU）博士、中山大学（SYSU）校友。专注工业AI与智能制造，在锂电池制造AI应用及AI联盟生态建设中具有开创性实践与领导经验。同时深耕普适计算、情境感知、多模态交互与具身智能领域，拥有多项美国发明专利。IEEE高级会员。"/>
-        <meta property="og:type" content="profile" />                  <!-- 个人主页推荐使用 profile -->
+        <meta property="og:type" content="website">                <!-- 个人主页推荐使用 profile -->
         <meta property="og:url" content="https://stevenzhou2017.github.io" />   <!-- 替换为实际首页完整URL -->
         <meta property="og:image" content="https://stevenzhou2017.github.io/assets/images/Industrial_AI_expert.webp" />  <!-- 推荐 1200×630 px 高清专业照或实验室场景图 -->
         <meta property="og:image:alt" content="Dr. Junyang Zhou - Industrial AI Expert" />
@@ -25,43 +26,67 @@
         <meta property="og:image:height" content="630" />  
         <meta property="og:site_name" content="Dr. Junyang Zhou Personal Homepage" />
         <meta property="og:locale" content="zh_CN" />                 <!-- 支持中文显示 -->
-
-		<!---Style link, CSS--->
-        <link rel="stylesheet" href="./css/jyzhou.css">
-    </HEAD>	
-
-<BODY>
-	<CENTER>
-		<table width=800 border=0 cellpadding=0 cellspacing=0>
-				<tr><td bgcolor=#7CA3DE height=10><div align="center"></div></td></tr>
-                <tr><td bgcolor=#EEEEEE height=10> </td></tr>
-				
-				<tr><td bgcolor=#EEEEEE><div align="center">
-							<span class="title_1">Dr. Junyang Zhou's Homepage</span>
-				</div></td></tr>
-				
-				<tr><td bgcolor=#EEEEEE height=10> </td></tr>
-				<tr><td bgcolor=#7CA3DE height=10><div align="center"></div></td></tr>
-		</table>
+        <meta name="twitter:card" content="summary_large_image">
 		
-		<table width=800 border=0 cellpadding=0 cellspacing=0>
-				<tr><td height=10></td></tr>
+		<!---Style link, CSS--->
+        <link rel="stylesheet" href="/css/portal.css">
+        <link rel="icon" href="/images/favicon.ico">
 
-				<tr><td bgcolor="#000090">
-						<div align="center"><span class="menubar">
-						     || <a href="./index.html">Home</a> ||
-						     	<a href="./research.html">Research</a> ||
-							<a href="./publication.html">Publications</a> ||
-							<!--<a href="./award.html">Awards</a> ||-->
-                            <!--<a href="./download.html">Source</a> || -->
-							<a href="./resource.html">Source</a> ||
-							<a href="./links.html">Bookmarks</a> ||
-						</span></div>
-				</td></tr>
-				<tr><td height=10></td></tr>
-		</table>
-	
-		<TABLE width=800 border=0 cellpadding=0 cellspacing=0>
+        <!-- Critical Preloads -->
+        <link rel="preload" as="style" href="/css/portal.css">
+
+        <!-- JSON-LD -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [{
+             "@type": "Person",
+             "name": "Dr. Junyang Zhou",
+             "jobTitle": "Industrial AI Researcher & Architect",
+             "url": "https://stevenzhou2017.github.io",
+            "sameAs": ["https://github.com/stevenzhou2017", "https://linkedin.com/in/junyang-zhou-2593a9100"]
+          }]
+        }
+        </script>
+		
+    </head>	
+    <!-- ====================end of HEAD ==================== -->
+
+
+    <!-- ======================= body ========================= -->
+    <body>
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="/">工业AI知识门户</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/research.html">Research</a></li> 
+                    <li><a href="/publication.html">Publications</a></li>
+                    <li><a href="/resource.html">Resources</a></li>
+                    <li><a href="/links.html">Bookmarks</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Button -->
+            <button id="hamburger" class="mobile-menu" aria-label="Toggle menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Dark Mode Toggle -->
+            <button id="theme-toggle" aria-label="Toggle dark mode" style="background:none;border:none;font-size:1.5rem;cursor:pointer;margin-left:12px;">
+                🌙
+            </button>
+
+        </div>
+    </header>
+	<!-- ====================end of  HEADER ==================== -->
+
+	<center>
+		<table width=800 border=0 cellpadding=0 cellspacing=0>
 				
 <!--/////////////////////////////////////////////////////////Source Download//////////////////////////////////////////////////////////-->		
 		    <tr><td><div align="left"><span class="content_1">Source:</span></div></td></tr>
@@ -79,10 +104,10 @@
 				 <td><div align="left"><a href="./download/latex/pdfscreen-full.zip"><span class="url_1">pdfscreen-full</span></a></div></td>
 		    </tr>
 
-	    </TABLE>
+	    </table>
 
 		<div align="center"><hr noshade size=2 width="800" color=cccccc></div>	
-		<TABLE width=800 border=0 cellpadding=0 cellspacing=0>
+		<table width=800 border=0 cellpadding=0 cellspacing=0>
 <!--/////////////////////////////////////////////////////////Technology docs//////////////////////////////////////////////////////////-->		
 		         
 			<tr>
@@ -1258,7 +1283,118 @@
 		    </tr>
 	    </TABLE>
 		
-    </CENTER>
-	</BODY>
+    </center>
+	
+  <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>工业AI</h3>
+                    <ul>
+                        <li><a href="/research/">Research</a></li>
+                        <li><a href="/docs/">Documentation</a></li>
+                        <li><a href="/projects/">Projects</a></li>
+                        <li><a href="/publications/">Publications</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>资源</h3>
+                    <ul>
+                        <li><a href="/graph.json">Knowledge Graph</a></li>
+                        <li><a href="/llms.txt">LLMs</a></li>
+                        <li><a href="/sitemap.xml">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>社交</h3>
+                    <ul>
+                        <li><a href="https://github.com/stevenzhou2017">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/junyang-zhou-2593a9100">LinkedIn</a></li>
+                        <li><a href="mailto:junyang.zhou@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+			<p>© 2026 Dr. Junyang Zhou (周均扬博士). All Rights Reserved. | Base in Shenzhen, China</p>		
+		</div>
+    </footer>
+    <!--end of footer-->
 
-</HTML>
+    <!-- ==================== Hamburger Menu ==================== -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navUl = document.querySelector('#main-nav ul');
+        hamburger.addEventListener('click', () => {navUl.classList.toggle('show');
+        
+        // 切换图标
+        if (navUl.classList.contains('show')) {
+            hamburger.textContent = '✕';
+            hamburger.setAttribute('aria-expanded', 'true');
+        } else {
+            hamburger.textContent = '☰';
+            hamburger.setAttribute('aria-expanded', 'false');
+        }
+        });
+
+        // 点击菜单链接后自动关闭（提升体验）
+        document.querySelectorAll('#main-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                navUl.classList.remove('show');
+                hamburger.textContent = '☰';
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // ==================== Dark Mode ====================
+        const toggle = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme') || 
+                        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+        if (currentTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            toggle.textContent = '☀️';
+        }
+
+        toggle.addEventListener('click', () => {
+            if (document.documentElement.getAttribute('data-theme') === 'dark') {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+                toggle.textContent = '🌙';
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                toggle.textContent = '☀️';
+            }
+        });
+    </script>
+    
+    <!-- Dark Mode Script -->
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme') || 
+                            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+        if (currentTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            toggle.textContent = '☀️';
+        }
+
+        toggle.addEventListener('click', () => {
+            if (document.documentElement.getAttribute('data-theme') === 'dark') {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+                toggle.textContent = '🌙';
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                toggle.textContent = '☀️';
+            }
+        });
+    </script>
+    <!-- =================  end of  Hamburger Menu ==================== -->
+		
+    </body>
+    <!-- =======================end of body ========================= -->
+
+</html>
