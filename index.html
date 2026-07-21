@@ -31,14 +31,12 @@
 		<!-- Open Graph / Twitter -->
 		<meta name="twitter:card" content="summary_large_image">
 
-
-        <link rel="stylesheet" href="/css/portal.css">
-        <link rel="icon" href="/images/favicon.ico">
-
         <!-- Critical Preloads -->
-        <link rel="preload" href="/assets/images/personal_photo.webp" as="image" type="image/webp">
+        <link rel="preload" href="/assets/images/personal_photo.webp" as="image" type="image/webp" fetchpriority=high>
         <link rel="preload" as="style" href="/css/portal.css">
 
+		<link rel="stylesheet" href="/css/portal.css">
+        <link rel="icon" href="/images/favicon.ico">
     
         <!-- JSON-LD -->
         <script type="application/ld+json">
