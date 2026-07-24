@@ -17,6 +17,7 @@ This documentation hub provides engineering notes, tutorials, architecture desig
  - AI Agent
  - AI4S
  - AI for Security
+ - AI Safety
  - Robotics
  - Software Engineering
 
@@ -130,7 +131,7 @@ This documentation hub provides engineering notes, tutorials, architecture desig
  - [**agv+robot+camera fusion**](/docs/industrial-space-safety/agv-robot-camera-fusion/)
  - [**3D + AI**](/docs/industrial-space-safety/3d-tof-ai-value-loop/)
  - [**AI Safety Standards**](/docs/standards/ai-safety-development/)
-
+ - [**AI Safety Challenges**](../docs/2026/07/11_Challenges_Opportunities_in_AI_Safety.html)
 
 ---
 
@@ -164,6 +165,7 @@ This documentation hub provides engineering notes, tutorials, architecture desig
  - [**Vision + PTP**](../docs/2026/06/23_Precision_Time_Protocol_In_Industry.html)
  - [**Sensor + PTP**](../docs/2026/07/04_Industrial_Sensor_Integration_PTP.html)
  - [**PTP Evolution and Deployment**](../docs/2026/07/05_PTP_Development_Evolution_Deployment_Cases.html)
+ - [**AI DC**](../docs/2026/07/10_Trends_Implementation_AIDC.html)
 
 ---
 
