@@ -85,6 +85,7 @@ Industrial Safety -> OSDIP -> Research Gap -> Related Work -> Methodology -> Exp
  - [**Industrial Spatial Safety**](../docs/2026/06/25_Industrial_Spatial_Safety.html)
  - [**Pack Line Spatial Safety**](../docs/2026/07/01_Battery_Pack_Line_Industrial_Spatial_Safety_OS.html)
  - [**AI Safety**](/research/ai-safety/)
+ - [**AI Safety Challenges**](../docs/2026/07/11_Challenges_Opportunities_in_AI_Safety.html)
 
    
 ## OSDIP
