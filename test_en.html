@@ -47,35 +47,6 @@
 	
 <main lang="en">
 
-    <!-- ==================== HEADER ==================== -->
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <a href="/">Industrial AI</a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/research.html">Research</a></li> 
-                    <li><a href="/publication.html">Publications</a></li>
-                    <li><a href="/resource.html">Resources</a></li>
-                    <li><a href="/links.html">Bookmarks</a></li>
-                </ul>
-            </nav>
-
-            <!-- Hamburger Button -->
-            <button id="hamburger" class="mobile-menu" aria-label="Toggle menu" aria-expanded="false">
-                ☰
-            </button>
-
-            <!-- Dark Mode Toggle -->
-            <button id="theme-toggle" aria-label="Toggle dark mode" style="background:none;border:none;font-size:1.5rem;cursor:pointer;margin-left:12px;">
-                🌙
-            </button>
-
-        </div>
-    </header>
-    <!-- ====================end of HEADER ==================== -->
 	
 	<nav class="nav" aria-label="Primary navigation">
 	    <a class="brand" href="#top" aria-label="Back to top"><span>JZ</span><strong>Junyang Zhou</strong></a>
@@ -91,17 +62,71 @@
 			<a class="contactLink" href="mailto:junyang.zhou@gmail.com">Contact <span aria-hidden="true">↗</span></a>
 		</div>
 	</nav>
+	
 	<section class="hero" id="top">
-		<div class="heroGlow"></div>
-		<div class="eyebrow"><i></i> IEEE Senior Member · Industrial AI Leader</div>
-		<h1 class="englishHero">Frontier AI,<br/><span>Factory-Floor Impact</span></h1>
-		<p class="heroLead">I am Dr. Junyang Zhou—an industrial AI leader connecting algorithmic research, production engineering and measurable business value across intelligent manufacturing.</p>
-		<div class="heroActions">
-			<a class="primaryButton" href="#experience">Explore my work <span>↓</span></a>
-			<a class="textButton" href="https://www.linkedin.com/in/junyang-zhou-2593a9100" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
-			<a class="textButton" href="https://github.com/stevenzhou2017" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+		<div>
+			<div class="heroGlow"></div>
+			<div class="eyebrow"><i></i> IEEE Senior Member · Industrial AI Leader</div>
+			<h1 class="englishHero">Frontier AI,<br/><span>Factory-Floor Impact</span></h1>
+			<p class="heroLead">I am Dr. Junyang Zhou—an industrial AI leader connecting algorithmic research, production engineering and measurable business value across intelligent manufacturing.</p>
+			<div class="heroActions">
+				<a class="primaryButton" href="#experience">Explore my work <span>↓</span></a>
+				<a class="textButton" href="https://www.linkedin.com/in/junyang-zhou-2593a9100" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+				<a class="textButton" href="https://github.com/stevenzhou2017" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+			</div>
+
+			<div class="hero-buttons">
+            	<a href="/research/" class="btn">Research</a>
+            	<a href="/projects/" class="btn">Projects</a>
+            	<a href="/docs/" class="btn">Documentation</a>
+            	<a href="/publications/" class="btn">Publications</a>
+        	</div>
+<!--		<div class="monogram" aria-hidden="true">JY</div> -->
+			
+            <div>
+                <picture>
+                    <source srcset="/assets/images/personal_photo.webp" type="image/webp">
+                    <img src="/assets/images/personal_photo.webp" 
+                         alt="Dr. Junyang Zhou - Industrial AI Expert" 
+                         class="profile-image"
+                         width="320" height="400" 
+                         loading="eager" decoding="async" fetchpriority="high">
+                </picture>
+            </div>
 		</div>
-		<div class="monogram" aria-hidden="true">JY</div></section><section class="metrics" aria-label="Key metrics">
+	</section>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <h1>Dr. Junyang Zhou</h1>
+                <h2>Industrial AI • AI Operating System • AI Agent</h2>
+                <p>Industrial AI researcher and engineering leader specializing in <strong>Industrial Spatial Safety</strong>, <strong>Industrial Vision</strong>, <strong>Real-Time Operating System</strong>, <strong>Embodied AI</strong>, <strong>AI Agents</strong>, CUDA acceleration, and Intelligent Manufacturing.</p>
+                
+                <div class="hero-buttons">
+                    <a href="/research/" class="btn">Research</a>
+                    <a href="/projects/" class="btn">Projects</a>
+                    <a href="/docs/" class="btn">Documentation</a>
+                    <a href="/publications/" class="btn">Publications</a>
+                </div>
+            </div>
+
+            <div>
+                <picture>
+                    <source srcset="/assets/images/personal_photo.webp" type="image/webp">
+                    <img src="/assets/images/personal_photo.webp" 
+                         alt="Dr. Junyang Zhou - Industrial AI Expert" 
+                         class="profile-image"
+                         width="320" height="400" 
+                         loading="eager" decoding="async" fetchpriority="high">
+                </picture>
+            </div>
+        </div>
+    </section>
+	////////////////////////////////////////////////
+	
+	<section class="metrics" aria-label="Key metrics">
 			<div>
 				<strong>25+</strong><span>years in computing &amp; applied mathematics</span></div><div><strong>15+</strong><span>years leading industrial AI</span>
 			</div>
@@ -113,7 +138,9 @@
 			</div>
 			
 	</section>
-			
+
+
+	
 	<section class="section intro" id="about">
 		<div class="sectionLabel">01 / Profile</div>
 		<div class="sectionContent twoCol"><h2>Academic depth.<br/>Industrial impact.</h2>
@@ -215,120 +242,7 @@
 	
 	<section class="section knowledge" id="knowledge"><div class="sectionLabel">04 / Knowledge &amp; engineering</div><div class="sectionContent"><div class="knowledgeHeader"><div><p class="kicker">Industrial AI Knowledge Portal</p><h2>Research that ships</h2></div><p>A connected body of work spanning AI agents, vision runtimes, CUDA acceleration, industrial safety and future manufacturing.</p></div><div class="insightGrid"><a href="https://stevenzhou2017.github.io/docs/202604_08_LLM_Bayesian_Theorem.html" target="_blank" rel="noreferrer" class="insightCard"><div><span>2026.04</span><b>↗</b></div><h3>LLMs and Bayesian Theorem</h3><p>LLM · Bayesian</p></a><a href="https://stevenzhou2017.github.io/docs/202604_07_MCP_CLI.html" target="_blank" rel="noreferrer" class="insightCard"><div><span>2026.04</span><b>↗</b></div><h3>AI Agents: MCP vs. CLI</h3><p>Agent · Infrastructure</p></a><a href="https://stevenzhou2017.github.io/docs/202604_06_OpenClaw_Hermes.html" target="_blank" rel="noreferrer" class="insightCard"><div><span>2026.04</span><b>↗</b></div><h3>From OpenClaw to Hermes</h3><p>Agent · Evolution</p></a><a href="https://stevenzhou2017.github.io/docs/202604_05_Prompt_Context_Harness.html" target="_blank" rel="noreferrer" class="insightCard"><div><span>2026.04</span><b>↗</b></div><h3>Prompt, Context &amp; Harness Engineering</h3><p>Engineering · LLM</p></a><a href="https://stevenzhou2017.github.io/research.html" target="_blank" rel="noreferrer" class="insightCard"><div><span>Research</span><b>↗</b></div><h3>Event-Driven Vision Kernel</h3><p>CUDA · Real-Time</p></a><a href="https://stevenzhou2017.github.io/research/industrial-spatial-safety-pack-lines/" target="_blank" rel="noreferrer" class="insightCard"><div><span>Research</span><b>↗</b></div><h3>Battery Pack-Line Spatial Safety</h3><p>Safety · Physical AI</p></a></div><div class="projectBlock"><div class="projectTitle"><span>FEATURED SYSTEMS</span><a href="https://stevenzhou2017.github.io/index_en.html" target="_blank" rel="noreferrer">Original knowledge portal ↗</a></div><div class="projectList"><a href="https://stevenzhou2017.github.io/projects/" target="_blank" rel="noreferrer"><span>01</span><h3>CameraSDK</h3><p>Cross-platform industrial camera stack for GigE, USB3, GMSL, MIPI and zero-copy pipelines.</p><b>↗</b></a><a href="https://stevenzhou2017.github.io/projects/" target="_blank" rel="noreferrer"><span>02</span><h3>AlgorithmSDK</h3><p>Calibration, measurement, 3D, AI, CUDA and Python bindings for industrial vision.</p><b>↗</b></a><a href="https://stevenzhou2017.github.io/projects/" target="_blank" rel="noreferrer"><span>03</span><h3>VisionOS</h3><p>An industrial AI environment integrating vision, workflows, agents and real-time runtime.</p><b>↗</b></a></div></div></div></section><section class="section recognition" id="recognition"><div class="sectionLabel">05 / Academic &amp; recognition</div><div class="sectionContent recognitionGrid"><div><h2>Research roots.<br/>Industry recognition.</h2><p>Ph.D. in Computer Science, Hong Kong Baptist University (2007); M.Sc. in Probability &amp; Mathematical Statistics (2003) and B.Sc. in Applied Mathematics (2000), Sun Yat-sen University.</p></div><div class="recognitionCards"><article><span>Professional</span><h3>IEEE Senior Member</h3><p>Member #80407788; long-standing work in computing, pervasive systems and industrial intelligence.</p></article><article><span>Award · 2025</span><h3>Manufacturing Digital Pioneer</h3><p>CIO Era recognition for industrial digitalization leadership.</p></article><article><span>Award · 2021</span><h3>Intelligent Factory Gold Award</h3><p>Enterprise AI platform and intelligent-factory program at SVOLT.</p></article><article><span>Award · 2019</span><h3>Wu Wenjun AI Science &amp; Technology Award</h3><p>Recognition for AI innovation and industrial application at Midea.</p></article><article><span>Research · 2025</span><h3>IEEE Access Corresponding Author</h3><p>Self-supervised enhancement for industrial prediction and classification.</p></article></div></div></section>
 
-	<!-- ==================== FOOTER ==================== -->
-    <footer class="site-footer">
-        <div class="container">
-
-
-            <p class="footerLead">Let’s turn AI into industrial productivity.</p>
-			<a href="mailto:junyang.zhou@gmail.com">junyang.zhou@gmail.com <span>↗</span></a>
-					
-            <div class="footer-grid">
-                <div>
-                    <h3>Industrial AI</h3>
-                    <ul>
-                        <li><a href="/research/">Research</a></li>
-                        <li><a href="/docs/">Documentation</a></li>
-                        <li><a href="/projects/">Projects</a></li>
-                        <li><a href="/publications/">Publications</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Resources</h3>
-                    <ul>
-                        <li><a href="/graph.json">Knowledge Graph</a></li>
-                        <li><a href="/llms.txt">LLMs</a></li>
-                        <li><a href="/sitemap.xml">Sitemap</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Social</h3>
-                    <ul>
-                        <li><a href="https://github.com/stevenzhou2017">GitHub</a></li>
-                        <li><a href="https://linkedin.com/in/junyang-zhou-2593a9100">LinkedIn</a></li>
-                        <li><a href="mailto:junyang.zhou@gmail.com">Email</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-			<div class="footerBottom"><span>© 2026 Dr. Junyang Zhou</span><span>Shenzhen, China</span></div>
-        </div>
-    </footer>
-    <!-- ====================end of FOOTER ==================== -->
-
-    <!-- ==================== Hamburger Menu ==================== -->
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navUl = document.querySelector('#main-nav ul');
-        hamburger.addEventListener('click', () => {navUl.classList.toggle('show');
-        
-        // 切换图标
-        if (navUl.classList.contains('show')) {
-            hamburger.textContent = '✕';
-            hamburger.setAttribute('aria-expanded', 'true');
-        } else {
-            hamburger.textContent = '☰';
-            hamburger.setAttribute('aria-expanded', 'false');
-        }
-        });
-
-        // 点击菜单链接后自动关闭（提升体验）
-        document.querySelectorAll('#main-nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                navUl.classList.remove('show');
-                hamburger.textContent = '☰';
-                hamburger.setAttribute('aria-expanded', 'false');
-            });
-        });
-
-        // ==================== Dark Mode ====================
-        const toggle = document.getElementById('theme-toggle');
-        const currentTheme = localStorage.getItem('theme') || 
-                        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-
-        if (currentTheme === 'dark') {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            toggle.textContent = '☀️';
-        }
-
-        toggle.addEventListener('click', () => {
-            if (document.documentElement.getAttribute('data-theme') === 'dark') {
-                document.documentElement.removeAttribute('data-theme');
-                localStorage.setItem('theme', 'light');
-                toggle.textContent = '🌙';
-            } else {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-                toggle.textContent = '☀️';
-            }
-        });
-    </script>
-    <!-- ==================== end of Hamburger Menu ==================== -->
-    
-    <!-- Dark Mode Script -->
-    <script>
-        const toggle = document.getElementById('theme-toggle');
-        const currentTheme = localStorage.getItem('theme') || 
-                            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-
-        if (currentTheme === 'dark') {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            toggle.textContent = '☀️';
-        }
-
-        toggle.addEventListener('click', () => {
-            if (document.documentElement.getAttribute('data-theme') === 'dark') {
-                document.documentElement.removeAttribute('data-theme');
-                localStorage.setItem('theme', 'light');
-                toggle.textContent = '🌙';
-            } else {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-                toggle.textContent = '☀️';
-            }
-        });
-    </script>
-    <!-- ==================== end of Dark Mode Script ==================== -->
+	<footer><p class="footerLead">Let’s turn AI into industrial productivity.</p><a href="mailto:junyang.zhou@gmail.com">junyang.zhou@gmail.com <span>↗</span></a><div class="footerBottom"><span>© 2026 Dr. Junyang Zhou</span><span>Shenzhen, China</span></div></footer>
 
 </main>
 
