@@ -31,15 +31,40 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@graph": [{
-      "@type": "Person",
-               "name": "Dr. Junyang Zhou",
-               "jobTitle": "Industrial AI Researcher & Architect",
-               "url": "https://stevenzhou2017.github.io",
-               "sameAs": ["https://github.com/stevenzhou2017", "https://linkedin.com/in/junyang-zhou-2593a9100"]
-       }]
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://stevenzhou2017.github.io/#person",
+                 "name": "Dr. Junyang Zhou",
+                 "alternateName": "Zhou Junyang",
+                 "jobTitle": "Industrial AI Researcher & Architect",
+                 "url": "https://stevenzhou2017.github.io/",
+                 "sameAs": [
+                           "https://github.com/stevenzhou2017",
+                           "https://linkedin.com/in/junyang-zhou-2593a9100"
+                ],
+          "knowsAbout": [
+            "Industrial AI",
+            "AI Safety",
+            "Safety OS",
+            "Industrial Spatial Safety",
+            "Functional Safety",
+            "Vision Operating System",
+            "AI Agents",
+            "Industrial Vision",
+            "Safety Supervisor",
+            "Safety Case",
+            "3D Time-of-Flight",
+            "Embodied AI",
+            "CUDA",
+            "Intelligent Manufacturing"
+          ]
+        }
+      ]
     }
     </script>
+
+
 </head>  
 <!-- ====================end of HEAD ==================== -->
 
@@ -81,11 +106,33 @@
         <div class="container hero-grid">
             <div>
                 <h1>Dr. Junyang Zhou</h1>
-                <h2>Industrial AI • AI Operating System • AI Agent</h2>
-                <p>Industrial AI researcher and engineering leader specializing in <strong>Industrial Spatial Safety</strong>, <strong>Industrial Vision</strong>, <strong>Real-Time Operating System</strong>, <strong>Embodied AI</strong>, <strong>AI Agents</strong>, CUDA acceleration, and Intelligent Manufacturing.</p>
+                <h2>Industrial AI • AI Safety • Safety OS • AI Operating System • AI Agent</h2>
+
+                <p>Industrial AI researcher and engineering leader focusing on 
+                    <strong>AI Safety</strong>, 
+                    <strong>Industrial Safety OS</strong>, 
+                    <strong>Industrial Spatial Safety</strong>,  
+                    <strong>Vision Operating Systems</strong>,
+                    <strong>AI Agents</strong>,
+                    <strong>Industrial Vision</strong>,
+                    <strong>Embodied / Physical AI</strong>,
+                    CUDA acceleration, and Intelligent Manufacturing.
+                </p>
+
+                <p class="hero-highlight">
+                   My current research explores how AI can move beyond perception and
+                   prediction toward <strong>risk-aware, fail-safe and evidence-driven
+                   industrial safety systems</strong> that connect sensing, spatial reasoning,
+                   risk assessment, decision making, machine control, event traceability,
+                   V&amp;V and Safety Case engineering.
+                </p>
                 
+             <!--    <p>Industrial AI researcher and engineering leader specializing in <strong>Industrial Spatial Safety</strong>, <strong>Industrial Vision</strong>, <strong>Real-Time Operating System</strong>, <strong>Embodied AI</strong>, <strong>AI Agents</strong>, CUDA acceleration, and Intelligent Manufacturing.</p> -->
+
+             
                 <div class="hero-buttons">
                     <a href="/research/" class="btn">Research</a>
+                    <a href="/research/ai-safety-safety-os/" class="btn">AI Safety / Safety OS </a>
                     <a href="/projects/" class="btn">Projects</a>
                     <a href="/docs/" class="btn">Documentation</a>
                     <a href="/publications/" class="btn">Publications</a>
@@ -143,6 +190,154 @@
         </div>
     </section>
 
+    
+<!-- =========================================================
+     AI SAFETY & SAFETY OS
+========================================================= -->
+<section class="featured-section safety-os-section">
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-kicker">Emerging Research Direction</span>
+
+            <h2>AI Safety &amp; Industrial Safety OS</h2>
+
+            <p>
+                Building trustworthy industrial safety systems that integrate
+                functional safety, spatial intelligence, AI perception,
+                risk reasoning, deterministic control, lifecycle governance,
+                V&amp;V and Safety Case evidence.
+            </p>
+        </div>
+
+        <div class="portal-grid">
+
+            <!-- AI Safety -->
+            <article class="portal-card">
+                <div class="card-body">
+
+                    <span class="badge status">Research</span>
+
+                    <h3>AI Safety for Industrial Systems</h3>
+
+                    <p class="card-summary">
+                        Research on how AI perception, multimodal models and
+                        intelligent agents can enhance industrial safety while
+                        explicitly managing uncertainty, model limitations,
+                        degraded operation and residual risk.
+                    </p>
+
+                    <div class="card-meta">
+                        <span>Uncertainty</span>
+                        <span>Fail-safe</span>
+                        <span>Governance</span>
+                        <span>V&amp;V</span>
+                    </div>
+
+                    <a href="/research/ai-safety-safety-os/"
+                       class="card-link">
+                        Explore AI Safety →
+                    </a>
+
+                </div>
+            </article>
+
+
+            <!-- Safety OS -->
+            <article class="portal-card">
+                <div class="card-body">
+
+                    <span class="badge status">System</span>
+
+                    <h3>afety OS</h3>
+
+                    <p class="card-summary">
+                        An industrial spatial safety operating system connecting
+                        3D perception, AGV, Robot and PLC data with
+                        spatial modeling, AI risk assessment, Safety Supervisor,
+                        deterministic control and event traceability.
+                    </p>
+
+                    <div class="card-meta">
+                        <span>Perception</span>
+                        <span>Risk Engine</span>
+                        <span>Supervisor</span>
+                        <span>Closed Loop</span>
+                    </div>
+
+                    <a href="/research/ai-safety-safety-os/"
+                       class="card-link">
+                        Explore Safety OS →
+                    </a>
+
+                </div>
+            </article>
+
+
+            <!-- Safety Supervisor -->
+            <article class="portal-card">
+                <div class="card-body">
+
+                    <span class="badge status">Architecture</span>
+
+                    <h3>Safety Supervisor</h3>
+
+                    <p class="card-summary">
+                        Runtime safety orchestration covering Normal, Warning,
+                        Slowdown, Pause, E-Stop Request, Degraded, Recovery and
+                        Fault states, with safer-action priority and controlled
+                        recovery.
+                    </p>
+
+                    <div class="card-meta">
+                        <span>State Machine</span>
+                        <span>Degradation</span>
+                        <span>Recovery</span>
+                    </div>
+
+                    <a href="/research/ai-safety-safety-os/#safety-supervisor"
+                       class="card-link">
+                        View Architecture →
+                    </a>
+
+                </div>
+            </article>
+
+
+            <!-- Safety Engineering -->
+            <article class="portal-card">
+                <div class="card-body">
+
+                    <span class="badge status">Engineering</span>
+
+                    <h3>Safety Case &amp; V&amp;V</h3>
+
+                    <p class="card-summary">
+                        Evidence-driven lifecycle engineering connecting
+                        hazards, safety goals, safety requirements, design
+                        controls, test cases, evidence and residual-risk
+                        acceptance.
+                    </p>
+
+                    <div class="card-meta">
+                        <span>HARA</span>
+                        <span>FMEA</span>
+                        <span>RTM</span>
+                        <span>Safety Case</span>
+                    </div>
+
+                    <a href="/research/ai-safety-safety-os/#safety-case"
+                       class="card-link">
+                        Explore Safety Engineering →
+                    </a>
+
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+    
     
     <!-- ==================== KNOWLEDGE PORTALS ==================== -->
     <section class="hub-section">
@@ -220,11 +415,27 @@
                         <a href="/research/industrial-spatial-safety-pack-lines/" class="card-link">Read the topic →</a>
                     </div>
                 </div>
+
+
+                <div class="portal-card">
+                     <div class="card-body">
+                         <span class="badge status">Featured</span>
+                         <h3><a href="/research/ai-safety-safety-os/">AI Safety &amp; Safety OS</a></h3>
+                         <p class="card-summary">
+                             A system-level research framework integrating functional safety,
+                             industrial AI, spatial perception, uncertainty-aware risk
+                             assessment, deterministic safety supervision, V&amp;V and
+                             lifecycle evidence management.
+                         </p>
+                         <a href="/research/ai-safety-safety-os/" class="card-link">Read More → </a>
+                   </div>
+                </div>
                 
             </div>
         </div>
     </section>
 
+    
     <!-- ==================== FEATURED PROJECTS ==================== -->
     <section class="featured-section">
         <div class="container">
@@ -281,9 +492,34 @@
                         <a href="/docs/" class="card-link">Read →</a>
                     </div>
                 </div>
+
+                <div class="portal-card">
+                     <div class="card-body">
+                         <span class="badge status">Active</span>
+                         <h3>Safety OS</h3>
+
+                         <p class="card-summary">
+                           Industrial Safety Operating System for people–vehicle–robot–
+                           equipment spatial safety. Integrates 3D ToF sensing,
+                           AGV, Robot and PLC interfaces, spatial modeling, AI Risk Engine,
+                           Safety Supervisor, Event Bus, Recorder and Safety Dashboard.
+                         </p>
+
+                         <div class="card-meta">
+                            <span>3D ToF</span>
+                            <span>AI Safety</span>
+                            <span>PLC</span>
+                            <span>Robot</span>
+                            <span>Safety Case</span>
+                         </div>
+                         <a href="/research/ai-safety-safety-os/" class="card-link"> View Safety OS → </a>
+                   </div>
+              </div>
+                
             </div>
         </div>
     </section>
+
 
     <!-- ==================== LATEST PUBLICATIONS ==================== -->
     <section class="featured-section">
@@ -320,44 +556,84 @@
         <div class="container">
             <h2>Industrial AI Knowledge Graph</h2>
             <p>The research roadmap connecting Industrial AI, Vision Operating System, AI Agents, Industrial Vision, CUDA Computing, and Intelligent Manufacturing.</p>
+
+            <div class="knowledge-graph">
+                <div class="kg-root">  <strong>Industrial AI</strong>   </div>
+                <div class="kg-arrow">↓</div>
+                <div class="kg-layer">
+                     <span>Industrial Vision</span>
+                     <span>AI Agents</span>
+                     <span>AI Safety</span>
+                     <span>Embodied / Physical AI</span>
+                </div>
+                <div class="kg-arrow">↓</div>
+
+                <div class="kg-layer kg-highlight">
+                     <strong>Vision OS</strong>
+                     <strong>Safety OS</strong>
+                </div>
+
+                <div class="kg-arrow">↓</div>
+                <div class="kg-layer">
+                     <span>CameraSDK</span>
+                     <span>AlgorithmSDK</span>
+                     <span>3D</span>
+                     <span>Spatial Engine</span>
+                     <span>AI Risk Engine</span>
+                     <span>Safety Supervisor</span>
+                     <span>Event Bus</span>
+                </div>
+
+                <div class="kg-arrow">↓</div>
+
+                <div class="kg-layer">
+                     <span>Industrial Safety</span>
+                     <span>Robotics</span>
+                     <span>Battery Manufacturing</span>
+                     <span>Smart Factory</span>
+                     <span>Autonomous Manufacturing</span>
+                </div>
+             </div>
             
-            <div style="background:var(--surface); padding:40px; border-radius:16px; text-align:center; font-size:1.1rem; line-height:2.2;">
-                Industrial AI 
-                <span style="color:var(--primary); margin:0 15px;">↓</span> 
-                Industrial Safety 
-                <span style="color:var(--primary); margin:0 15px;">↓</span> 
-                Industrial Vision 
-                <span style="color:var(--primary); margin:0 15px;">↓</span> 
-                Vision Operating System<br><br>
-                <strong>CameraSDK　•　AlgorithmSDK　•　Vision Kernel　•　AI Agent</strong><br><br>
-                ↓<br>
-                AI Safety • Robotics • Embodied AI • Smart Manufacturing
-            </div>
         </div>
     </section>
 
+    
     <!-- ==================== RESEARCH INTERESTS ==================== -->
     <section class="interest-section">
         <div class="container">
             <h2>Research Interests</h2>
             <div class="tag-cloud">
-                <span>Industrial AI</span>
-                <span>Industrial Vision</span>
-                <span>Vision Operating System</span>
-                <span>AI Agent</span>
-                <span>Embodied AI</span>
-                <span>Computer Vision</span>
-                <span>CUDA</span>
-                <span>GPU Computing</span>
-                <span>Industrial Safety</span>
-                <span>AI Safety</span>
-                <span>Robotics</span>
-                <span>LLM / VLM</span>
-                <span>Manufacturing Intelligence</span>
+                 <span>Industrial AI</span>
+
+                 <span class="featured-tag">AI Safety</span>
+                 <span class="featured-tag">Safety OS</span>
+
+                 <span>Industrial Spatial Safety</span>
+                 <span>Functional Safety</span>
+                 <span>Safety Supervisor</span>
+                 <span>Safety Case</span>
+
+                 <span>Vision Operating System</span>
+                 <span>Industrial Vision</span>
+
+                 <span>AI Agent</span>
+                 <span>LLM / VLM</span>
+
+                 <span>3D ToF</span>
+                 <span>Embodied AI</span>
+                 <span>Physical AI</span>
+
+                 <span>CUDA / GPU Computing</span>
+                 <span>Robotics</span>
+
+                 <span>Intelligent Manufacturing</span>
             </div>
         </div>
     </section>
 
+
+    
     <!-- ==================== PROFESSIONAL PROFILE ==================== -->
     <!-- ==================== PROFESSIONAL PROFILE (精简版) ==================== -->  
     <section class="profile-section">
