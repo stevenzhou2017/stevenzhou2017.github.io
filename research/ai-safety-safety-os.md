@@ -68,37 +68,7 @@ people, vehicles, robots, machines and materials.
 Its architecture can be represented as:
 
 ```text
-Physical World
-      │
-      ▼
-3D / Sensor / AGV / Robot / PLC
-      │
-      ▼
-Device Adapter Layer
-      │
-      ▼
-Unified Industrial Data Model
-      │
-      ▼
-Spatial Modeling
-      │
-      ▼
-AI Perception & Fusion
-      │
-      ▼
-AI Risk Engine
-      │
-      ▼
-Safety Supervisor
-      │
-      ▼
-Command / PLC / Robot / AGV
-      │
-      ▼
-Safe Action
-      │
-      ▼
-Event Trace / Recorder / Safety Case
+Physical World -> 3D / Sensor / AGV / Robot / PLC -> Device Adapter Layer -> Unified Industrial Data Model -> Spatial Modeling -> AI Perception & Fusion -> AI Risk Engine -> Safety Supervisor -> Command / PLC / Robot / AGV -> Safe Action -> Event Trace / Recorder / Safety Case
 ````
 
 ---
@@ -172,15 +142,7 @@ risk estimation and physical control.
 Typical states include:
 
 ```text
-Normal
-   ↓
-Warning
-   ↓
-Slowdown
-   ↓
-Pause
-   ↓
-E-Stop Request
+Normal -> Warning -> Slowdown -> Pause -> E-Stop Request
 ```
 
 The complete runtime also includes:
@@ -233,19 +195,10 @@ The key idea is:
 Safety OS follows a layered safety strategy:
 
 ```text
-L0  Inherent Safety
-        ↓
-L1  Functional Safety
-        ↓
-L2  Process / Machine Control
-        ↓
-L3  AI-enhanced Safety
-        ↓
-L4  Governance & Evidence
+L0  Inherent Safety -> L1  Functional Safety -> L2  Process / Machine Control -> L3  AI-enhanced Safety -> L4  Governance & Evidence
 ```
 
-AI should enhance — not silently replace — the deterministic safety
-mechanisms required by the system risk assessment.
+AI should enhance — not silently replace — the deterministic safety mechanisms required by the system risk assessment.
 
 Relevant engineering frameworks include:
 
@@ -264,19 +217,7 @@ Relevant engineering frameworks include:
 A core Safety OS lifecycle is:
 
 ```text
-Hazard
-   ↓
-Safety Goal
-   ↓
-Safety Requirement
-   ↓
-Design Control
-   ↓
-Test Case
-   ↓
-Evidence
-   ↓
-Residual Risk
+Hazard -> Safety Goal -> Safety Requirement -> Design Control -> Test Case -> Evidence -> Residual Risk
 ```
 
 Important engineering artifacts include:
@@ -325,30 +266,10 @@ Safety OS concepts can also be applied to:
 # Research Roadmap
 
 ```text
-Industrial Safety
-        │
-        ▼
-Spatial Safety
-        │
-        ▼
-AI Safety
-        │
-        ▼
-Safety OS
-        │
-        ▼
-Safety Agents
-        │
-        ▼
-Safety Foundation Models
-        │
-        ▼
-Autonomous Safety Engineering
+Industrial Safety -> Spatial Safety -> AI Safety -> Safety OS -> Safety Agents -> Safety Foundation Models ->Autonomous Safety Engineering
 ```
 
-The long-term goal is a safety intelligence infrastructure capable of
-supporting risk discovery, system design, verification, evidence
-generation and runtime safety operation across industrial systems.
+The long-term goal is a safety intelligence infrastructure capable of supporting risk discovery, system design, verification, evidence generation and runtime safety operation across industrial systems.
 
 ---
 
