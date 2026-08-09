@@ -217,6 +217,426 @@ nav ul li a:hover {
 }
 
 
+/* =========================================================
+   Industrial AI Research Architecture
+========================================================= */
+
+.research-architecture-section {
+  padding: 72px 20px;
+}
+
+.research-architecture-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.research-architecture-header {
+  max-width: 850px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.research-architecture-header h2 {
+  margin: 10px 0 14px;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: var(--text-primary, #0f172a);
+}
+
+.research-architecture-header p {
+  line-height: 1.7;
+  color: var(--text-secondary, #64748b);
+}
+
+.section-kicker {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+
+/* ================= NODE ================= */
+
+.architecture-node {
+  position: relative;
+
+  padding: 18px 20px;
+
+  background: var(--surface, #ffffff);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  box-shadow:
+    0 2px 5px rgba(15, 23, 42, 0.04),
+    0 8px 20px rgba(15, 23, 42, 0.04);
+
+  text-align: center;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.architecture-node:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 5px 14px rgba(15, 23, 42, 0.08),
+    0 14px 32px rgba(15, 23, 42, 0.06);
+}
+
+.architecture-node strong {
+  display: block;
+
+  color: var(--text-primary, #0f172a);
+
+  font-size: 1rem;
+}
+
+.architecture-node small {
+  display: block;
+
+  margin-top: 6px;
+
+  color: var(--text-secondary, #64748b);
+
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.node-label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #64748b;
+
+  font-size: 0.64rem;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+}
+
+
+/* ================= ROOT ================= */
+
+.architecture-root {
+  display: flex;
+  justify-content: center;
+}
+
+.node-root {
+  min-width: 240px;
+
+  border: 2px solid #2563eb;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(37, 99, 235, 0.08),
+      rgba(14, 165, 233, 0.05)
+    );
+}
+
+.node-root strong {
+  color: #1d4ed8;
+  font-size: 1.35rem;
+}
+
+
+/* ================= CONNECTOR ================= */
+
+.vertical-line,
+.column-line {
+  width: 2px;
+
+  margin: 0 auto;
+
+  background: #cbd5e1;
+}
+
+.vertical-line {
+  height: 42px;
+}
+
+.column-line {
+  height: 26px;
+}
+
+
+/* ================= THREE COLUMNS ================= */
+
+.architecture-branches {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(230px, 1fr)
+    minmax(340px, 1.45fr)
+    minmax(230px, 1fr);
+
+  gap: 28px;
+}
+
+
+/* top horizontal connector */
+
+.architecture-branches::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 16.66%;
+  right: 16.66%;
+
+  height: 2px;
+
+  background: #cbd5e1;
+
+  transform: translateY(-1px);
+}
+
+
+.architecture-column {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: stretch;
+}
+
+.architecture-column::before {
+  content: "";
+
+  width: 2px;
+  height: 24px;
+
+  margin: 0 auto;
+
+  background: #cbd5e1;
+}
+
+
+/* ================= DOMAIN NODES ================= */
+
+.node-domain {
+  min-height: 90px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.vision-node {
+  border-top: 4px solid #2563eb;
+}
+
+.safety-node {
+  border-top: 4px solid #dc2626;
+}
+
+.agent-node {
+  border-top: 4px solid #7c3aed;
+}
+
+.node-domain strong {
+  font-size: 1.15rem;
+}
+
+
+/* ================= SYSTEM ================= */
+
+.node-system {
+  border: 1px solid #94a3b8;
+
+  background: #f8fafc;
+}
+
+.node-system strong {
+  font-size: 1.08rem;
+}
+
+
+/* Safety OS emphasis */
+
+.safety-os {
+  border: 2px solid #dc2626;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(220, 38, 38, 0.07),
+      rgba(249, 115, 22, 0.04)
+    );
+}
+
+.safety-os strong {
+  color: #b91c1c;
+  font-size: 1.2rem;
+}
+
+
+/* ================= MODULES ================= */
+
+.subsystem-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px;
+}
+
+.safety-components {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+}
+
+.node-module {
+  min-height: 86px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+
+/* ================= SAFE ACTION ================= */
+
+.node-action {
+  border: 2px solid #059669;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(5, 150, 105, 0.08),
+      rgba(16, 185, 129, 0.04)
+    );
+}
+
+.node-action strong {
+  color: #047857;
+  font-size: 1.1rem;
+}
+
+
+/* ================= EVIDENCE ================= */
+
+.evidence-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+}
+
+.node-evidence {
+  border-top: 3px solid #0f766e;
+}
+
+
+/* ================= SUMMARY ================= */
+
+.architecture-summary {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+
+  margin-top: 54px;
+  padding-top: 28px;
+
+  border-top: 1px solid #e2e8f0;
+}
+
+.architecture-summary div {
+  text-align: center;
+}
+
+.architecture-summary strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #0f172a;
+}
+
+.architecture-summary span {
+  color: #64748b;
+
+  font-size: 0.82rem;
+}
+
+
+/* =========================================================
+   Responsive
+========================================================= */
+
+@media (max-width: 960px) {
+
+  .architecture-branches {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .architecture-branches::before {
+    display: none;
+  }
+
+  .architecture-column::before {
+    height: 18px;
+  }
+
+  .safety-components {
+    grid-template-columns: 1fr;
+  }
+
+  .subsystem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .evidence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .architecture-summary {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 640px) {
+
+  .research-architecture-section {
+    padding: 48px 14px;
+  }
+
+  .research-architecture-header {
+    margin-bottom: 32px;
+  }
+
+  .architecture-node {
+    padding: 15px;
+  }
+
+}
+
+
 /* ====================== Cards ====================== */
 .portal-card {
     background: var(--surface);
