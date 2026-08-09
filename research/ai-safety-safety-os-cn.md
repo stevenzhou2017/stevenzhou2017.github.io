@@ -110,9 +110,9 @@ Safety OS 是面向工业生产场景的人、车、机、料空间安全操作�
 
 系统连接：
 
-- 立体安全传感器 LT；
-- 3D ToF；
-- AGV；
+- 立体安全传感器；
+- 3D camera；
+- AGV
 - Robot；
 - PLC；
 - 工业设备；
@@ -202,7 +202,7 @@ PLC / Robot / AGV控制
 
 ### 立体空间传感器
 
-- LT安全传感器；
+- 安全传感器；
 - 3D ToF；
 - RGB-D；
 - 深度相机；
@@ -707,7 +707,7 @@ Autonomous Safety Engineering
 - Industrial Spatial Safety 工业空间安全
 - Vision Operating System 视觉操作系统
 - Industrial AI Agent 工业智能体
-- 3D ToF + AI
+- 3D + AI
 - Embodied AI 具身智能
 - Physical AI 物理智能
 - Intelligent Manufacturing 智能制造
