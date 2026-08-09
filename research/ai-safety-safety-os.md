@@ -111,8 +111,8 @@ Safety OS is organized around six primary layers.
 
 Inputs include:
 
-* Safety sensor
-* 3D Camera
+* safety sensor
+* 3D camera
 * AGV state
 * Robot state
 * PLC signals
