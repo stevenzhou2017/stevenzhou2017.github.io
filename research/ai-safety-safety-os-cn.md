@@ -24,16 +24,11 @@ AI正在参与越来越多的工业生产决策过程：
 - 预测潜在风险；
 - 辅助或驱动工业设备执行动作。
 
-这带来了一个核心工程问题：
+这带来了一个核心工程问题：**如何让AI提升工业安全能力，同时避免AI自身成为新的安全风险来源？**
 
-> **如何让AI提升工业安全能力，同时避免AI自身成为新的安全风险来源？**
-
-我的研究方向聚焦于：
-
-**AI Safety（AI安全） + Industrial Safety OS（工业安全操作系统）**
+我的研究方向聚焦于：**AI Safety（AI安全） + Industrial Safety OS（工业安全操作系统）**
 
 探索如何将：
-
 - 人工智能感知；
 - 多模态模型；
 - 空间智能；
@@ -50,7 +45,7 @@ AI正在参与越来越多的工业生产决策过程：
 
 # 2. 核心研究理念
 
-## AI系统不仅需要知道“看到了什么”
+## AI系统不仅需要知道 “看到了什么”
 
 传统AI视觉系统通常输出：
 
@@ -59,9 +54,7 @@ AI正在参与越来越多的工业生产决策过程：
 - 位置坐标；
 - 预测结果。
 
-但是工业安全系统需要进一步回答：
-
-> 当前信息是否足够支持安全决策？
+但是工业安全系统需要进一步回答：当前信息是否足够支持安全决策？
 
 因此，安全型AI系统必须具备：
 
@@ -71,26 +64,14 @@ AI正在参与越来越多的工业生产决策过程：
 - 风险判断能力；
 - 主动降级能力。
 
-核心理念：
-
-> **安全AI系统必须知道自己不知道什么。**
+核心理念：**安全AI系统必须知道自己不知道什么。**
 
 当系统无法确定当前状态是否安全时：
 
-不是继续输出高风险决策，
-
-而应该：
+不是继续输出高风险决策，而应该：
 
 ```
-
-正常运行
-↓
-风险增加
-↓
-降低能力
-↓
-安全状态
-
+正常运行 -> 风险增加 -> 降低能力 -> 安全状态
 ```
 
 ---
@@ -101,15 +82,10 @@ AI正在参与越来越多的工业生产决策过程：
 
 Safety OS 是面向工业生产场景的人、车、机、料空间安全操作系统。
 
-目标：
-
-构建一个：
-
-> 可感知、可理解、可推理、可控制、可验证、可追溯的工业安全智能基础设施。
+目标： 构建一个：可感知、可理解、可推理、可控制、可验证、可追溯的工业安全智能基础设施。
 
 
 系统连接：
-
 - 立体安全传感器；
 - 3D camera；
 - AGV
@@ -122,69 +98,8 @@ Safety OS 是面向工业生产场景的人、车、机、料空间安全操作�
 实现：
 
 ```
-
-物理工业世界
-
-```
-    ↓
-```
-
-LT / 3D ToF / AGV / Robot / PLC
-
-```
-    ↓
-```
-
-设备接入层 Adapter
-
-```
-    ↓
-```
-
-统一工业数据模型
-
-```
-    ↓
-```
-
-空间理解 Spatial Intelligence
-
-```
-    ↓
-```
-
-AI感知与融合
-
-```
-    ↓
-```
-
-AI Risk Engine 风险推理
-
-```
-    ↓
-```
-
-Safety Supervisor 安全监督
-
-```
-    ↓
-```
-
-PLC / Robot / AGV控制
-
-```
-    ↓
-```
-
-安全动作执行
-
-```
-    ↓
-```
-
+物理工业世界 -> 3D / AGV / Robot / PLC -> 设备接入层 Adapter -> 统一工业数据模型 -> 空间理解 Spatial Intelligence -> AI感知与融合 -> AI Risk Engine 风险推理 -> Safety Supervisor 安全监督 -> PLC / Robot / AGV控制 -> 安全动作执行 -> 
 事件追踪 / 回放 / Safety Case
-
 ```
 
 ---
@@ -220,9 +135,7 @@ PLC / Robot / AGV控制
 - 设备运行状态。
 
 
-输出：
-
-统一安全感知数据。
+输出：统一安全感知数据。
 
 
 ---
@@ -230,14 +143,10 @@ PLC / Robot / AGV控制
 ## 4.2 空间智能层 Spatial Intelligence
 
 
-传统安全系统关注：
-
-> 单个传感器是否触发。
+传统安全系统关注：单个传感器是否触发。
 
 
-Safety OS关注：
-
-> 当前工业空间是否处于安全状态。
+Safety OS关注：当前工业空间是否处于安全状态。
 
 
 空间模型包括：
@@ -255,21 +164,7 @@ Safety OS关注：
 实现：
 
 ```
-
-Sensor Data
-
-```
-  ↓
-```
-
-3D Spatial Model
-
-```
-  ↓
-```
-
-Risk-aware Environment Understanding
-
+Sensor Data -> 3D Spatial Model -> Risk-aware Environment Understanding
 ```
 
 ---
@@ -293,14 +188,12 @@ AI Risk Engine负责：
 输出：
 
 ```
-
 Risk Level
 
 Low
 Medium
 High
 Critical
-
 ```
 
 同时提供：
@@ -324,21 +217,7 @@ Safety Supervisor 是 Safety OS 的核心运行时。
 连接：
 
 ```
-
-AI风险判断
-
-```
-    +
-```
-
-功能安全逻辑
-
-```
-    +
-```
-
-设备控制
-
+AI风险判断 + 功能安全逻辑 + 设备控制
 ```
 
 
@@ -348,37 +227,13 @@ AI风险判断
 典型状态：
 
 ```
-
-Normal
-正常
-
-↓
-
-Warning
-警告
-
-↓
-
-Slowdown
-减速
-
-↓
-
-Pause
-暂停
-
-↓
-
-E-Stop Request
-急停请求
-
+Normal/正常 -> Warning/警告 -> Slowdown/减速 -> Pause/暂停 -> E-Stop Request/急停请求
 ```
 
 
 扩展状态：
 
 ```
-
 Degraded
 降级
 
@@ -387,7 +242,6 @@ Recovery Check
 
 Fault
 故障
-
 ```
 
 
@@ -408,17 +262,13 @@ Fault
 传统传感器输出：
 
 ```
-
 Depth Map
-
 ```
 
 安全型传感器需要输出：
 
 ```
-
 Safety Quality Frame
-
 ```
 
 包括：
@@ -455,9 +305,7 @@ Safety Quality Frame
 - Recommended Degraded Action
 
 
-核心思想：
-
-> 传感器不仅告诉系统“看到了什么”，还需要告诉系统“这些信息是否足够支持安全决策”。
+核心思想：传感器不仅告诉系统“看到了什么”，还需要告诉系统“这些信息是否足够支持安全决策”。
 
 ---
 
@@ -468,43 +316,7 @@ Safety OS采用分层安全策略：
 
 
 ```
-
-L0
-固有安全
-(Inherent Safety)
-
-```
-    ↓
-```
-
-L1
-功能安全
-(Functional Safety)
-
-```
-    ↓
-```
-
-L2
-过程控制
-(Process Control)
-
-```
-    ↓
-```
-
-L3
-AI增强安全
-(AI Enhanced Safety)
-
-```
-    ↓
-```
-
-L4
-治理与证据链
-(Governance & Evidence)
-
+L0/固有安全(Inherent Safety) -> L1/功能安全/(Functional Safety) -> L2/过程控制/(Process Control) -> L3/AI增强安全/(AI Enhanced Safety) -> L4/治理与证据链/(Governance & Evidence)
 ```
 
 
@@ -537,40 +349,7 @@ Safety OS采用证据驱动开发方式。
 完整链路：
 
 ```
-
-Hazard
-危险
-
-↓
-
-Safety Goal
-安全目标
-
-↓
-
-Safety Requirement
-安全需求
-
-↓
-
-Design Control
-设计控制
-
-↓
-
-Test Case
-测试用例
-
-↓
-
-Evidence
-证据
-
-↓
-
-Residual Risk
-残余风险
-
+Hazard/危险 -> Safety Goal/安全目标 -> Safety Requirement/安全需求 ->Design Control/设计控制 ->Test Case/测试用例 ->Evidence/证据 ->Residual Risk/残余风险
 ```
 
 
@@ -642,45 +421,7 @@ Safety OS提供：
 
 
 ```
-
-Industrial Safety
-
-```
-    ↓
-```
-
-Spatial Safety
-
-```
-    ↓
-```
-
-AI Safety
-
-```
-    ↓
-```
-
-Safety OS
-
-```
-    ↓
-```
-
-Safety Agent
-
-```
-    ↓
-```
-
-Safety Foundation Model
-
-```
-    ↓
-```
-
-Autonomous Safety Engineering
-
+Industrial Safety -> Spatial Safety -> AI Safety -> Safety OS -> Safety Agent -> Safety Foundation Model -> Autonomous Safety Engineering
 ```
 
 
@@ -699,7 +440,6 @@ Autonomous Safety Engineering
 ---
 
 # 10. 相关研究方向
-
 
 - Industrial AI 工业人工智能
 - AI Safety 人工智能安全
@@ -747,59 +487,14 @@ Safety OS设计参考：
 未来工业安全系统将从：
 
 ```
-
-传统安全传感器
-
-```
-    ↓
-```
-
-智能安全系统
-
-```
-    ↓
-```
-
-AI增强安全系统
-
-```
-    ↓
-```
-
-Safety OS
-
-```
-    ↓
-```
-
-自主安全智能体
-
+传统安全传感器 -> 智能安全系统 -> AI增强安全系统 -> Safety OS -> 自主安全智能体
 ```
 
 演进。
 
-
-最终目标：
-
-> 构建能够理解工业世界、识别风险、主动保护人和设备，并且具备工程可验证性的下一代工业安全智能操作系统。
+最终目标：构建能够理解工业世界、识别风险、主动保护人和设备，并且具备工程可验证性的下一代工业安全智能操作系统。
 
 ```
-
-Industrial AI
-+
-AI Safety
-+
-Functional Safety
-+
-Spatial Intelligence
-+
-Safety Engineering
-
+Industrial AI + AI Safety + Functional Safety + Spatial Intelligence + Safety Engineering -> Industrial Safety OS
 ```
-    ↓
-```
-
-Industrial Safety OS
-
-
 ---
