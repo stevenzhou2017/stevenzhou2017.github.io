@@ -23,6 +23,7 @@ This AI Research Hub provides Theory, Formula, Framework covering of AI Agent, I
 - AI4S
 - Embodied AI
 - Real-time AI
+- AI Safety & Safety OS
 
 ---
 
@@ -86,6 +87,7 @@ Industrial Safety -> OSDIP -> Research Gap -> Related Work -> Methodology -> Exp
  - [**Pack Line Spatial Safety**](../docs/2026/07/01_Battery_Pack_Line_Industrial_Spatial_Safety_OS.html)
  - [**AI Safety**](/research/ai-safety/)
  - [**AI Safety Challenges**](../docs/2026/07/11_Challenges_Opportunities_in_AI_Safety.html)
+ - [**AI Safety & Industrial Safety OS**](/research/ai-safety-safety-os/)
 
    
 ## OSDIP
