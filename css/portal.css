@@ -128,6 +128,95 @@ nav ul li a:hover {
     border: 10px solid var(--surface);
 }
 
+
+/* =========================================================
+   AI Safety / Safety OS
+========================================================= */
+
+.safety-os-section {
+    position: relative;
+}
+
+.safety-os-section .section-kicker {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 5px 12px;
+
+    border-radius: 999px;
+
+    background: rgba(220, 38, 38, 0.08);
+    color: #b91c1c;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.safety-os-section .portal-card {
+    border-top: 3px solid #dc2626;
+}
+
+.safety-os-section .portal-card:hover {
+    transform: translateY(-4px);
+}
+
+.featured-tag {
+    font-weight: 700 !important;
+    border: 1px solid rgba(220, 38, 38, 0.25) !important;
+}
+
+.knowledge-graph {
+    padding: 38px;
+    border-radius: 16px;
+
+    background: var(--surface);
+
+    text-align: center;
+}
+
+.kg-root {
+    font-size: 1.35rem;
+}
+
+.kg-arrow {
+    padding: 10px;
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
+.kg-layer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.kg-layer span,
+.kg-layer strong {
+    padding: 9px 15px;
+    border-radius: 8px;
+    background: var(--background, #f8fafc);
+}
+
+.kg-highlight strong {
+    padding: 12px 22px;
+    border: 1px solid var(--primary);
+    font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+
+    .knowledge-graph {
+        padding: 24px 16px;
+    }
+
+    .kg-layer {
+        flex-direction: column;
+    }
+}
+
+
 /* ====================== Cards ====================== */
 .portal-card {
     background: var(--surface);
