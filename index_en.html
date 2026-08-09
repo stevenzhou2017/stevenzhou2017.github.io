@@ -366,6 +366,8 @@
         </div>
     </section>
 
+
+   
     <!-- ==================== FEATURED RESEARCH ==================== -->
     <section class="featured-section">
         <div class="container">
@@ -378,34 +380,11 @@
                         <a href="/research/" class="card-link">Read More →</a>
                     </div>
                 </div>
-                <div class="portal-card">
-                    <div class="card-body">
-                        <h3>AI Agent Architecture</h3>
-                        <p class="card-summary">Industrial AI Agent ecosystem integrating LLM, VLM, workflow and manufacturing intelligence.</p>
-                        <a href="/research/" class="card-link">Read More →</a>
-                    </div>
-                </div>
-                <div class="portal-card">
-                    <div class="card-body">
-                        <h3>Event-driven Vision Kernel</h3>
-                        <p class="card-summary">Real-time event-driven industrial vision runtime with GPU acceleration.</p>
-                        <a href="/research/" class="card-link">Read More →</a>
-                    </div>
-                </div>
-
-                <div class="portal-card">
-                    <div class="card-body">
-                        <h3><a href="/research/industrial-spatial-safety-pack-lines/"> Industrial Spatial Safety for Battery Pack Lines </a> </h3>
-                        <p class="card-summary">A closed-loop industrial spatial safety architecture for lithium battery Pack lines, integrating Camera, AGV, Robot, PLC, MES, Digital Twin, and AI Agent.</p>
-                        <a href="/research/industrial-spatial-safety-pack-lines/" class="card-link">Read the topic →</a>
-                    </div>
-                </div>
-
 
                 <div class="portal-card">
                      <div class="card-body">
-                         <span class="badge status">Featured</span>
-                         <h3><a href="/research/ai-safety-safety-os/">AI Safety &amp; Safety OS</a></h3>
+                         <span class="badge status active">Featured</span>
+                         <h3><a href="/research/ai-safety-safety-os/">AI Safety & Safety OS</a></h3>
                          <p class="card-summary">
                              A system-level research framework integrating functional safety,
                              industrial AI, spatial perception, uncertainty-aware risk
@@ -415,7 +394,43 @@
                          <a href="/research/ai-safety-safety-os/" class="card-link">Read More → </a>
                    </div>
                 </div>
+
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3><a href="/research/industrial-spatial-safety-pack-lines/">Industrial Spatial Safety for Battery Pack Lines </a> </h3>
+                        <p class="card-summary">A closed-loop industrial spatial safety architecture for lithium battery Pack lines, integrating Camera, AGV, Robot, PLC, MES, Digital Twin, and AI Agent.</p>
+                        <a href="/research/industrial-spatial-safety-pack-lines/" class="card-link">Read the topic →</a>
+                    </div>
+                </div>
                 
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>AI Agent Architecture</h3>
+                        <p class="card-summary">Industrial AI Agent ecosystem integrating LLM, VLM, workflow and manufacturing intelligence.</p>
+                        <a href="/research/" class="card-link">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>3D Spatial Intelligence</h3>
+                        <p class="card-summary">
+                            3D Spatial Intelligence is the ability of artificial intelligence systems to perceive, interpret, 
+                            and reason about the physical three-dimensional world, moving beyond flat 2D images and text data to understand depth, 
+                            physics, geometry, and spatial relationships.
+                        </p>
+                        <a href="/research/" class="card-link">Read More →</a>
+                    </div>
+                </div>
+                
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>Event-driven Vision Kernel</h3>
+                        <p class="card-summary">Real-time event-driven industrial vision runtime with GPU acceleration.</p>
+                        <a href="/research/" class="card-link">Read More →</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -537,6 +552,7 @@
     </section>
 
     <!-- ==================== KNOWLEDGE GRAPH ==================== -->
+    <!--
     <section class="knowledge-section">
         <div class="container">
             <h2>Industrial AI Knowledge Graph</h2>
@@ -582,8 +598,176 @@
             
         </div>
     </section>
+-->
+    <!-- ==================== KNOWLEDGE GRAPH ==================== -->
+    <section class="research-architecture-section">
+         <div class="research-architecture-container">
+              <div class="research-architecture-header">
+                  <span class="section-kicker">Research OS V2</span>
+                  <h2>Industrial AI Research Architecture</h2>
+                  <p>From industrial perception to AI safety and intelligent agents — connecting runtime systems, safety engineering and physical-world execution.</p>
+              </div>
 
-    
+              <!-- Level 1 -->
+              <div class="architecture-root">
+                   <div class="architecture-node node-root">
+                        <span class="node-label">CORE DOMAIN</span>
+                        <strong>Industrial AI</strong>
+                  </div>
+              </div>
+
+              <div class="vertical-line"></div>
+
+                   <!-- Level 2 -->
+                   <div class="architecture-branches">
+
+                        <!-- Industrial Vision -->
+                        <div class="architecture-column">
+
+                            <div class="architecture-node node-domain vision-node">
+                                 <span class="node-label">PERCEPTION</span>
+                                 <strong>Industrial Vision</strong>
+                            </div>
+
+                            <div class="column-line"></div>
+
+                            <div class="architecture-node node-system">
+                                <span class="node-label">RUNTIME</span>
+                                <strong>Vision OS</strong>
+                            </div>
+
+                            <div class="column-line"></div>
+
+                            <div class="subsystem-grid">
+                                 <div class="architecture-node node-module">
+                                      <strong>CameraSDK</strong>
+                                      <small>Acquisition · PTP · Zero Copy</small>
+                                 </div>
+
+                                 <div class="architecture-node node-module">
+                                      <strong>AlgorithmSDK</strong>
+                                      <small>AI · 3D · Calibration · CUDA</small>
+                                 </div>
+                            </div>
+
+                       </div>
+
+
+                       <!-- AI Safety -->
+                       <div class="architecture-column safety-column">
+
+                            <div class="architecture-node node-domain safety-node">
+                                  <span class="node-label">SAFETY INTELLIGENCE</span>
+                                  <strong>AI Safety</strong>
+                            </div>
+
+                            <div class="column-line"></div>
+
+                            <div class="architecture-node node-system safety-os">
+                                 <span class="node-label">SAFETY RUNTIME</span>
+                                 <strong>Safety OS</strong>
+                            </div>
+
+                            <div class="column-line"></div>
+
+                            <div class="safety-components">
+
+                                 <div class="architecture-node node-module">
+                                      <strong>Spatial Engine</strong>
+                                      <small>3D Space · Zones · Trajectory</small>
+                                 </div>
+
+                                 <div class="architecture-node node-module">
+                                      <strong>AI Risk Engine</strong>
+                                      <small>Risk · Prediction · Uncertainty</small>
+                                 </div>
+
+                                 <div class="architecture-node node-module">
+                                     <strong>Safety Supervisor</strong>
+                                     <small>State Machine · Degradation · Recovery</small>
+                                 </div>
+
+                            </div>
+
+                            <div class="column-line"></div>
+
+                            <div class="architecture-node node-action">
+                                 <span class="node-label">PHYSICAL CONTROL</span>
+                                 <strong>Safe Industrial Action</strong>
+                                 <small> Warning · Slowdown · Pause · E-Stop Request </small>
+                           </div>
+
+                           <div class="column-line"></div>
+
+                           <div class="evidence-grid">
+
+                                <div class="architecture-node node-evidence">
+                                     <strong>V&amp;V</strong>
+                                     <small>Verification &amp; Validation</small>
+                                 </div>
+
+                                <div class="architecture-node node-evidence">
+                                     <strong>Safety Case</strong>
+                                     <small>Evidence · Traceability · Residual Risk</small>
+                                </div>
+
+                                <div class="architecture-node node-evidence">
+                                     <strong>Event Trace</strong>
+                                     <small>Recorder · Replay · Audit</small>
+                                </div>
+                          </div>
+                      </div>
+
+
+                      <!-- AI Agent -->
+                      <div class="architecture-column">
+
+                           <div class="architecture-node node-domain agent-node">
+                                <span class="node-label">INTELLIGENCE</span>
+                                <strong>AI Agent</strong>
+                           </div>
+
+                           <div class="column-line"></div>
+
+                           <div class="architecture-node node-system">
+                                <span class="node-label">RUNTIME</span>
+                                <strong>Agent Runtime</strong>
+                           </div>
+
+                           <div class="column-line"></div>
+
+                           <div class="architecture-node node-module">
+                                <strong>Industrial Agents</strong>
+                                <small>LLM · VLM · Workflow · Tool Use</small>
+                          </div>
+                     </div>
+
+                 </div>
+
+
+                 <!-- Bottom Summary -->
+                 <div class="architecture-summary">
+                     <div>
+                          <strong>Vision OS</strong>
+                          <span>Perception &amp; AI Runtime</span>
+                     </div>
+
+                     <div>
+                          <strong>Safety OS</strong>
+                          <span>Risk-aware Safety Runtime</span>
+                     </div>
+
+                     <div>
+                          <strong>Agent Runtime</strong>
+                          <span>Reasoning &amp; Orchestration Runtime</span>
+                     </div>
+
+                  </div>
+
+          </div>
+     </section>
+
+
     <!-- ==================== RESEARCH INTERESTS ==================== -->
     <section class="interest-section">
         <div class="container">
@@ -593,7 +777,8 @@
 
                  <span class="featured-tag">AI Safety</span>
                  <span class="featured-tag">Safety OS</span>
-
+                 <span class="featured-tag">AI Agent</span>
+                
                  <span>Industrial Spatial Safety</span>
                  <span>Functional Safety</span>
                  <span>Safety Supervisor</span>
@@ -602,7 +787,7 @@
                  <span>Vision Operating System</span>
                  <span>Industrial Vision</span>
 
-                 <span>AI Agent</span>
+                 <span>AI Agent Runtime</span>
                  <span>LLM / VLM</span>
 
                  <span>3D ToF</span>
