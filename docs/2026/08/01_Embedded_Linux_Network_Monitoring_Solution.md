@@ -533,16 +533,7 @@ $$T_{\text{detect}} \approx 2 \times 5 + 1 = 11\text{秒}$$
 
 Netlink 是事件驱动，理论检测时间为：
 
-$$
-T_{\text{netlink}}
-==================
-
-T_{\text{kernel-event}}
-+
-T_{\text{schedule}}
-+
-T_{\text{user-process}}
-$$
+$$ T_{\text{netlink}} =  T_{\text{kernel-event}} + T_{\text{schedule}} + T_{\text{user-process}} $$
 
 通常是毫秒级，但取决于：
 
@@ -557,18 +548,13 @@ $$
 
 Heartbeat 检测时间主要由以下参数决定：
 
-$$
-T_{\text{heartbeat}}
-====================
-
-(N-1)T_i + T_o
-$$
+$$ T_{\text{heartbeat}} = (N-1)T_i + T_o $$
 
 其中：
 
-* (T_i)：心跳周期；
-* (T_o)：单次响应超时；
-* (N)：连续失败门限。
+* $T_i$：心跳周期；
+* $T_o$：单次响应超时；
+* $N$：连续失败门限。
 
 举例：
 
