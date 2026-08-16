@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ==================== HEAD ==================== -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dr. Junyang Zhou | Industrial AI • AI Safety • Safety OS • Vision Operating System</title>
+    <meta name="keywords" content="Industrial AI, AI Safety, Safety OS, Industrial Safety, Industrial Spatial Safety, Functional Safety, Vision Operating System, AI Agent, Industrial Vision, Safety Supervisor, Safety Case, IEC 61508, ISO 13849, IEC 62061, Industrial AI Safety, Embodied AI, CUDA, Intelligent Manufacturing">
+    <meta name="keywords" content="Industrial AI, Vision Operating System, AI Agent, Industrial Vision, CUDA, Smart Manufacturing, Robotics, Embodied AI">
+    <meta name="author" content="Dr. Junyang Zhou">
+
+    
+    <!-- Preload Critical Resources (LCP 关键) -->
+ 	<link rel="preload" href="/assets/images/personal_photo.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="style" href="/css/portal.css">
+    
+    <link rel="stylesheet" href="/css/portal.css">
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Dr. Junyang Zhou | Industrial AI • AI Safety • Safety OS">
+    <meta property="og:description" content="Research on Industrial AI, AI Safety, Safety OS, Industrial Spatial Safety, Vision Operating System, AI Agents and Intelligent Manufacturing.">
+    <meta property="og:image" content="https://stevenzhou2017.github.io/assets/images/Industrial_AI_expert.webp">
+    <meta property="og:url" content="https://stevenzhou2017.github.io/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://stevenzhou2017.github.io/#person",
+                 "name": "Dr. Junyang Zhou",
+                 "alternateName": "Zhou Junyang",
+                 "jobTitle": "Industrial AI Researcher & Architect",
+                 "url": "https://stevenzhou2017.github.io/",
+                 "sameAs": [
+                           "https://github.com/stevenzhou2017",
+                           "https://linkedin.com/in/junyang-zhou-2593a9100"
+                ],
+          "knowsAbout": [
+            "Industrial AI",
+            "AI Safety",
+            "Safety OS",
+            "Industrial Spatial Safety",
+            "Functional Safety",
+            "Vision Operating System",
+            "AI Agents",
+            "Industrial Vision",
+            "Safety Supervisor",
+            "Safety Case",
+            "3D Time-of-Flight",
+            "Embodied AI",
+            "CUDA",
+            "Intelligent Manufacturing"
+          ]
+        }
+      ]
+    }
+    </script>
+
+
+</head>  
+<!-- ====================end of HEAD ==================== -->
+
+<!-- ==================== body ==================== -->   
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="/">Industrial AI Knowledge Portal</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/research.html">Research</a></li> 
+                    <li><a href="/publication.html">Publications</a></li>
+                    <li><a href="/resource.html">Resources</a></li>
+                    <li><a href="/links.html">Bookmarks</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Button -->
+            <button id="hamburger" class="mobile-menu" aria-label="Toggle menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Dark Mode Toggle -->
+            <button id="theme-toggle" aria-label="Toggle dark mode" style="background:none;border:none;font-size:1.5rem;cursor:pointer;margin-left:12px;">
+                🌙
+            </button>
+
+        </div>
+    </header>
+    <!-- ====================end of HEADER ==================== -->
+   
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div>
+                <h1>Dr. Junyang Zhou</h1>
+                <h2>Industrial AI • AI Safety • Safety OS • AI Operating System • AI Agent</h2>
+
+                <p>Industrial AI researcher and engineering leader focusing on 
+                    <strong>AI Safety</strong>, 
+                    <strong>Industrial Safety OS</strong>, 
+                    <strong>Industrial Spatial Safety</strong>,  
+                    <strong>Vision Operating Systems</strong>,
+                    <strong>AI Agents</strong>,
+                    <strong>Industrial Vision</strong>,
+                    <strong>Embodied / Physical AI</strong>,
+                    CUDA acceleration, and Intelligent Manufacturing.
+                </p>
+
+                <p class="hero-highlight">
+                   My current research explores how AI can move beyond perception and
+                   prediction toward <strong>risk-aware, fail-safe and evidence-driven
+                   industrial safety systems</strong> that connect sensing, spatial reasoning,
+                   risk assessment, decision making, machine control, event traceability,
+                   V&amp;V and Safety Case engineering.
+                </p>
+                
+             <!--    <p>Industrial AI researcher and engineering leader specializing in <strong>Industrial Spatial Safety</strong>, <strong>Industrial Vision</strong>, <strong>Real-Time Operating System</strong>, <strong>Embodied AI</strong>, <strong>AI Agents</strong>, CUDA acceleration, and Intelligent Manufacturing.</p> -->
+
+             
+                <div class="hero-buttons">
+                    <a href="/research/" class="btn">Research</a>
+                    <a href="/research/ai-safety-safety-os/" class="btn">AI Safety OS </a>
+                    <a href="/projects/" class="btn">Projects</a>
+                    <a href="/docs/" class="btn">Docs</a>
+                    <a href="/publications/" class="btn">Publications</a>
+                </div>
+            </div>
+
+            <div>
+                <picture>
+                    <source srcset="/assets/images/personal_photo.webp" type="image/webp">
+                    <img src="/assets/images/personal_photo.webp" 
+                         alt="Dr. Junyang Zhou - Industrial AI Expert" 
+                         class="profile-image"
+                         width="320" height="400" 
+                         loading="eager" decoding="async" fetchpriority="high">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== PROFESSIONAL EXPERIENCE ==================== -->
+    <section class="featured-section">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="portal-grid">
+                <div class="portal-card">
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3>AI Director / Digital Intelligence Director</h3>
+                            <span class="badge status">BAK Power</span>
+                        <!--    <span class="badge status active">BAK Power</span> -->
+                        </div>
+                        <p class="card-subtitle">2022 – 2026</p>
+                        <p class="card-summary">Led smart factory transformation with Vision Operating System, AI Agents, and real-time quality inspection systems.</p>
+                        <div class="card-meta">
+                            <span>80+ patents</span>
+                            <span>IEEE Senior Member</span>
+                        </div>
+                        <a href="https://www.linkedin.com/in/junyang-zhou-2593a9100" class="card-link" target="_blank">View LinkedIn →</a>
+                    </div>
+                </div>
+
+                <div class="portal-card">
+                    <div class="card-body">
+                        <div class="card-header">
+                            <h3>Industrial AI Platform Architect</h3>
+                            <span class="badge status">Previous Role</span>
+                        </div>
+                        <p class="card-subtitle">2015 – 2022</p>
+                        <p class="card-summary">Designed end-to-end Vision Operating System and CUDA-accelerated industrial vision pipelines.</p>
+                        <a href="https://www.linkedin.com/in/junyang-zhou-2593a9100" class="card-link" target="_blank">View LinkedIn →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<!-- =========================================================
+     AI SAFETY & SAFETY OS
+========================================================= -->
+<section class="featured-section safety-os-section">
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-kicker">Emerging Research Direction</span>
+
+            <h2>AI Safety &amp; Industrial Safety OS</h2>
+
+            <p>
+                Building trustworthy industrial safety systems that integrate
+                functional safety, spatial intelligence, AI perception,
+                risk reasoning, deterministic control, lifecycle governance,
+                V&amp;V and Safety Case evidence.
+            </p>
+        </div>
+
+        <div class="portal-grid">
+
+            <!-- AI Safety -->
+            <article class="portal-card">
+                <div class="card-body">
+
+                    <span class="badge status">Research</span>
+
+                    <h3>AI Safety for Industrial Systems</h3>
+
+                    <p class="card-summary">
+                        Research on how AI perception, multimodal models and
+                        intelligent agents can enhance industrial safety while
+                        explicitly managing uncertainty, model limitations,
+                        degraded operation and residual risk.
+                    </p>
+
+                    <div class="card-meta">
+                        <span>Uncertainty</span>
+                        <span>Fail-safe</span>
+                        <span>Governance</span>
+                        <span>V&amp;V</span>
+                    </div>
+
+                    <a href="/research/ai-safety-safety-os/" class="card-link"> Explore AI Safety → </a>
+                </div>
+            </article>
+
+
+            <!-- Safety OS -->
+            <article class="portal-card">
+                <div class="card-body">
+
+                    <span class="badge status">System</span>
+
+                    <h3>afety OS</h3>
+
+                    <p class="card-summary">
+                        An industrial spatial safety operating system connecting
+                        3D perception, AGV, Robot and PLC data with
+                        spatial modeling, AI risk assessment, Safety Supervisor,
+                        deterministic control and event traceability.
+                    </p>
+
+                    <div class="card-meta">
+                        <span>Perception</span>
+                        <span>Risk Engine</span>
+                        <span>Supervisor</span>
+                        <span>Closed Loop</span>
+                    </div>
+
+                    <a href="/research/ai-safety-safety-os/" class="card-link">Explore Safety OS → </a>
+                </div>
+            </article>
+
+
+            <!-- Safety Supervisor -->
+            <article class="portal-card">
+                <div class="card-body">
+
+                    <span class="badge status">Architecture</span>
+
+                    <h3>Safety Supervisor</h3>
+
+                    <p class="card-summary">
+                        Runtime safety orchestration covering Normal, Warning,
+                        Slowdown, Pause, E-Stop Request, Degraded, Recovery and
+                        Fault states, with safer-action priority and controlled
+                        recovery.
+                    </p>
+
+                    <div class="card-meta">
+                        <span>State Machine</span>
+                        <span>Degradation</span>
+                        <span>Recovery</span>
+                    </div>
+
+                    <a href="/research/ai-safety-safety-os/#safety-supervisor" class="card-link">View Architecture → </a>
+
+                </div>
+            </article>
+
+
+            <!-- Safety Engineering -->
+            <article class="portal-card">
+                <div class="card-body">
+
+                    <span class="badge status">Engineering</span>
+
+                    <h3>Safety Case &amp; V&amp;V</h3>
+
+                    <p class="card-summary">
+                        Evidence-driven lifecycle engineering connecting
+                        hazards, safety goals, safety requirements, design
+                        controls, test cases, evidence and residual-risk
+                        acceptance.
+                    </p>
+
+                    <div class="card-meta">
+                        <span>HARA</span>
+                        <span>FMEA</span>
+                        <span>RTM</span>
+                        <span>Safety Case</span>
+                    </div>
+
+                    <a href="/research/ai-safety-safety-os/#safety-case" class="card-link"> Explore Safety Engineering → </a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+    
+    
+    <!-- ==================== KNOWLEDGE PORTALS ==================== -->
+    <section class="hub-section">
+        <div class="container">
+            <h2>Knowledge Portals</h2>
+            <p>Explore the Industrial AI Knowledge Base through four interconnected hubs.</p>
+            
+            <div class="portal-grid">
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>Research Hub</h3>
+                        <p class="card-summary">Industrial AI, Vision Operating System, AI Agent, Embodied AI, Industrial Safety, AI Safety, Future Manufacturing.</p>
+                        <a href="/research/" class="card-link">Explore →</a>
+                    </div>
+                </div>
+
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>Documentation Hub</h3>
+                        <p class="card-summary">Engineering Documentation, CUDA, Camera SDK, Algorithm SDK, Industrial Vision SDK, Vision Kernel.</p>
+                        <a href="/docs/" class="card-link">Explore →</a>
+                    </div>
+                </div>
+
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>Projects Hub</h3>
+                        <p class="card-summary">CameraSDK, AlgorithmSDK, VisionOS, Industrial AI Platform, Engineering Practice.</p>
+                        <a href="/projects/" class="card-link">Explore →</a>
+                    </div>
+                </div>
+
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>Publications Hub</h3>
+                        <p class="card-summary">Journal Papers, Conference Papers, Technical Reports, White Papers.</p>
+                        <a href="/publications/" class="card-link">Explore →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   
+    <!-- ==================== FEATURED RESEARCH ==================== -->
+    <section class="featured-section">
+        <div class="container">
+            <h2>Featured Research</h2>
+            <div class="portal-grid">
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>Vision Operating System</h3>
+                        <p class="card-summary">Industrial AI runtime architecture for real-time perception, reasoning, decision and execution.</p>
+                        <a href="/research/" class="card-link">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="portal-card">
+                     <div class="card-body">
+                         <span class="badge status active">Featured</span>
+                         <h3><a href="/research/ai-safety-safety-os/">AI Safety & Safety OS</a></h3>
+                         <p class="card-summary">
+                             A system-level research framework integrating functional safety,
+                             industrial AI, spatial perception, uncertainty-aware risk
+                             assessment, deterministic safety supervision, V&amp;V and
+                             lifecycle evidence management.
+                         </p>
+                         <a href="/research/ai-safety-safety-os/" class="card-link">Read More → </a>
+                   </div>
+                </div>
+
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3><a href="/research/industrial-spatial-safety-pack-lines/">Industrial Spatial Safety for Battery Pack Lines </a> </h3>
+                        <p class="card-summary">A closed-loop industrial spatial safety architecture for lithium battery Pack lines, integrating Camera, AGV, Robot, PLC, MES, Digital Twin, and AI Agent.</p>
+                        <a href="/research/industrial-spatial-safety-pack-lines/" class="card-link">Read the topic →</a>
+                    </div>
+                </div>
+                
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>AI Agent Architecture</h3>
+                        <p class="card-summary">Industrial AI Agent ecosystem integrating LLM, VLM, workflow and manufacturing intelligence.</p>
+                        <a href="/research/" class="card-link">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>3D Spatial Intelligence</h3>
+                        <p class="card-summary">
+                            3D Spatial Intelligence is the ability of artificial intelligence systems to perceive, interpret, 
+                            and reason about the physical three-dimensional world, moving beyond flat 2D images and text data to understand depth, 
+                            physics, geometry, and spatial relationships.
+                        </p>
+                        <a href="/research/" class="card-link">Read More →</a>
+                    </div>
+                </div>
+                
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>Event-driven Vision Kernel</h3>
+                        <p class="card-summary">Real-time event-driven industrial vision runtime with GPU acceleration.</p>
+                        <a href="/research/" class="card-link">Read More →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- ==================== FEATURED PROJECTS ==================== -->
+    <section class="featured-section">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="portal-grid">
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>CameraSDK</h3>
+                        <p class="card-summary">Cross-platform industrial camera SDK supporting GigE, USB3, GMSL, MIPI, Python, C++, Zero Copy.</p>
+                        <a href="/projects/" class="card-link">View Project →</a>
+                    </div>
+                </div>
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>AlgorithmSDK</h3>
+                        <p class="card-summary">Industrial Vision SDK including Calibration, Measurement, 3D, AI, CUDA and Python bindings.</p>
+                        <a href="/projects/" class="card-link">View Project →</a>
+                    </div>
+                </div>
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>Vision Operating System</h3>
+                        <p class="card-summary">Industrial AI operating environment integrating AI, Vision, Workflow, Agent, and Runtime.</p>
+                        <a href="/projects/" class="card-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== LATEST DOCUMENTATION ==================== -->
+    <section class="featured-section">
+        <div class="container">
+            <h2>Latest Documentation</h2>
+            <div class="portal-grid">
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>CUDA Async Streams</h3>
+                        <p class="card-summary">GPU asynchronous execution for industrial AI inference.</p>
+                        <a href="/docs/" class="card-link">Read →</a>
+                    </div>
+                </div>
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>CPU-GPU Zero Copy Pipeline</h3>
+                        <p class="card-summary">Zero Copy architecture for high-throughput machine vision.</p>
+                        <a href="/docs/" class="card-link">Read →</a>
+                    </div>
+                </div>
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>Industrial Vision SDK</h3>
+                        <p class="card-summary">Engineering architecture of industrial computer vision platform.</p>
+                        <a href="/docs/" class="card-link">Read →</a>
+                    </div>
+                </div>
+
+                <div class="portal-card">
+                     <div class="card-body">
+                         <span class="badge status">Active</span>
+                         <h3>Safety OS</h3>
+
+                         <p class="card-summary">
+                           Industrial Safety Operating System for people–vehicle–robot–
+                           equipment spatial safety. Integrates 3D ToF sensing,
+                           AGV, Robot and PLC interfaces, spatial modeling, AI Risk Engine,
+                           Safety Supervisor, Event Bus, Recorder and Safety Dashboard.
+                         </p>
+
+                         <div class="card-meta">
+                            <span>3D ToF</span>
+                            <span>AI Safety</span>
+                            <span>PLC</span>
+                            <span>Robot</span>
+                            <span>Safety Case</span>
+                         </div>
+                         <a href="/research/ai-safety-safety-os/" class="card-link"> View Safety OS → </a>
+                   </div>
+              </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== LATEST PUBLICATIONS ==================== -->
+    <section class="featured-section">
+        <div class="container">
+            <h2>Latest Publications</h2>
+            <div class="portal-grid">
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>IEEE Publications</h3>
+                        <p class="card-summary">Industrial AI, Prediction, Computer Vision, Self-supervised Learning.</p>
+                        <a href="/publications/" class="card-link">Read →</a>
+                    </div>
+                </div>
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>Technical Reports</h3>
+                        <p class="card-summary">Industrial AI architecture, Vision Operating System, AI Engineering.</p>
+                        <a href="/publications/" class="card-link">Read →</a>
+                    </div>
+                </div>
+                <div class="portal-card">
+                    <div class="card-body">
+                        <h3>White Papers</h3>
+                        <p class="card-summary">Industrial AI roadmap, AI transformation, Manufacturing Intelligence.</p>
+                        <a href="/publications/" class="card-link">Read →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== KNOWLEDGE GRAPH ==================== -->
+    <section class="research-architecture-section">
+         <div class="research-architecture-container">
+              <div class="research-architecture-header">
+                  <h2>Industrial AI Research Architecture</h2>
+                  <p>From industrial perception to AI safety and intelligent agents — connecting runtime systems, safety engineering and physical-world execution.</p>
+              </div>
+
+              <!-- Level 1 -->
+              <div class="architecture-root">
+                   <div class="architecture-node node-root">
+                        <span class="node-label">CORE DOMAIN</span>
+                        <strong>Industrial AI</strong>
+                  </div>
+              </div>
+
+              <div class="vertical-line"></div>
+
+                   <!-- Level 2 -->
+                   <div class="architecture-branches">
+
+                        <!-- Industrial Vision -->
+                        <div class="architecture-column">
+                            <div class="architecture-node node-domain vision-node">
+                                 <span class="node-label">PERCEPTION</span>
+                                 <strong>Industrial Vision</strong>
+                            </div>
+                            <div class="column-line"></div>
+                            <div class="architecture-node node-system">
+                                 <span class="node-label">RUNTIME</span>
+                                 <strong>Vision OS</strong>
+                            </div>
+                            <div class="column-line"></div>
+                            <div class="subsystem-grid">
+                                 <div class="architecture-node node-module">
+                                      <strong>CameraSDK</strong>
+                                      <small>Acquisition · PTP · Zero Copy</small>
+                                 </div>
+                                 <div class="architecture-node node-module">
+                                      <strong>AlgorithmSDK</strong>
+                                      <small>AI · 3D · Calibration · CUDA</small>
+                                 </div>
+                            </div>
+                       </div>
+
+                       <!-- AI Safety -->
+                       <div class="architecture-column safety-column">
+                            <div class="architecture-node node-domain safety-node">
+                                  <span class="node-label">SAFETY INTELLIGENCE</span>
+                                  <strong>AI Safety</strong>
+                            </div>
+                            <div class="column-line"></div>
+                            <div class="architecture-node node-system safety-os">
+                                 <span class="node-label">SAFETY RUNTIME</span>
+                                 <strong>Safety OS</strong>
+                            </div>
+                            <div class="column-line"></div>
+                            <div class="safety-components">
+                                 <div class="architecture-node node-module">
+                                      <strong>Spatial Engine</strong>
+                                      <small>3D Space · Zones · Trajectory</small>
+                                 </div>
+                                 <div class="architecture-node node-module">
+                                      <strong>AI Risk Engine</strong>
+                                      <small>Risk · Prediction · Uncertainty</small>
+                                 </div>
+                                 <div class="architecture-node node-module">
+                                     <strong>Safety Supervisor</strong>
+                                     <small>State Machine · Degradation · Recovery</small>
+                                 </div>
+                            </div>
+                            <div class="column-line"></div>
+                            <div class="architecture-node node-action">
+                                 <span class="node-label">PHYSICAL CONTROL</span>
+                                 <strong>Safe Industrial Action</strong>
+                                 <small> Warning · Slowdown · Pause · E-Stop Request </small>
+                           </div>
+                           <div class="column-line"></div>
+                           <div class="evidence-grid">
+                                <div class="architecture-node node-evidence">
+                                     <strong>V&amp;V</strong>
+                                     <small>Verification &amp; Validation</small>
+                                 </div>
+
+                                <div class="architecture-node node-evidence">
+                                     <strong>Safety Case</strong>
+                                     <small>Evidence · Traceability · Residual Risk</small>
+                                </div>
+
+                                <div class="architecture-node node-evidence">
+                                     <strong>Event Trace</strong>
+                                     <small>Recorder · Replay · Audit</small>
+                                </div>
+                          </div>
+                      </div>
+
+
+                      <!-- AI Agent -->
+                      <div class="architecture-column">
+                           <div class="architecture-node node-domain agent-node">
+                                <span class="node-label">INTELLIGENCE</span>
+                                <strong>AI Agent</strong>
+                           </div>
+                           <div class="column-line"></div>
+                           <div class="architecture-node node-system">
+                                <span class="node-label">RUNTIME</span>
+                                <strong>Agent Runtime</strong>
+                           </div>
+                           <div class="column-line"></div>
+                           <div class="architecture-node node-module">
+                                <strong>Industrial Agents</strong>
+                                <small>LLM · VLM · Workflow · Tool Use</small>
+                          </div>
+                     </div>
+                 </div>
+
+                 <!-- Bottom Summary -->
+                 <div class="architecture-summary">
+                     <div>
+                          <strong>Vision OS</strong>
+                          <span>Perception &amp; AI Runtime</span>
+                     </div>
+                     <div>
+                          <strong>Safety OS</strong>
+                          <span>Risk-aware Safety Runtime</span>
+                     </div>
+                     <div>
+                          <strong>Agent Runtime</strong>
+                          <span>Reasoning &amp; Orchestration Runtime</span>
+                     </div>
+                  </div>
+          </div>
+     </section>
+
+
+    <!-- ==================== RESEARCH INTERESTS ==================== -->
+    <section class="interest-section">
+        <div class="container">
+            <h2>Research Interests</h2>
+            <div class="tag-cloud">
+                 <span>Industrial AI</span>
+
+                 <span class="featured-tag">AI Safety</span>
+                 <span class="featured-tag">Safety OS</span>
+                 <span class="featured-tag">AI Agent</span>
+                
+                 <span>Industrial Spatial Safety</span>
+                 <span>Functional Safety</span>
+                 <span>Safety Supervisor</span>
+                 <span>Safety Case</span>
+
+                 <span>Vision Operating System</span>
+                 <span>Industrial Vision</span>
+
+                 <span>AI Agent Runtime</span>
+                 <span>LLM / VLM</span>
+
+                 <span>3D ToF</span>
+                 <span>Embodied AI</span>
+                 <span>Physical AI</span>
+
+                 <span>CUDA / GPU Computing</span>
+                 <span>Robotics</span>
+
+                 <span>Intelligent Manufacturing</span>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- ==================== PROFESSIONAL PROFILE ==================== -->
+    <!-- ==================== PROFESSIONAL PROFILE (精简版) ==================== -->  
+    <section class="profile-section">
+        <div class="container">
+            <h2>Professional Profile</h2>
+            <p>Dr. Junyang Zhou is an Industrial AI researcher, engineering leader, and architect with deep expertise in Industrial AI, Industrial Safety, Vision Operating Systems, AI Agents, and Intelligent Manufacturing.</p>
+            <ul>
+                <li>25+ years in Computer Science and Applied Mathematics</li>
+                <li>15+ years leading Industrial AI transformation</li>
+                <li>80+ patents</li>
+                <li>IEEE Senior Member</li>
+                <li>Former AI Director at BAK Power</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:junyang.zhou@gmail.com">junyang.zhou@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/stevenzhou2017">github.com/stevenzhou2017</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/junyang-zhou-2593a9100">Junyang Zhou</a></p>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Industrial AI</h3>
+                    <ul>
+                        <li><a href="/research/">Research</a></li>
+                        <li><a href="/docs/">Documentation</a></li>
+                        <li><a href="/projects/">Projects</a></li>
+                        <li><a href="/publications/">Publications</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="/graph.json">Knowledge Graph</a></li>
+                        <li><a href="/llms.txt">LLMs</a></li>
+                        <li><a href="/sitemap.xml">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <ul>
+                        <li><a href="https://github.com/stevenzhou2017">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/junyang-zhou-2593a9100">LinkedIn</a></li>
+                        <li><a href="mailto:junyang.zhou@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p>© 2026 Dr. Junyang Zhou — Industrial AI Knowledge Portal</p>
+        </div>
+    </footer>
+    <!-- ====================end of FOOTER ==================== -->
+
+    <!-- ==================== Hamburger Menu ==================== -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navUl = document.querySelector('#main-nav ul');
+        hamburger.addEventListener('click', () => {navUl.classList.toggle('show');
+        
+        // 切换图标
+        if (navUl.classList.contains('show')) {
+            hamburger.textContent = '✕';
+            hamburger.setAttribute('aria-expanded', 'true');
+        } else {
+            hamburger.textContent = '☰';
+            hamburger.setAttribute('aria-expanded', 'false');
+        }
+        });
+
+        // 点击菜单链接后自动关闭（提升体验）
+        document.querySelectorAll('#main-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                navUl.classList.remove('show');
+                hamburger.textContent = '☰';
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // ==================== Dark Mode ====================
+        const toggle = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme') || 
+                        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+        if (currentTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            toggle.textContent = '☀️';
+        }
+
+        toggle.addEventListener('click', () => {
+            if (document.documentElement.getAttribute('data-theme') === 'dark') {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+                toggle.textContent = '🌙';
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                toggle.textContent = '☀️';
+            }
+        });
+    </script>
+    <!-- ==================== end of Hamburger Menu ==================== -->
+    
+    <!-- Dark Mode Script -->
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme') || 
+                            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+        if (currentTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            toggle.textContent = '☀️';
+        }
+
+        toggle.addEventListener('click', () => {
+            if (document.documentElement.getAttribute('data-theme') === 'dark') {
+                document.documentElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+                toggle.textContent = '🌙';
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+                toggle.textContent = '☀️';
+            }
+        });
+    </script>
+    <!-- ==================== end of Dark Mode Script ==================== -->
+    
+</body>
+<!-- ==================== end of body ==================== -->
+
+</html>
