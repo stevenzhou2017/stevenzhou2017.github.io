@@ -402,6 +402,8 @@ Skill 可以根据文件类型、任务复杂度、是否需要协作、是否�
 
 ## 10. 知识图谱
 
+![Claude/Codex Skill 知识图谱](./claude-skill-knowledge-graph.png)
+
 ```mermaid
 graph TD
     A["Claude/Codex Skill<br/>可复用任务与工作流说明包"] --> B["核心价值"]
