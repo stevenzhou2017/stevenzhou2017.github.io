@@ -31,7 +31,7 @@ date： 2026.09.05
 | 部署与安全含义 / Deployment & safety | 将协方差映射到 `position_covariance`、`boundary_uncertainty`、安全区膨胀与 SQ0–SQ4；不要只作为日志字段。 |
 | 建议 / Recommendation | **REPRODUCE / 复现**：在 LT 点云上做 covariance reliability diagram，并比较 Euclidean 与 Mahalanobis 风险边界。 |
 
-### 2. Accurate Measurement of 3D and 2D Circular Centers… (v2)
+### 2. Accurate Measurement of 3D and 2D Circular Centers With Application to LiDAR-Camera Extrinsic Calibration
 
 | 字段 / Field | 内容 / Content |
 |---|---|
