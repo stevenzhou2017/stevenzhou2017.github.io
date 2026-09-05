@@ -1,4 +1,4 @@
-# 工业智能体研究简报
+# 工业智能体每周研究简报 / Industrial AI Agents Weekly Brief*
 
 author: 周均扬
 
