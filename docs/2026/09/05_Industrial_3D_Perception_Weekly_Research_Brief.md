@@ -1,4 +1,4 @@
-# 工业三维感知每周研究简报｜Industrial 3D Perception Weekly Research Brief
+# 工业三维感知每周研究简报｜Industrial 3D Perception Weekly Research Brief (Week 2)
 
 author: 周均扬
 
