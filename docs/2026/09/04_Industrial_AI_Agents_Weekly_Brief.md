@@ -1,4 +1,4 @@
-# 工业智能体研究简报(Week 2)
+# 工业智能体研究简报 | Industrial AI Agents VLM VLA and Vision Language Action Weekly Brief (Week 2)
 
 author: 周均扬
 
