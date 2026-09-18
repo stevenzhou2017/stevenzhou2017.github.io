@@ -63,7 +63,7 @@ date: 2026.09.18
 
 ## 技术趋势 / Technology trends
 
-- **从像素/点级异常转向关系与可观测性。 / From pixel-level scores to relations and observability.** 本周最有工业价值的工作都显式表达“什么关系失败”或“哪些自由度不可观测”，这比单一置信度更适合 Supervisor 决策与审计。
+- **从像素/点级异常转向关系与可观测性。 / From pixel-level scores to relations and observability.** 本周最有工业价值的工作都显式表达“什么关系失败”或“哪些自由度不可观测”，这比单一置信度更适合决策与审计。
 - **预测模型的数据规模快速上升，但安全证据没有同步增长。 / Data scale is rising faster than safety evidence.** 合成数据与 VLM 标注降低了训练成本，却增加了域差、标签偏差和不可校准置信度风险。
 - **实时性仍是公开证据缺口。 / Runtime remains an evidence gap.** 入选论文均未在摘要层面给出可用于工业预算的 p99 延迟、内存峰值与过载退化行为。
 - **ToF/标定更新稀缺。 / Sparse ToF and calibration updates.** 应继续保持专项检索，但当前更值得投入的是用已有相机做温漂、同步、反光、多径与跨设备重装验证，而非追逐弱相关新模型。
