@@ -1,0 +1,82 @@
+# 工业三维感知每周研究简报 | Industrial 3D Perception Weekly Brief (Week 3)
+
+author: 周均扬
+
+date: 2026.09.18
+
+---
+
+**覆盖窗口 / Coverage:** 2026-09-12—2026-09-18  
+**判定口径 / Scope rule:** 仅纳入上期简报后首次公开或有实质更新的原始来源；截至 2026-09-18 检索。论文均为预印本，尚不等同于安全认证证据。 / Only primary sources first released or materially updated after the previous brief are included. Papers are preprints, not safety-certification evidence.
+
+## 本周结论 / Executive takeaways
+
+1. **LiLi — 复现 / Reproduce.** 最贴近工业可靠性的新增工作：把 LiDAR 配准退化从单一分数扩展为 SE(3) 中的退化变换集合，可直接启发定位置信度与 Safety Supervisor 降级逻辑。
+2. **RAFAIL — 基准测试 / Benchmark.** 用任务关系而非整幅场景做在线异常检测，适合作为 WONSOR Safety OS 的非安全认证诊断通道；73.4% 平衡准确率仍不足以单独触发安全停机。
+3. **PointZero — 跟踪 / Track.** RGB-D 与稀疏三维轨迹预训练提升动态预测迁移性，但合成数据占比高、缺少置信度和实时性证据，暂不进入安全或实时主链。
+
+本周未发现达到入选门槛的纯 **ToF/iToF** 或 **RGB-D/IR-D 标定与配准** 新工作。 / No newly surfaced pure ToF/iToF or RGB-D/IR-D calibration work met the inclusion threshold this week.
+
+---
+
+## Top 1 — LiLi: Lie Theory Based 3D LiDAR Scan Alignment Degeneracy Detection
+
+- **日期与来源 / Date & source:** 2026-09-15 v1；2026-09-16 v2。 [arXiv:2609.17145](https://arxiv.org/abs/2609.17145)
+- **问题 / Problem:** 走廊、隧道和平坦区域中，点云配准可能存在多组等价位姿；传统 Hessian/特征值方法固定当前对应关系，易受噪声和复杂退化影响。 / Scan matching in corridors, tunnels and flat fields can admit non-unique poses; Hessian-based tests may miss reassociation-driven degeneracy.
+- **方法 / Method:** 在优化解附近施加扰动、重新优化，并用 `se(3)` 生成元描述完整退化变换集合。 / Perturb and re-optimize around the solution, then describe degenerate transformation families with Lie-algebra generators.
+- **证据 / Evidence:** 合成数据相对 Hessian 基线将配准误差降低约 50%；集成进 LiDAR 里程计后改善 260 m 真实轨迹，并完成基线失败的 430 m 往返隧道轨迹。
+- **局限 / Limitations:** 8 页预印本；场景和轨迹规模小；摘要未给出嵌入式延迟、误报/漏报、阈值稳定性或跨传感器结果；LiDAR 证据不能直接外推至 iToF/双目。
+- **工程成熟度 / Maturity:** **TRL 3–4，研究原型 / research prototype.** 有合成与真实退化场景，但尚无公开 SDK、长期运行或安全案例证据。
+- **建议 / Recommendation:** **复现 / REPRODUCE.** 在仓库走廊、货架重复纹理、平面墙、粉尘与动态遮挡数据上，与 Hessian 条件数、ICP 残差和真值位姿并行比较。
+
+## Top 2 — RAFAIL: Relationship-Aware Failure Detection for Robotic Manipulation
+
+- **日期与来源 / Date & source:** 2026-09-16。 [arXiv:2609.18324](https://arxiv.org/abs/2609.18324)
+- **问题 / Problem:** 全局 OOD 检测常把无害背景变化判成失败；在线 VLM 语义判断又引入不可控时延。 / Global OOD detectors react to irrelevant scene changes, while online VLM checks add runtime cost.
+- **方法 / Method:** 离线用 VLM 标注成功示范中的任务进度与实体关系重要度，再学习点云关系表征；运行时用关系专属 OOD 检测器，无需 VLM 推理，也不需要失败样本。
+- **证据 / Evidence:** 三个真实机器人操作任务上的平衡准确率为 **73.4%**，优于论文比较的 OOD 与不确定性基线。
+- **局限 / Limitations:** 仅三项任务；73.4% 意味着仍有显著漏检/误报；摘要未报告最坏时延、类别分解、传感器退化、遮挡强度或校准漂移敏感性；VLM 离线标注可把语义偏差固化进检测器。
+- **工程成熟度 / Maturity:** **TRL 3–4.** 真实机器人验证，但尚缺公开代码、跨工厂数据和安全完整性论证。
+- **建议 / Recommendation:** **基准测试 / BENCHMARK.** 先以影子模式运行，按关系和工况测 AUROC、FNR@固定FPR、告警提前量、漂移和尾延迟；验证失败前兆而非仅任务结束判定。
+
+## Top 3 — PointZero: 3D Point Track Completion for Learning Transferable 3D Dynamics
+
+- **日期与来源 / Date & source:** 2026-09-16。 [arXiv:2609.19142](https://arxiv.org/abs/2609.19142)
+- **问题 / Problem:** 三维动态模型通常依赖带机器人动作标签的数据，难以利用海量无动作标签视频。 / 3D dynamics models usually require robot action labels, limiting scalable pre-training.
+- **方法 / Method:** 从单帧 RGB-D 与稀疏、部分三维轨迹，补全所有已观测点的未来轨迹；使用 290 万合成帧预训练 Transformer，再适配动作条件动态预测与模仿学习。
+- **证据 / Evidence:** 在 PGND 三维动态基准上优于基线；在 7 个仿真和真实操作任务中的 6 个达到或超过基线；作者声明发布数据集、检查点和完整训练配方。
+- **局限 / Limitations:** 证据以任务成功和基准比较为主；未见安全相关 FNR、预测校准、遮挡/反光/深度空洞压力测试、推理时延或内存；合成到工业现场的域差距仍大。
+- **工程成熟度 / Maturity:** **TRL 3.** 可复现实验资产较完整，但属于预测先验，不是经验证的测量链。
+- **建议 / Recommendation:** **跟踪 / TRACK.** 等代码和权重稳定后，用工业 RGB-D/双目序列做零样本压力测试；在误差分位数和置信度校准合格前不接控制主链。
+
+## 其他值得关注 / Watchlist
+
+### ActiveScale: Scaling Active Perception for Robots across Model, Data, and Hardware
+
+- **日期与来源 / Date & source:** 2026-09-16。 [arXiv:2609.18514](https://arxiv.org/abs/2609.18514)
+- **问题与方法 / Problem & method:** 面向固定视点遮挡，给 VLA 加历史视频、逐帧相机位姿 token 与轻量位姿预测头；以 1,000 小时第一视角和机器人数据训练，并配套移动操作采集平台。
+- **证据与局限 / Evidence & limits:** 论文称主动感知任务成功率提高且做了消融；摘要未提供数值、代码、硬件延迟、位姿误差容限或失败检测。主动移动相机还会改变遮挡、同步与外参状态。
+- **成熟度与影响 / Maturity & impact:** **TRL 3.** 对智能立体安全传感器更重要的启示是“主动视点请求”接口，而非直接集成 VLA。
+- **建议 / Recommendation:** **延后 / DEFER** 主链集成；仅跟踪其数据采集设计，并评估固定双目加第二观察位是否能以确定性切换获得收益。
+
+---
+
+## 技术趋势 / Technology trends
+
+- **从像素/点级异常转向关系与可观测性。 / From pixel-level scores to relations and observability.** 本周最有工业价值的工作都显式表达“什么关系失败”或“哪些自由度不可观测”，这比单一置信度更适合 Supervisor 决策与审计。
+- **预测模型的数据规模快速上升，但安全证据没有同步增长。 / Data scale is rising faster than safety evidence.** 合成数据与 VLM 标注降低了训练成本，却增加了域差、标签偏差和不可校准置信度风险。
+- **实时性仍是公开证据缺口。 / Runtime remains an evidence gap.** 入选论文均未在摘要层面给出可用于工业预算的 p99 延迟、内存峰值与过载退化行为。
+- **ToF/标定更新稀缺。 / Sparse ToF and calibration updates.** 应继续保持专项检索，但当前更值得投入的是用已有相机做温漂、同步、反光、多径与跨设备重装验证，而非追逐弱相关新模型。
+
+## 下周建议实验 / Suggested experiments for next week
+
+1. **LiLi 式退化影子检测 / Degeneracy shadow test:** 从现有点云注册管线导出 6-DoF 扰动—重优化分散度；在走廊、平墙、重复货架上对照真值，绘制每自由度可观测性与定位误差的可靠性图。
+2. **关系级异常基准 / Relationship-OOD benchmark:** 定义 `human↔hazard_zone`、`object↔protective_field`、`camera↔mount` 三类关系，注入遮挡、背景变化、错位和时间不同步；比较关系 OOD 与全局 OOD 的 FNR、FPR、提前量及 p99 延迟。
+3. **禁止“虚构自由空间”回归 / No-hallucinated-free-space regression:** 将 PointZero/任意补全或预测模块置于旁路，验证所有模型输出都不能把 raw depth 的 `invalid/unknown` 自动改写为 free；加入接口单元测试和事件日志断言。
+4. **主动视点安全预算 / Active-view safety budget:** 离线模拟第二观察位请求，量化遮挡改善、外参切换误差、同步偏差与额外停止距离；只在确定性安全包络内评估收益。
+
+## Recommended interface fields
+
+`pose_observable_dof_mask`, `degenerate_generators`, `reoptimization_spread`, `relation_id`, `relation_ood_score`, `progress_phase`, `prediction_horizon_ms`, `track_visibility`, `measurement_origin`, `model_confidence`, `p99_latency_ms`。
+
+**安全边界 / Safety boundary:** 上述研究可增强诊断、预测和降级决策，但本期没有任何来源提供足以替代独立安全功能、认证传感链或确定性停机逻辑的证据。
