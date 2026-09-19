@@ -11,8 +11,8 @@ date: 2026.09.18
 
 ## 本周结论 / Executive takeaways
 
-1. **LiLi — 复现 / Reproduce.** 最贴近工业可靠性的新增工作：把 LiDAR 配准退化从单一分数扩展为 SE(3) 中的退化变换集合，可直接启发定位置信度与 Safety Supervisor 降级逻辑。
-2. **RAFAIL — 基准测试 / Benchmark.** 用任务关系而非整幅场景做在线异常检测，适合作为 WONSOR Safety OS 的非安全认证诊断通道；73.4% 平衡准确率仍不足以单独触发安全停机。
+1. **LiLi — 复现 / Reproduce.** 最贴近工业可靠性的新增工作：把 LiDAR 配准退化从单一分数扩展为 SE(3) 中的退化变换集合，可直接启发定位置信度降级逻辑。
+2. **RAFAIL — 基准测试 / Benchmark.** 用任务关系而非整幅场景做在线异常检测，适合作为非安全认证诊断通道；73.4% 平衡准确率仍不足以单独触发安全停机。
 3. **PointZero — 跟踪 / Track.** RGB-D 与稀疏三维轨迹预训练提升动态预测迁移性，但合成数据占比高、缺少置信度和实时性证据，暂不进入安全或实时主链。
 
 本周未发现达到入选门槛的纯 **ToF/iToF** 或 **RGB-D/IR-D 标定与配准** 新工作。 / No newly surfaced pure ToF/iToF or RGB-D/IR-D calibration work met the inclusion threshold this week.
