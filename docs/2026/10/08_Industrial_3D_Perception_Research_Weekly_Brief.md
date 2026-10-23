@@ -9,9 +9,9 @@ date： 2026.10.23
 
 ## 执行摘要｜Executive summary
 
-本周入选 3 项。最值得投入的是把“可靠性”直接写进训练与融合结构：第一项同时优化点云腐蚀鲁棒性、时延和显存；第二项证明传感器融合应随量程改变，而不是整幅图统一处理；第三项显示 3D 教师的直接特征对齐会造成表征秩坍缩，关系式蒸馏更稳健。三项都尚不足以进入安全控制主链，但可立即转化为 WONSOR 的离线压力测试、SQ 质量分级和 AI 旁路验证。
+本周入选 3 项。最值得投入的是把“可靠性”直接写进训练与融合结构：第一项同时优化点云腐蚀鲁棒性、时延和显存；第二项证明传感器融合应随量程改变，而不是整幅图统一处理；第三项显示 3D 教师的直接特征对齐会造成表征秩坍缩，关系式蒸馏更稳健。
 
-Three items meet this week's bar. The strongest deployment signal is that reliability must be designed into training and fusion: one work jointly optimizes point-cloud corruption robustness, latency, and memory; another shows that fusion policy should vary with range; and the third exposes representation-rank collapse under naïve 3D-teacher alignment. None is ready for a safety control path, but all can inform offline stress testing, SQ quality grading, and shadow-mode AI evaluation.
+Three items meet this week's bar. The strongest deployment signal is that reliability must be designed into training and fusion: one work jointly optimizes point-cloud corruption robustness, latency, and memory; another shows that fusion policy should vary with range; and the third exposes representation-rank collapse under naïve 3D-teacher alignment. 
 
 ## Top 3 排名｜Ranking
 
