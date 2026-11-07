@@ -8,9 +8,9 @@ date： 2026.11.06
 
 ## 执行摘要｜Executive summary
 
-本周入选三项。最直接的产品信号来自 UA-Depth：它不只修补透明、反光和半透明物体的深度，还同步预测像素级不确定性，适合转化为 LT 的“测量—修复—可信度—安全隔离”验证框架，但修复深度绝不能被当作安全测量。第二项提出可见性感知的 LiDAR 参考真值生成，可避免累计点云把被遮挡点错误投影到当前视角，对 WP2 故障注入和自动化测试平台尤其有价值。第三项 RECONSPATIAL 证明 VLM 的相对布局正确不代表米制位置正确，因此 Safety OS 必须把 Structure 与 Metric 两类证据分开门控。
+本周入选三项。最直接的产品信号来自 UA-Depth：它不只修补透明、反光和半透明物体的深度，还同步预测像素级不确定性，适合转化为 LT 的“测量—修复—可信度—安全隔离”验证框架，但修复深度绝不能被当作安全测量。第二项提出可见性感知的 LiDAR 参考真值生成，可避免累计点云把被遮挡点错误投影到当前视角，对 WP2 故障注入和自动化测试平台尤其有价值。第三项 RECONSPATIAL 证明 VLM 的相对布局正确不代表米制位置正确。
 
-Three items meet this week's bar. UA-Depth is the most directly relevant: it jointly restores depth and predicts pixel-wise uncertainty for transparent and reflective materials, but restored depth must remain outside the safety measurement path. A visibility-aware LiDAR reference pipeline addresses hidden-point contamination in validation ground truth. RECONSPATIAL shows that structurally plausible spatial reasoning can still be metrically wrong, reinforcing separate structure and metric gates in WONSOR Safety OS.
+Three items meet this week's bar. UA-Depth is the most directly relevant: it jointly restores depth and predicts pixel-wise uncertainty for transparent and reflective materials, but restored depth must remain outside the safety measurement path. A visibility-aware LiDAR reference pipeline addresses hidden-point contamination in validation ground truth. RECONSPATIAL shows that structurally plausible spatial reasoning can still be metrically wrong.
 
 ## Top 3 排名｜Ranking
 
