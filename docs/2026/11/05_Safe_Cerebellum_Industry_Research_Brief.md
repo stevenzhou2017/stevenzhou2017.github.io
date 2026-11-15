@@ -15,13 +15,14 @@ date: 2026.11.15
 
 ## 本周简报摘要
 
-1. **触觉反射正在从 VLA 的附属输入变成独立快回路。** Panasonic 联合研究团队公布 T-Rex：视觉语言动作生成约 5 Hz，指尖触觉修正约 20 Hz；12 项真实接触任务平均成功率 65%，比已披露的最强基线高 30 个百分点。它说明“大小脑分频”能改善力控与接触适应，但尚不是功能安全控制器。**WONSOR 启示：**将风险理解与安全执行解耦，快回路必须具备固定时限和故障降级。**优先级：P1。**
+1. **触觉反射正在从 VLA 的附属输入变成独立快回路。** Panasonic 联合研究团队公布 T-Rex：视觉语言动作生成约 5 Hz，指尖触觉修正约 20 Hz；12 项真实接触任务平均成功率 65%，比已披露的最强基线高 30 个百分点。它说明“大小脑分频”能改善力控与接触适应，但尚不是功能安全控制器。
 
-2. **外部空间监督已进入边缘工业硬件路径。** Neurealm 与 Advantech 把 NVIDIA Halos Outside-In Safety Blueprint 部署到基于 IGX Thor 的 MIC-735-IT，并定位为在协作环境中产生实时硬件 e-stop 的方案。本周在 IRSC 2026 展示。**WONSOR 启示：**LT 立体安全传感器可承担 outside-in 监督，但必须由独立安全链路裁决，不能将视觉 AI 结果直接等同安全输出。**优先级：P0。**
+2. **外部空间监督已进入边缘工业硬件路径。** Neurealm 与 Advantech 把 NVIDIA Halos Outside-In Safety Blueprint 部署到基于 IGX Thor 的 MIC-735-IT，并定位为在协作环境中产生实时硬件 e-stop 的方案。本周在 IRSC 2026 展示。
 
-3. **实时 MCU 的竞争已从性能指标转向安全可组合性。** Infineon 发布 RISC-V AURIX RC1 路线，覆盖底盘、区域控制、BMS 与 ADAS 安全管理，计划支持 ASIL D；ST 发布 STM32A，覆盖高安全与多域实时控制。**WONSOR 启示：**Safety Supervisor/Adapter 应以“AI 算力域 + 实时安全域 + 独立安全 I/O”做硬件选型，而非把推理与安全决策压在同一失效域。**优先级：P1。**
+3. **实时 MCU 的竞争已从性能指标转向安全可组合性。** Infineon 发布 RISC-V AURIX RC1 路线，覆盖底盘、区域控制、BMS 与 ADAS 安全管理，计划支持 ASIL D；ST 发布 STM32A，覆盖高安全与多域实时控制。
 
-4. **工业侧同样在下沉安全 MCU。** NXP 本周强调 MCX E32 的双处理域、ECC SRAM、FCCU、STCU 和时钟/错误管理，适用于联网、运动控制与实时功能分配。**WONSOR 启示：**可作为 LT Adapter 或现场状态采集节点候选，但功能安全等级、诊断覆盖和认证边界必须以安全手册/项目 FMEDA 为准。**优先级：P2。**
+4. **工业侧同样在下沉安全 MCU。** NXP 本周强调 MCX E32 的双处理域、ECC SRAM、FCCU、STCU 和时钟/错误管理，适用于联网、运动控制与实时功能分配。
+
 
 ## 本期信息卡
 
