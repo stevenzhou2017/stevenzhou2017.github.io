@@ -11,7 +11,7 @@ date： 2026.11.13
 ## 本周结论 | Executive takeaways
 
 1. **V3DSAM — Reproduce / 复现（Top 1）:** 用可解释的像素级双向重投影与物体级三维一致性拒绝错误回环；对长期定位的工程价值最高，但验证样本仍很小。
-2. **GeoMind — Benchmark / 建立基准（Top 2）:** 把空间推理与空间记忆拆成 54 个任务变体，暴露身份跟踪、关系约束到动作转换的系统性失败；适合 WONSOR AI 旁路 V&V。
+2. **GeoMind — Benchmark / 建立基准（Top 2）:** 把空间推理与空间记忆拆成 54 个任务变体，暴露身份跟踪、关系约束到动作转换的系统性失败。
 3. **Spatial Harness — Track + reproduce / 跟踪并复现（Top 3）:** 将空间问题转为显式、可执行的物理世界状态；准确率显著提升，但感知误差与模型“忽略工具证据”仍是关键失效模式。
 
 **边界结论 / Boundary:** 本周未发现达到入选门槛的新纯 ToF/iToF 解调、多径抑制、RGB-D/IR-D 工业标定标准或量产 SDK 实质更新，因此不以旧工作填充。No qualifying new pure ToF/iToF, multipath, industrial RGB-D/IR-D calibration standard, or production-SDK update was found; older items are not repeated.
